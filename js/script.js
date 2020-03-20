@@ -18,6 +18,6 @@ function stickyHeader() {
       }
 }
 
-const renderTasks = new RenderTasks('../tasks-to-render.json');
+const renderTasks = new RenderTasks('tasks-to-render.json');
 renderTasks.initTasks();
 
