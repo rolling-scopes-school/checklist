@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.singolo {
+  font-family: "Lato-Black", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Lato-Regular", Arial, Helvetica, sans-serif;
+  --color-main: #276da5;
+}
+
+.main-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 6px solid #444;
+  padding: 50px 0 10px;
+}
+
+.content-wrapper {
+  padding: 0 15px;
+  padding-bottom: 100px;
+}
+
+.prepare {
+  position: relative;
+}
+
+.prepare .content-wrapper {
+  padding: 0 35px;
+}
+
+.title {
+  font-family: "Lato-Black", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: var(--color-main);
+  flex-grow: 1;
+}
+
+.back {
+  /* width: 20px; */
+  margin: 0 10px 4px 4px;
+  padding: 5px 10px;
+  /* display: inline-block; */
+  cursor: pointer;
+}
+
+.score-board {
+  font-size: 28px;
+}
+
+.prepare {
+  padding: 20px 0;
+}
+
+.task-description {
+  padding: 15px 0;
+  width: 80%;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+}
+
+.start {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.start p {
+  font-size: 16px;
+  color: brown;
+  padding: 10px 25px;
+}
+
+.start input {
+  font-family: "Lato-Black", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: none;
+  color: var(--color-main);
+  font-size: 20px;
+  border: 1px solid var(--color-main);
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: transform .3s ease-in;
+  -webkit-transition: transform .3s ease-in;
+  -moz-transition: transform .3s ease-in;
+  -ms-transition: transform .3s ease-in;
+  -o-transition: transform .3s ease-in;
+}
+
+.start input:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.start input:disabled {
+  display: none;
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+label {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 20px 60px 20px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.checkbox-container {
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  padding-left: 10px;
+}
+
+.checkbox-container[data-active="false"] label,
+.checkbox-container[data-active="inactive"] label {
+  opacity: 0.3;
+  cursor: default !important;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  width: 1024px;
+  z-index: 50;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  z-index: 101;
+}
+
+header.sticky {
+  padding: 10px 0;
+}
+
+header h1 {
+  transform-origin: bottom left;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+
+header.sticky h1 {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+main {
+  padding-top: 104px;
+}
+
+.feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 138px;
+  height: 43px;
+  text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white,
+    0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white,
+    0 0 5px white;
+}
+
+.feedback button {
+  font-size: 13px;
+  padding: 10px 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #444;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.feedback button {
+  padding-bottom: 25px;
+}
+
+.info {
+  box-shadow: 2px 2px 10px #444;
+  max-width: 400px;
+  position: absolute;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.congrats {
+  margin-bottom: 20px;
+}
+
+.congrats img {
+  height: 150px;
+  width: 150px;
+}
+
+.visible {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  margin-top: 0;
+  height: 450px;
+  padding: 35px 1px 31px 25px;
+  position: fixed;
+  background: #fff;
+  opacity: 1;
+  z-index: 1000;
+  min-width: 300px;
+}
+
+.info p {
+  padding: 5px 0;
+  text-align: justify;
+}
+
+.content {
+  height: 100%;
+  overflow: auto;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.close {
+  display: block;
+  text-align: right !important;
+  font-size: 30px;
+  font-family: "Lato-Black", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  padding: 7px 15px 0 15px !important;
+}
+
+.header {
+  width: 100%;
+  height: 38px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+
+.close:hover {
+  color: brown;
+}
+
+.reset {
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.title h3 {
+  color: #222;
+  text-transform: none;
+  font-size: 25px;
+  width: 995px;
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  margin: 20px 0;
+}
+
+.information:after {
+  display: block;
+  background: url(images/icon.png) no-repeat;
+  font-family: "Lato-Black";
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  top: -13px;
+  right: -17px;
+  font-size: 25px;
+  color: #1e04ff;
+}
+
+.copy {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  box-shadow: 0 4px 10px #ccc;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+.not-link {
+  text-decoration: none !important;
+  cursor: default;
+  color: #444 !important;
+}
+
+.checkbox-container input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.checkbox-container label {
+  position: relative;
+  width: 30%;
+}
+.progress {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+a.add-feedback {
+  color: #2b8aff;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.checkbox-container label:hover a.add-feedback {
+  display: inline-block !important;
+}
+
+.add-form textarea {
+  width: 100%;
+  /* height: 100px; */
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+/* New radio buttons styles */
+
+.radio-group {
+  width: 300px;
+  display: flex !important;
+  flex-direction: row !important;
+  padding: 10px 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  padding: 0;
+  font-size: 11px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+
+label:hover {
+  color: #2196f3;
+}
+
+.radio-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin: 5px;
+  border: 1px solid #2196f3;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-group input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.radio-group input:checked {
+  color: rgb(39, 106, 192);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+
+.checkmark:active::after {
+  transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-group input:checked ~ .checkmark:after {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+/* Style the indicator (dot/circle) */
+.radio-group .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+}
+
+.task-max-score {
+  width: 65px;
+  margin: 10px 10px 10px 0;
+  border: 1px solid #ccc;
+}
+
+.task-max-score span {
+  font-size: 10px;
+  line-height: 13px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+
+.task-max-score p {
+  text-align: center;
+  font-size: 35px;
+}
+
+.feedback-buttons {
+  text-align: right;
+}
+
+.feedback-buttons a {
+  font-size: 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  cursor: pointer;
+}
+
+.feedback-add {
+  color: purple !important;
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+
+.fetch-errors {
+  text-align: center;
+  color: rgb(223, 0, 0);
+  margin: 20px 0;
+}
+
+.visible {
+  display: block;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .3s ease-out;
+}
+
+.tasks-list a {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
