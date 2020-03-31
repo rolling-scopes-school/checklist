@@ -1,0 +1,32 @@
+{
+  "name": "checklist",
+  "version": "1.0.0",
+  "description": "Позволяет быстро подготовить форму проверки для любого таска (json), который оценивается по принципу: _100/50/0 - указывается максимальное количество баллов за полностью реализованный пункт, снимается половина (50%) баллов, если пункт выполнен с ошибками, и не начисляются баллы вовсе, если пункт требований не реализован_.",
+  "main": "create-list.js",
+  "scripts": {
+    "build": "babel js -d public",
+    "build-webpack": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/checklist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/checklist/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/checklist#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@babel/register": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
