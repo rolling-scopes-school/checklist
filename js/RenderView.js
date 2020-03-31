@@ -1,4 +1,4 @@
-export function render(criteria, taskName) {
+export function render(criteria, taskName, information) {
     let isFeedback = false;
     let toClipBoard = '';
     let isCtrl = false;
@@ -20,6 +20,9 @@ export function render(criteria, taskName) {
     const totalTasksBoard = document.querySelector('.total');
     const title = document.querySelector('.title');
     title.innerText = taskName;
+    const prepareInfo = document.querySelector('.prepare');
+    prepareInfo.innerHTML = information ? information : '';
+
 
     const filteredCriteria = criteria.map(
       (item) =>

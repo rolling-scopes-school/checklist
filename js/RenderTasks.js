@@ -23,7 +23,7 @@ export class RenderTasks {
       e.preventDefault();
       this.tasksList.remove();
       document.querySelector('.back').classList.remove('hidden');
-      render(tasksObj.criteria, tasksObj.taskName);
+      render(tasksObj.criteria, tasksObj.taskName, tasksObj.information);
     };
     this.tasksList && this.tasksList.appendChild(link);
     this.loader.classList.remove('visible');
