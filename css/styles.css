@@ -147,18 +147,42 @@ label {
 }
 
 .checkbox-container {
+  position: relative;
   transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
   -ms-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   padding-left: 10px;
+  scroll-margin: 160px;
 }
 
-.checkbox-container[data-active="false"] label,
+.checkbox-container[data-active="false"]{
+  opacity: 0.3;
+  cursor: default !important;
+}
+
+/* .checkbox-container[data-active="false"] label,
 .checkbox-container[data-active="inactive"] label {
   opacity: 0.3;
   cursor: default !important;
+} */
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(210, 210, 210, .6);
+}
+
+.checkbox-container[data-active="false"] .overlay {
+  display: block;
+  z-index: 99;
 }
 
 header {
@@ -204,6 +228,7 @@ main {
   bottom: 10px;
   right: 138px;
   height: 43px;
+  z-index: 99;
   text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white,
     0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white,
     0 0 5px white;
@@ -380,6 +405,15 @@ a.add-feedback {
   box-sizing: border-box;
 }
 
+.askFeedback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  text-align: left;
+  width: 80%;
+}
+
 /* New radio buttons styles */
 
 .radio-group {
@@ -507,6 +541,7 @@ label:hover {
 }
 
 .feedback-buttons {
+  position: relative;
   text-align: right;
 }
 
@@ -519,7 +554,8 @@ label:hover {
 }
 
 .feedback-add {
-  color: purple !important;
+  color: rgb(16, 84, 173) !important;
+  font-weight: bold;
 }
 
 .loader {
