@@ -19,6 +19,7 @@ export class RenderTasks {
     this.tasks.push(tasksObj);
     const taskContainer = document.createElement('DIV');
     taskContainer.classList.add('taskContainer');
+    taskContainer.dataset.name = tasksObj.taskName;
     const taskLink = document.createElement('DIV');
     taskLink.classList.add('taskLink');
     const ghLink = document.createElement('a');
@@ -67,9 +68,17 @@ export class RenderTasks {
     const urls = Object.values(filesURL);
 
     for (let i = 0; i < urls.length; i++) {
-      this.getTask(urls[i]);
+      await this.getTask(urls[i]);
     }
 
+    // Sort tasks list
+      this.tasks =this.tasks.sort((a,b) => {
+        return a.taskName > b.taskName ? 1 : -1;
+      });
+      this.tasks.map(({taskName}) => {
+        const task = this.tasksList.querySelector(`[data-name="${taskName}"]`);
+        task && this.tasksList.appendChild(task);
+      })
   }
 
   renderErrors = () => {
