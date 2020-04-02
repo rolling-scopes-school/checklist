@@ -1,5 +1,7 @@
 {
   "taskName": "RSS Игра в пятнашки",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-the-gem-puzzle.md",
+  "information": "",
   "criteria": [
     {
       "type": "title",

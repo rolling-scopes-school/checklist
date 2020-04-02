@@ -1,4 +1,4 @@
-export function render(criteria, taskName) {
+export function render(criteria, taskName, information) {
     let isFeedback = false;
     let toClipBoard = '';
     let isCtrl = false;
@@ -11,6 +11,9 @@ export function render(criteria, taskName) {
       'выполнено полностью',
     ];
     const penaltiesMarks = [ 'нет', 'да' ];
+    const askFeedback = "Вы отметили: <em>выполнено частично</em>. Обязательно оставьте фидбек!";
+    const askChange = "Вы изменили оценку. Возможно стоит изменить отзыв?"
+
     const feedback = document.querySelector('.feedback button');
     feedback.parentElement.classList.remove('hidden');
     const info = document.querySelector('.info');
@@ -20,13 +23,11 @@ export function render(criteria, taskName) {
     const totalTasksBoard = document.querySelector('.total');
     const title = document.querySelector('.title');
     title.innerText = taskName;
+    const prepareInfo = document.querySelector('.prepare');
+    prepareInfo.innerHTML = information ? information : '';
 
-    const filteredCriteria = criteria.map(
-      (item) =>
 
-          !item.title ? item :
-          null
-    );
+    const filteredCriteria = criteria.map((item) =>!item.title ? item : null);
     totalTasks = filteredCriteria.filter((el) => el).length;
     totalTasksBoard.innerText = totalTasks;
 
@@ -66,6 +67,8 @@ export function render(criteria, taskName) {
       document.querySelectorAll('.checkbox-container').forEach((el) => {
         el.dataset.active = 'true';
         el.querySelectorAll('input').forEach((input) => (input.checked = false));
+        const form = el.querySelector('form');
+        form && form.remove();
         el.querySelector('.add-feedback').innerHTML = 'Добавить отзыв';
       });
       checkDone('reset');
@@ -110,12 +113,50 @@ export function render(criteria, taskName) {
           task.status = scoreId;
 
           scoreboard.innerHTML = total < 0 ? 0 : total;
+
+          if (+scoreId === 1 && task.type == 'subtask') {
+            task.needFeedback = true;
+            task.activeRadio = radio;
+            const parent = radio.closest('.checkbox-container');
+            if (!parent.querySelector('textarea')) parent.querySelector('a').click();
+            parent.scrollIntoView({behavior: "smooth"});
+            askLeaveFeedback(parent, askFeedback);
+            document.querySelectorAll('.checkbox-container').forEach((el) => {
+              el.dataset.active = 'false';
+              if (el === parent) el.dataset.active = 'true';
+            });
+          }else if(task.needFeedback && task.type == 'subtask'){
+            task.needFeedback = false;
+            const parent = radio.closest('.checkbox-container');
+            const form = parent.querySelector('form');
+
+            // if (filteredCriteria[id].feedback) {
+            //   askLeaveFeedback(parent, askChange);
+            // } else {
+            //   if (form) form.remove();
+            // }
+            if (form) form.remove();
+
+            document.querySelectorAll('.checkbox-container').forEach((el) => {
+              el.dataset.active = 'true';
+            });
+          }
+
+          if (task.activeRadio !== undefined && task.activeRadio.dataset.score !== scoreId && task.feedback) {
+            task.activeRadio = radio;
+            const parent = radio.closest('.checkbox-container');
+            parent.querySelector('a').click();
+            askLeaveFeedback(parent, askChange);
+          }
+
           isFeedback && getFeedback(filteredCriteria);
         }
 
         if (filteredCriteria.some((el) => el && el.status !== undefined))
           reset.classList.remove('hidden');
         else reset.classList.add('hidden');
+
+        task.activeRadio = radio;
       }
     });
 
@@ -130,9 +171,9 @@ export function render(criteria, taskName) {
       else {
         parentDiv.classList.add('checkbox-container');
         parentDiv.dataset.active = 'true';
+        parentDiv.dataset.id = i;
 
         const radioGroup = createRadioGroup(el, i, flag);
-
         const taskMaxScore = document.createElement('div');
         taskMaxScore.classList.add('task-max-score');
         const scoreDesc = el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
@@ -140,28 +181,43 @@ export function render(criteria, taskName) {
         const taskDesc = document.createElement('div');
         taskDesc.classList.add('task-description');
         taskDesc.innerHTML = `<p class='task-title'>${el.text}</p>`;
-
         taskDesc.innerHTML += "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
+
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        overlay.onclick = () => {
+          const el = document.querySelector('[data-active="true"]');
+          askLeaveFeedback(el, askFeedback);
+          el.scrollIntoView({behavior: "smooth"});
+        }
 
         parentDiv.appendChild(taskMaxScore);
         parentDiv.appendChild(taskDesc);
         parentDiv.appendChild(radioGroup);
+        parentDiv.appendChild(overlay);
       }
       renderList.push(parentDiv);
+    }
+
+    function askLeaveFeedback(el, message) {
+      const textarea = el.querySelector('textarea');
+      if (!textarea) return;
+      textarea.focus();
+      const prevMessage = textarea.parentElement.querySelector('.askFeedback');
+      if (prevMessage) prevMessage.remove();
+      const askMessage = document.createElement('DIV');
+      askMessage.classList.add('askFeedback');
+      askMessage.innerHTML = message;
+      el.querySelector('.feedback-buttons').appendChild(askMessage);
     }
 
     function createRadioGroup(el, id, flag) {
       const parent = document.createElement('div');
       parent.classList.add('radio-group');
-      const options =
-
-          el.type == 'subtask' ? [ ...checkMarks ] :
-          [ ...penaltiesMarks ];
+      const options = el.type == 'subtask' ? [ ...checkMarks ] : [ ...penaltiesMarks ];
       options.map((desc, i) => {
         const input = document.createElement('input');
-        input.dataset.type =
-          flag ? 'main' :
-          'regular';
+        input.dataset.type = flag ? 'main' : 'regular';
         input.setAttribute('data-id', id);
         input.setAttribute('data-score', i);
         input.setAttribute('name', id);
@@ -195,47 +251,57 @@ export function render(criteria, taskName) {
         isFeedback = false;
       });
       header.appendChild(close);
-      if (totalTasks !== done) {
-        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${totalTasks -
-          done} из ${totalTasks}</div></div>`;
-      }
-      else {
-        info.innerHTML = '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
-        let resultList = filteredCriteria.filter((item) => item && item.status != undefined);
-        let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
-        content.innerHTML += `<p><strong>Ваша оценка - ${total >= 0 ? total : 0} ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
+      if (filteredCriteria.some((task) => task && task.needFeedback && !task.feedback)) {
+        const parent = document.querySelector('.checkbox-container[data-active="true"]');
+        if (parent.querySelector('textarea')) {
+          parent.scrollIntoView({behavior: "smooth"});
+          askLeaveFeedback(parent, askFeedback);
+        }
+        content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вам необходимо оставить обязательный фидбек ко всем пунктам, где отмечено - <em>Выполнено частично</em>!</div></div>`;
+      } else {
+        if (totalTasks !== done) {
+          content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${totalTasks -
+            done} из ${totalTasks}</div></div>`;
+        }
+        else {
+          info.innerHTML = '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
+          let resultList = filteredCriteria.filter((item) => item && item.status != undefined);
+          let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
+          content.innerHTML += `<p><strong>Ваша оценка - ${total >= 0 ? total : 0} ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
 
-        const resultDescriptions = {
-          0: 'Не выполненные/не засчитанные пункты:',
-          1: 'Частично выполненные пункты:',
-          2: 'Выполненные пункты:',
-          penalty: 'Штрафы:',
-        };
-        Object.keys(resultDescriptions).forEach((desc) => {
-          let partialResult = [];
-          if (resultList.some(
-              (el) =>
-                (el.type == desc && el.status != 0) ||
-                (el.type != 'penalty' && el.status == desc)
-            )
-          ) {
-            content.innerHTML += `<p><strong>${resultDescriptions[desc]}\r\n</strong></p>`;
-            partialResult = resultList.filter(
-              (el) =>
-                (el.type == desc && el.status != 0) ||
-                (el.type != 'penalty' && el.status == desc)
-            );
-            partialResult.map((item, i) => {
-              content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
-                item.feedback ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
-                item.feedback +
-                '</p></p>' :
-                '</p>'}\r\n`;
-            });
-          }
-        });
-        toClipBoard = content.innerText;
+          const resultDescriptions = {
+            0: 'Не выполненные/не засчитанные пункты:',
+            1: 'Частично выполненные пункты:',
+            2: 'Выполненные пункты:',
+            penalty: 'Штрафы:',
+          };
+          Object.keys(resultDescriptions).forEach((desc) => {
+            let partialResult = [];
+            if (resultList.some(
+                (el) =>
+                  (el.type == desc && el.status != 0) ||
+                  (el.type != 'penalty' && el.status == desc)
+              )
+            ) {
+              content.innerHTML += `<p><strong>${resultDescriptions[desc]}\r\n</strong></p>`;
+              partialResult = resultList.filter(
+                (el) =>
+                  (el.type == desc && el.status != 0) ||
+                  (el.type != 'penalty' && el.status == desc)
+              );
+              partialResult.map((item, i) => {
+                content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
+                  item.feedback ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
+                  item.feedback +
+                  '</p></p>' :
+                  '</p>'}\r\n`;
+              });
+            }
+          });
+          toClipBoard = content.innerText;
+        }
       }
+
       info.appendChild(header);
       info.appendChild(content);
       info.classList.add('visible');
@@ -256,9 +322,7 @@ export function render(criteria, taskName) {
       e.preventDefault();
       document.querySelectorAll('.add-form').forEach((el) => el.remove());
       const link = e.target;
-      const id = link.closest('.checkbox-container').querySelector('input')
-        .dataset.id;
-
+      const id = link.closest('.checkbox-container').querySelector('input').dataset.id;
       const box = document.createElement('form');
       box.classList.add('add-form');
       const textarea = document.createElement('textarea');
@@ -273,10 +337,16 @@ export function render(criteria, taskName) {
 
       const closeText = document.createElement('a');
       closeText.innerText = 'Отмена';
-      closeText.onclick = () => box.remove();
+      closeText.onclick = () =>{
+        box.remove();
+        resetRadioState(id);
+      };
       const saveText = closeText.cloneNode();
       saveText.innerText = 'Сохранить';
-      saveText.onclick = () => handleAreaEvent(id, textarea, link, box);
+      saveText.onclick = () => {
+        handleAreaEvent(id, textarea, link, box);
+        checkFeedback(id);
+      };
 
       const buttons = document.createElement('DIV');
       buttons.classList.add('feedback-buttons');
@@ -289,10 +359,57 @@ export function render(criteria, taskName) {
       box.addEventListener('keyup', (e) => {
         if (e.keyCode == 13 && isCtrl) {
           handleAreaEvent(id, textarea, link, box);
+          checkFeedback(id);
         }
-        else if (e.keyCode == 27) box.remove();
+        else if (e.keyCode == 27) {
+          resetRadioState(id);
+          box.remove();
+        };
       });
     };
+
+    function checkFeedback(id) {
+      if (filteredCriteria[id].needFeedback
+        && filteredCriteria[id].feedback
+        && checkString(filteredCriteria[id])) {
+          document.querySelectorAll('.checkbox-container').forEach((el) => {
+          el.dataset.active = 'true';
+        });
+      } else if (filteredCriteria[id].needFeedback){
+        const parent = filteredCriteria[id].activeRadio.closest('.checkbox-container');
+        parent.querySelector('a').click();
+        askLeaveFeedback(parent, "Фидбек не может быть пустым! Минимальная длина 8 символов");
+        setTimeout(() => askLeaveFeedback(parent, askFeedback), 3000);
+        return;
+      }
+    }
+
+    function checkString(taskObj) {
+      taskObj.feedback = taskObj.feedback.replace(/(\s+)/g, ' ').trim();
+      if (taskObj.feedback.length < 8) return false;
+      return true;
+    }
+
+    function resetRadioState(id) {
+      if (filteredCriteria[id].needFeedback) {
+        done--;
+        doneBoard.innerText = done;
+        filteredCriteria[id].activeRadio.checked = false;
+        substractScore(filteredCriteria[id].max);
+        delete filteredCriteria[id].needFeedback;
+        delete filteredCriteria[id].activeRadio;
+        delete filteredCriteria[id].status;
+        document.querySelectorAll('.checkbox-container').forEach((el) => {
+          el.dataset.active = 'true';
+        });
+        if (!total) reset.classList.add('hidden');
+      }
+    }
+
+    function substractScore(score) {
+      total-= +(score / 2).toFixed(1);
+      scoreboard.innerHTML = total < 0 ? 0 : total;
+    }
 
     function handleAreaEvent(id, textarea, link, box) {
       filteredCriteria[id].feedback = textarea.value;
