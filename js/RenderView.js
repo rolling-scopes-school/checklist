@@ -251,7 +251,6 @@ export function render(criteria, taskName, information) {
         isFeedback = false;
       });
       header.appendChild(close);
-      console.log(filteredCriteria);
       if (filteredCriteria.some((task) => task && task.needFeedback && !task.feedback)) {
         const parent = document.querySelector('.checkbox-container[data-active="true"]');
         if (parent.querySelector('textarea')) {
