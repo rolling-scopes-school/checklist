@@ -201,6 +201,7 @@ export function render(criteria, taskName, information) {
 
     function askLeaveFeedback(el, message) {
       const textarea = el.querySelector('textarea');
+      if (!textarea) return;
       textarea.focus();
       const prevMessage = textarea.parentElement.querySelector('.askFeedback');
       if (prevMessage) prevMessage.remove();
@@ -250,47 +251,58 @@ export function render(criteria, taskName, information) {
         isFeedback = false;
       });
       header.appendChild(close);
-      if (totalTasks !== done) {
-        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${totalTasks -
-          done} из ${totalTasks}</div></div>`;
-      }
-      else {
-        info.innerHTML = '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
-        let resultList = filteredCriteria.filter((item) => item && item.status != undefined);
-        let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
-        content.innerHTML += `<p><strong>Ваша оценка - ${total >= 0 ? total : 0} ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
+      console.log(filteredCriteria);
+      if (filteredCriteria.some((task) => task && task.needFeedback && !task.feedback)) {
+        const parent = document.querySelector('.checkbox-container[data-active="true"]');
+        if (parent.querySelector('textarea')) {
+          parent.scrollIntoView({behavior: "smooth"});
+          askLeaveFeedback(parent, askFeedback);
+        }
+        content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вам необходимо оставить обязательный фидбек ко всем пунктам, где отмечено - <em>Выполнено частично</em>!</div></div>`;
+      } else {
+        if (totalTasks !== done) {
+          content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${totalTasks -
+            done} из ${totalTasks}</div></div>`;
+        }
+        else {
+          info.innerHTML = '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
+          let resultList = filteredCriteria.filter((item) => item && item.status != undefined);
+          let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
+          content.innerHTML += `<p><strong>Ваша оценка - ${total >= 0 ? total : 0} ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
 
-        const resultDescriptions = {
-          0: 'Не выполненные/не засчитанные пункты:',
-          1: 'Частично выполненные пункты:',
-          2: 'Выполненные пункты:',
-          penalty: 'Штрафы:',
-        };
-        Object.keys(resultDescriptions).forEach((desc) => {
-          let partialResult = [];
-          if (resultList.some(
-              (el) =>
-                (el.type == desc && el.status != 0) ||
-                (el.type != 'penalty' && el.status == desc)
-            )
-          ) {
-            content.innerHTML += `<p><strong>${resultDescriptions[desc]}\r\n</strong></p>`;
-            partialResult = resultList.filter(
-              (el) =>
-                (el.type == desc && el.status != 0) ||
-                (el.type != 'penalty' && el.status == desc)
-            );
-            partialResult.map((item, i) => {
-              content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
-                item.feedback ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
-                item.feedback +
-                '</p></p>' :
-                '</p>'}\r\n`;
-            });
-          }
-        });
-        toClipBoard = content.innerText;
+          const resultDescriptions = {
+            0: 'Не выполненные/не засчитанные пункты:',
+            1: 'Частично выполненные пункты:',
+            2: 'Выполненные пункты:',
+            penalty: 'Штрафы:',
+          };
+          Object.keys(resultDescriptions).forEach((desc) => {
+            let partialResult = [];
+            if (resultList.some(
+                (el) =>
+                  (el.type == desc && el.status != 0) ||
+                  (el.type != 'penalty' && el.status == desc)
+              )
+            ) {
+              content.innerHTML += `<p><strong>${resultDescriptions[desc]}\r\n</strong></p>`;
+              partialResult = resultList.filter(
+                (el) =>
+                  (el.type == desc && el.status != 0) ||
+                  (el.type != 'penalty' && el.status == desc)
+              );
+              partialResult.map((item, i) => {
+                content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
+                  item.feedback ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
+                  item.feedback +
+                  '</p></p>' :
+                  '</p>'}\r\n`;
+              });
+            }
+          });
+          toClipBoard = content.innerText;
+        }
       }
+
       info.appendChild(header);
       info.appendChild(content);
       info.classList.add('visible');
@@ -360,17 +372,23 @@ export function render(criteria, taskName, information) {
     function checkFeedback(id) {
       if (filteredCriteria[id].needFeedback
         && filteredCriteria[id].feedback
-        && filteredCriteria[id].feedback.length > 25) {
+        && checkString(filteredCriteria[id])) {
           document.querySelectorAll('.checkbox-container').forEach((el) => {
           el.dataset.active = 'true';
         });
       } else if (filteredCriteria[id].needFeedback){
         const parent = filteredCriteria[id].activeRadio.closest('.checkbox-container');
         parent.querySelector('a').click();
-        askLeaveFeedback(parent, "Фидбек не может быть пустым! Минимальная длина 25 символов");
+        askLeaveFeedback(parent, "Фидбек не может быть пустым! Минимальная длина 8 символов");
         setTimeout(() => askLeaveFeedback(parent, askFeedback), 3000);
         return;
       }
+    }
+
+    function checkString(taskObj) {
+      taskObj.feedback = taskObj.feedback.replace(/(\s+)/g, ' ').trim();
+      if (taskObj.feedback.length < 8) return false;
+      return true;
     }
 
     function resetRadioState(id) {
