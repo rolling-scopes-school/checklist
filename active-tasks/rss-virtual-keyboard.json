@@ -46,7 +46,7 @@
     },
     {
       "type": "penalty",
-      "text": "Ошибки в консоли, связанные с исполняемым кодом(ошибки типа favicon.ico: Failed to load resource: the server responded with a status of 404 не учитываются) или предупреждения eslint-config-airbnb-base",
+      "text": "Ошибки в консоли, связанные с исполняемым кодом(ошибки типа favicon.ico: Failed to load resource: the server responded with a status of 404 не учитываются),
       "max": -15
     }
   ]
