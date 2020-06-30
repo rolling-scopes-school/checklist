@@ -1,4 +1,6 @@
-import { render } from '../js/RenderView.js';
+import {
+  render
+} from '../js/RenderView.js';
 const ghIconUlr = './images/gh.svg'
 
 export class RenderTasks {
@@ -9,6 +11,7 @@ export class RenderTasks {
   }
 
   getTask = async taskURL => {
+    if (!taskURL.match(/http/)) {}
     let res = await fetch(taskURL);
     if (!res.ok) {
       this.fetchFails.push(taskURL);
@@ -32,9 +35,9 @@ export class RenderTasks {
     ghLink.appendChild(ghImg);
     ghLink.setAttribute('title', 'Original repo README');
     const link = document.createElement('a');
-    link.setAttribute('href', taskURL);
+    link.setAttribute('href', (tasksObj.externalLink || taskURL));
     link.innerText = tasksObj.taskName;
-    link.onclick = (e) => {
+    if (!tasksObj.externalLink) link.onclick = (e) => {
       e.preventDefault();
       this.tasksList.remove();
       document.querySelector('.back').classList.remove('hidden');
@@ -68,17 +71,20 @@ export class RenderTasks {
     const urls = Object.values(filesURL);
 
     for (let i = 0; i < urls.length; i++) {
+      console.log(urls[i])
       await this.getTask(urls[i]);
     }
 
     // Sort tasks list
-      this.tasks =this.tasks.sort((a,b) => {
-        return a.taskName > b.taskName ? 1 : -1;
-      });
-      this.tasks.map(({taskName}) => {
-        const task = this.tasksList.querySelector(`[data-name="${taskName}"]`);
-        task && this.tasksList.appendChild(task);
-      })
+    this.tasks = this.tasks.sort((a, b) => {
+      return a.taskName > b.taskName ? 1 : -1;
+    });
+    this.tasks.map(({
+      taskName
+    }) => {
+      const task = this.tasksList.querySelector(`[data-name="${taskName}"]`);
+      task && this.tasksList.appendChild(task);
+    })
   }
 
   renderErrors = () => {
@@ -94,4 +100,3 @@ export class RenderTasks {
     }
   }
 }
-
