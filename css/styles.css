@@ -537,6 +537,10 @@ label:hover {
   width: 65px;
   margin: 10px 10px 10px 0;
   border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .2s ease-in;
 }
 
 .task-max-score span {
