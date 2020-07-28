@@ -11,14 +11,15 @@ export function render(criteria, taskName, information) {
     'выполнено полностью',
   ];
   const penaltiesMarks = ['нет', 'да'];
-  const askFeedback = "Вы отметили: <em>выполнено частично</em>. Обязательно оставьте фидбек!";
-  const askChange = "Вы изменили оценку. Возможно стоит изменить отзыв?"
+  const askFeedback =
+    'Вы отметили: <em>выполнено частично</em>. Обязательно оставьте фидбек!';
+  const askChange = 'Вы изменили оценку. Возможно стоит изменить отзыв?';
 
   const feedback = document.querySelector('.feedback button');
   feedback.parentElement.classList.remove('hidden');
   const info = document.querySelector('.info');
   const scoreboard = document.querySelector('.score-board');
-  scoreboard.parentElement.classList.remove('hidden')
+  scoreboard.parentElement.classList.remove('hidden');
   const doneBoard = document.querySelector('.done');
   const totalTasksBoard = document.querySelector('.total');
   const title = document.querySelector('.title');
@@ -26,8 +27,9 @@ export function render(criteria, taskName, information) {
   const prepareInfo = document.querySelector('.prepare');
   prepareInfo.innerHTML = information ? information : '';
 
-
-  const filteredCriteria = criteria.map((item) => !item.title ? item : null);
+  const filteredCriteria = criteria.map((item) =>
+    (!item['subtitle'] && !item.title) || !item.title ? item : null
+  );
   totalTasks = filteredCriteria.filter((el) => el).length;
   totalTasksBoard.innerText = totalTasks;
 
@@ -46,8 +48,9 @@ export function render(criteria, taskName, information) {
   let total = 0;
   const renderList = [];
   criteria.forEach((el, i) => {
-    el.status === 'main' ? renderCriterion(el, i, true) :
-      renderCriterion(el, i);
+    el.status === 'main'
+      ? renderCriterion(el, i, true)
+      : renderCriterion(el, i);
   });
   const domList = document.createElement('form');
   renderList.forEach((el) => domList.appendChild(el));
@@ -80,7 +83,6 @@ export function render(criteria, taskName, information) {
   // reset state
   reset.click();
 
-
   domList.addEventListener('click', (e) => {
     const parent = e.target.parentElement;
     const id = e.target.dataset.id;
@@ -105,9 +107,13 @@ export function render(criteria, taskName, information) {
         // Calculate actual Total Score
         const scores = [0, +(task.max / 2).toFixed(1), task.max];
         if (task.status >= 0) {
-          total -= task.type !== 'penalty' ? scores[task.status] : scores[task.status] * 2;
+          total -=
+            task.type !== 'penalty'
+              ? scores[task.status]
+              : scores[task.status] * 2;
         }
-        total += task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
+        total +=
+          task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
         task.status = scoreId;
 
         scoreboard.innerHTML = total < 0 ? 0 : total;
@@ -116,9 +122,10 @@ export function render(criteria, taskName, information) {
           task.needFeedback = true;
           task.activeRadio = radio;
           const parent = radio.closest('.checkbox-container');
-          if (!parent.querySelector('textarea')) parent.querySelector('a').click();
+          if (!parent.querySelector('textarea'))
+            parent.querySelector('a').click();
           parent.scrollIntoView({
-            behavior: "smooth"
+            behavior: 'smooth',
           });
           askLeaveFeedback(parent, askFeedback);
           document.querySelectorAll('.checkbox-container').forEach((el) => {
@@ -142,7 +149,11 @@ export function render(criteria, taskName, information) {
           });
         }
 
-        if (task.activeRadio !== undefined && task.activeRadio.dataset.score !== scoreId && task.feedback) {
+        if (
+          task.activeRadio !== undefined &&
+          task.activeRadio.dataset.score !== scoreId &&
+          task.feedback
+        ) {
           task.activeRadio = radio;
           const parent = radio.closest('.checkbox-container');
           parent.querySelector('a').click();
@@ -170,7 +181,7 @@ export function render(criteria, taskName, information) {
     } else if (el.type === 'sub-title') {
       parentDiv.classList.add('sub-title');
       const subtitle = document.createElement('h4');
-      subtitle.innerText = el.subtitle;
+      subtitle.innerText = el.title;
       parentDiv.appendChild(subtitle);
     } else {
       parentDiv.classList.add('checkbox-container');
@@ -180,12 +191,14 @@ export function render(criteria, taskName, information) {
       const radioGroup = createRadioGroup(el, i, flag);
       const taskMaxScore = document.createElement('div');
       taskMaxScore.classList.add('task-max-score');
-      const scoreDesc = el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
+      const scoreDesc =
+        el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
       taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p>${el.max}</p>`;
       const taskDesc = document.createElement('div');
       taskDesc.classList.add('task-description');
       taskDesc.innerHTML = `<p class='task-title'>${el.text}</p>`;
-      taskDesc.innerHTML += "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
+      taskDesc.innerHTML +=
+        "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
 
       const overlay = document.createElement('div');
       overlay.classList.add('overlay');
@@ -193,9 +206,9 @@ export function render(criteria, taskName, information) {
         const el = document.querySelector('[data-active="true"]');
         askLeaveFeedback(el, askFeedback);
         el.scrollIntoView({
-          behavior: "smooth"
+          behavior: 'smooth',
         });
-      }
+      };
 
       parentDiv.appendChild(taskMaxScore);
       parentDiv.appendChild(taskDesc);
@@ -220,7 +233,8 @@ export function render(criteria, taskName, information) {
   function createRadioGroup(el, id, flag) {
     const parent = document.createElement('div');
     parent.classList.add('radio-group');
-    const options = el.type == 'subtask' ? [...checkMarks] : [...penaltiesMarks];
+    const options =
+      el.type == 'subtask' ? [...checkMarks] : [...penaltiesMarks];
     options.map((desc, i) => {
       const input = document.createElement('input');
       input.dataset.type = flag ? 'main' : 'regular';
@@ -257,24 +271,36 @@ export function render(criteria, taskName, information) {
       isFeedback = false;
     });
     header.appendChild(close);
-    if (filteredCriteria.some((task) => task && task.needFeedback && !task.feedback)) {
-      const parent = document.querySelector('.checkbox-container[data-active="true"]');
+    if (
+      filteredCriteria.some(
+        (task) => task && task.needFeedback && !task.feedback
+      )
+    ) {
+      const parent = document.querySelector(
+        '.checkbox-container[data-active="true"]'
+      );
       if (parent.querySelector('textarea')) {
         parent.scrollIntoView({
-          behavior: "smooth"
+          behavior: 'smooth',
         });
         askLeaveFeedback(parent, askFeedback);
       }
       content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вам необходимо оставить обязательный фидбек ко всем пунктам, где отмечено - <em>Выполнено частично</em>!</div></div>`;
     } else {
       if (totalTasks !== done) {
-        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${totalTasks -
-            done} из ${totalTasks}</div></div>`;
+        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${
+          totalTasks - done
+        } из ${totalTasks}</div></div>`;
       } else {
-        info.innerHTML = '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
-        let resultList = filteredCriteria.filter((item) => item && item.status != undefined);
+        info.innerHTML =
+          '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
+        let resultList = filteredCriteria.filter(
+          (item) => item && item.status != undefined
+        );
         let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
-        content.innerHTML += `<p><strong>Ваша оценка - ${total >= 0 ? total : 0} ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
+        content.innerHTML += `<p><strong>Ваша оценка - ${
+          total >= 0 ? total : 0
+        } ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
 
         const resultDescriptions = {
           0: 'Не выполненные/не засчитанные пункты:',
@@ -284,23 +310,27 @@ export function render(criteria, taskName, information) {
         };
         Object.keys(resultDescriptions).forEach((desc) => {
           let partialResult = [];
-          if (resultList.some(
+          if (
+            resultList.some(
               (el) =>
-              (el.type == desc && el.status != 0) ||
-              (el.type != 'penalty' && el.status == desc)
-            )) {
+                (el.type == desc && el.status != 0) ||
+                (el.type != 'penalty' && el.status == desc)
+            )
+          ) {
             content.innerHTML += `<p><strong>${resultDescriptions[desc]}\r\n</strong></p>`;
             partialResult = resultList.filter(
               (el) =>
-              (el.type == desc && el.status != 0) ||
-              (el.type != 'penalty' && el.status == desc)
+                (el.type == desc && el.status != 0) ||
+                (el.type != 'penalty' && el.status == desc)
             );
             partialResult.map((item, i) => {
               content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
-                  item.feedback ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
-                  item.feedback +
-                  '</p></p>' :
-                  '</p>'}\r\n`;
+                item.feedback
+                  ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
+                    item.feedback +
+                    '</p></p>'
+                  : '</p>'
+              }\r\n`;
             });
           }
         });
@@ -327,7 +357,8 @@ export function render(criteria, taskName, information) {
     e.preventDefault();
     document.querySelectorAll('.add-form').forEach((el) => el.remove());
     const link = e.target;
-    const id = link.closest('.checkbox-container').querySelector('input').dataset.id;
+    const id = link.closest('.checkbox-container').querySelector('input')
+      .dataset.id;
     const box = document.createElement('form');
     box.classList.add('add-form');
     const textarea = document.createElement('textarea');
@@ -368,21 +399,28 @@ export function render(criteria, taskName, information) {
       } else if (e.keyCode == 27) {
         resetRadioState(id);
         box.remove();
-      };
+      }
     });
   };
 
   function checkFeedback(id) {
-    if (filteredCriteria[id].needFeedback &&
+    if (
+      filteredCriteria[id].needFeedback &&
       filteredCriteria[id].feedback &&
-      checkString(filteredCriteria[id])) {
+      checkString(filteredCriteria[id])
+    ) {
       document.querySelectorAll('.checkbox-container').forEach((el) => {
         el.dataset.active = 'true';
       });
     } else if (filteredCriteria[id].needFeedback) {
-      const parent = filteredCriteria[id].activeRadio.closest('.checkbox-container');
+      const parent = filteredCriteria[id].activeRadio.closest(
+        '.checkbox-container'
+      );
       parent.querySelector('a').click();
-      askLeaveFeedback(parent, "Фидбек не может быть пустым! Минимальная длина 8 символов");
+      askLeaveFeedback(
+        parent,
+        'Фидбек не может быть пустым! Минимальная длина 8 символов'
+      );
       setTimeout(() => askLeaveFeedback(parent, askFeedback), 3000);
       return;
     }
