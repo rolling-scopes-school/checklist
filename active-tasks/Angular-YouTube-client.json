@@ -1,0 +1,101 @@
+{
+  "taskName": "Angular YouTube client",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/tasks/angular",
+  "information": "",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Task #1"
+    },
+    {
+      "type": "subtask",
+      "text": "Приложение создано",
+      "max": 50
+    },
+    {
+      "type": "title",
+      "title": "Task #2"
+    },
+    {
+      "type": "subtask",
+      "text": "Реализован блок фильтрации результатов поиска",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Реализовано окрашивание нижней части карточки в зависимости от даты опубликования видео",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Реализована сортировка результатов поиска по ключевому слову",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Реализована сортировка результатов поиска по колличеству просмотров как в сторону увелтчения, так в сторону уменьшения",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Реализована сортировка результатов поиска по дате опубликования как в сторону увелтчения, так в сторону уменьшения",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Task #3"
+    },
+    {
+      "type": "subtask",
+      "text": "Реализован роутинг (страницы: 404, login, main page, detailed information page)",
+      "max": 50
+    },
+    {
+      "type": "subtask",
+      "text": "Неавторизованный пользователь с любой страницы приложения перенаправляется на страницу 'login'",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Приложение разбито на модули: модуль YouTube загружается только при переходе на главную страницу",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Task #4"
+    },
+    {
+      "type": "subtask",
+      "text": "Для поиска информации о видео используется API YouTube",
+      "max": 100
+    },
+    {
+      "type": "title",
+      "title": "Task #5"
+    },
+    {
+      "type": "subtask",
+      "text": "Реализована страница 'Admin'",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Существует возможность добавления собственных карточек с информацией о видео",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "Результаты поиска полученные от YouTube API сохраняются в state",
+      "max": 40
+    },
+    {
+      "type": "title",
+      "title": "Штрафы"
+    },
+    {
+      "type": "penalty",
+      "text": "Ошибки в консоли, связанные с исполняемым кодом(ошибки типа favicon.ico: Failed to load resource: the server responded with a status of 404 не учитываются)",
+      "max": -40
+    }
+  ]
+}
