@@ -24,7 +24,7 @@
     },
     {
       "type": "title",
-      "title": "Advanced scope +50"
+      "title": "Advanced scope +60"
     },
     {
       "type": "subtask",
@@ -52,8 +52,13 @@
       "max": 10
     },
     {
+      "type": "subtask",
+      "text": "звуковое сопровождение передвижения фишек",
+      "max": 10
+    },
+    {
       "type": "title",
-      "title": "Hacker scope +20"
+      "title": "Hacker scope +80"
     },
     {
       "type": "subtask",
@@ -64,6 +69,25 @@
       "type": "subtask",
       "text": "когда игра закончилась, выводится сообщение «Ура! Вы решили головоломку за ##:## и N ходов»",
       "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "вместо цифр на карточках используются картинки",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "реализовано автоматическое, анимированное завершение игры",
+      "max": 30
+    },
+    {
+      "type": "title",
+      "title": "Штрафы"
+    },
+    {
+      "type": "penalty",
+      "text": "Ошибки в консоли, связанные с исполняемым кодом(ошибки типа favicon.ico: Failed to load resource: the server responded with a status of 404 не учитываются)",
+      "max": -15
     }
   ]
 }
