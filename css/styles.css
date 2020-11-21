@@ -43,7 +43,7 @@ body {
 }
 
 .main-wrapper {
-  width: 1024px;
+  /*width: 1024px;*/
   margin: 0 auto;
   position: relative;
 }
@@ -84,6 +84,10 @@ header {
   padding: 5px 10px;
   /* display: inline-block; */
   cursor: pointer;
+}
+
+.total-points {
+  margin-left: 15px;
 }
 
 .score-board {
@@ -200,7 +204,7 @@ label {
 header {
   background: #fff;
   position: fixed;
-  width: 1024px;
+  width: 100%;
   z-index: 50;
   transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
@@ -229,6 +233,10 @@ header.sticky h1 {
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
+}
+
+.score-title {
+  margin-right: 10px;
 }
 
 main {
@@ -337,7 +345,7 @@ main {
 
 .reset {
   padding: 5px;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   cursor: pointer;
 }
 
@@ -438,7 +446,7 @@ a.add-feedback {
 }
 
 label {
-  padding: 0;
+  padding: 0 3px;
   font-size: 11px;
   position: relative;
   cursor: pointer;
