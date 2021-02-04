@@ -1,7 +1,7 @@
 {
   "taskName": "RS-clone",
   "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rsclone",
-  "information": "Максимальный балл за приложение 320, за статью 160, оцениваются только 13 пунктов с наибольшим колличеством балов",
+  "information": "Максимальный балл за приложение 320, за статью 160",
   "criteria": [
     {
       "type": "title",
