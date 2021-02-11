@@ -22,7 +22,7 @@
       "max": 5
     },
     {
-      "type": "task",
+      "type": "title",
       "title": "Task #3"
     },
     {
@@ -31,7 +31,7 @@
       "max": 15
     },
     {
-      "type": "task",
+      "type": "title",
       "title": "Task #4"
     },
     {
@@ -40,7 +40,7 @@
       "max": 50
     },
     {
-      "type": "task",
+      "type": "title",
       "title": "Task #5"
     },
     {
@@ -77,6 +77,10 @@
       "type": "subtask",
       "text": "Short report about the work done exists",
       "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Penalties",
     },
     {
       "type": "penalty",
