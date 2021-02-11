@@ -1,0 +1,97 @@
+{
+  "taskName": "2. Linear Regression and Visualization",
+  "github": "https://github.com/rolling-scopes-school/ml-intro/blob/2021/2_linear_regression/seminar_and_homework.ipynb",
+  "information": "Final score will divide by 10 automatically after submitting the results to the platform",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Task #1"
+    },
+    {
+      "type": "subtask",
+      "text": "Histogram of player height distribution in meters is built correctly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Task #2"
+    },
+    {
+      "type": "subtask",
+      "text": "MSE function is written correctly and passes the asserts",
+      "max": 5
+    },
+    {
+      "type": "task",
+      "title": "Task #3"
+    },
+    {
+      "type": "subtask",
+      "text": "The dependence of test BallControl predictions and real BallControl score on Dribbling score is plotted correctly",
+      "max": 15
+    },
+    {
+      "type": "task",
+      "title": "Task #4"
+    },
+    {
+      "type": "subtask",
+      "text": "Linear Regression class is completed correctly and passes the asserts",
+      "max": 50
+    },
+    {
+      "type": "task",
+      "title": "Task #5"
+    },
+    {
+      "type": "subtask",
+      "text": "Float number from Value field extracted",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Correlation matrix is built",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A sequential process of dropping highly correlated features was carried out. No pairs of features with abs(corr) > 0.9 are left.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Train-test split done.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Model was trained on train dataset, predictions were made for both train and test",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Model performance was measured both on train and test data in terms of MSE or RMSE",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Short report about the work done exists",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Any other model except custom Linear Regression or sklearn.linear_model.Ridge(alpha=0) is used",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Number of selected features BEFORE removal of linearly dependent ones is less than 10",
+      "max": -5
+    },
+    {
+      "type": "penalty",
+      "text": "Linearly dependent features were not removed before training the model",
+      "max": -5
+    }
+  ]
+}
