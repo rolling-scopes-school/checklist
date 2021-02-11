@@ -79,6 +79,10 @@
       "max": 10
     },
     {
+      "type": "title",
+      "title": "Penalties",
+    },
+    {
       "type": "penalty",
       "text": "Any other model except custom Linear Regression or sklearn.linear_model.Ridge(alpha=0) is used",
       "max": -10
