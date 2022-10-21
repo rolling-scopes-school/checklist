@@ -1,0 +1,74 @@
+{
+    "taskName": "RSS CodeJam-2022q3",
+    "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-1/dom-api/codejam-the-gem-puzzle.md",
+    "information": "",
+    "criteria": [
+      {
+        "type": "title",
+        "title": "Basic scope +30"
+      },
+      {
+        "type": "subtask",
+        "text": "вёрстка, дизайн, адаптив",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "cостояние игрового поля генерируется случайным образом",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "при клике по плитке, стоящей рядом с пустой клеткой, плитка перемещается на место пустой клетки",
+        "max": 10
+      },
+      {
+        "type": "title",
+        "title": "Advanced scope +50"
+      },
+      {
+        "type": "subtask",
+        "text": "игру можно начать заново без перезагрузки страницы",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "отображается продолжительность игры и количество сделанных ходов",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "звуковое сопровождение (вкл/выкл) движения плитки",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "реализовано сохранение состояния игры и сохранение 10 лучших результатов с иcпользованием LocalStorage",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "реализован выбор размера поля",
+        "max": 10
+      },
+      {
+        "type": "title",
+        "title": "Hacker scope +40"
+      },
+      {
+        "type": "subtask",
+        "text": "алгоритм перетасовки должен работать правильно - пользователь может решить головоломку. Когда игра закончилась, выводится сообщение «Hooray! You solved the puzzle in ##:## and N moves!»",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "анимация движения плитки по игровому полю",
+        "max": 15
+      },
+      {
+        "type": "subtask",
+        "text": "плитки можно перетаскивать с помощью мыши",
+        "max": 15
+      }
+    ]
+  }
