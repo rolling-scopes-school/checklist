@@ -17,7 +17,6 @@ langSelectorNode.addEventListener(
   langSelector
 )
 for (let node of langSelectorNode.children){
-  console.log(node.firstChild.textContent, getLang())
   if (node.textContent.trim() == getLang()) {
     node.classList.add('disabled-link')
   }
@@ -34,8 +33,9 @@ function stickyHeader() {
 function langSelector(e) {
   const tagName = e.target.tagName.toString();
   const langText = e.target.textContent;
+  const disabled = e.target.parentElement.classList.contains('disabled-link')
 
-  if(tagName.toUpperCase() !== 'A') return;
+  if(tagName.toUpperCase() !== 'A' || disabled) return;
   localStorage.setItem(LANG, langText);
   window.location.reload();
 }

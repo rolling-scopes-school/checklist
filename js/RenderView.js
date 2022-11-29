@@ -45,6 +45,7 @@ export function render(criteria, taskName, information) {
 
   let total = 0;
   let totalWithPercent = 0;
+  const percentData = {};
   const renderList = [];
   criteria.forEach((el, i) => {
     el.status === 'main'
@@ -61,6 +62,10 @@ export function render(criteria, taskName, information) {
   const reset = document.querySelector('.reset');
   reset.addEventListener('click', (e) => {
     total = 0;
+    totalWithPercent = 0;
+    Object
+      .keys(percentData)
+      .forEach((key) => delete percentData[key]);
     isFeedback = false;
     filteredCriteria.map((item) => {
       item && delete item.status;
@@ -81,8 +86,6 @@ export function render(criteria, taskName, information) {
 
   // reset state
   reset.click();
-
-  const percentData = {};
 
   domList.addEventListener('click', (e) => {
     const parent = e.target.parentElement;

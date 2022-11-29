@@ -646,6 +646,7 @@ code {
 .lang-selector {
   display: flex;
   margin-right: 20px;
+  font-size: 1.5em;
 }
 
 .lang-selector li {
