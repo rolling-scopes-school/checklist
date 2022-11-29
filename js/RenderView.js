@@ -46,6 +46,7 @@ export function render(criteria, taskName, information) {
   });
 
   let total = 0;
+  let totalWithPercent = 0;
   const renderList = [];
   criteria.forEach((el, i) => {
     el.status === 'main'
@@ -128,10 +129,10 @@ export function render(criteria, taskName, information) {
         const percentSum = Object
           .keys(percentData)
           .reduce((sum, key) => sum - percentData[key], 0);
-        const totalWithPercent = total - total * ((percentSum) * 0.01);
+        totalWithPercent = (total - total * ((percentSum) * 0.01)).toFixed(1);
         task.status = scoreId;
 
-        scoreboard.innerHTML = totalWithPercent < 0 ? 0 : totalWithPercent.toFixed(1);
+        scoreboard.innerHTML = totalWithPercent < 0 ? 0 : totalWithPercent;
 
         if (+scoreId === 1 && task.type == 'subtask') {
           task.needFeedback = true;
@@ -312,9 +313,9 @@ export function render(criteria, taskName, information) {
         let resultList = filteredCriteria.filter(
           (item) => item && item.status != undefined
         );
-        let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
+        let points = totalWithPercent % 10 > 1 && totalWithPercent % 10 <= 4 ? 'балла' : 'баллов';
         content.innerHTML += `<p><strong>Ваша оценка - ${
-          total >= 0 ? total : 0
+          totalWithPercent >= 0 ? totalWithPercent : 0
         } ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
 
         const resultDescriptions = {
