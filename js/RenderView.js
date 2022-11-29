@@ -108,7 +108,6 @@ export function render(criteria, taskName, information) {
 
         // Calculate actual Total Score
         const isPercentPenalty = task.max[task.max.length - 1] === '%';
-        console.log(isPercentPenalty);
         const scores = [0, +(task.max / 2).toFixed(1), task.max];
         if (task.status >= 0 && !isPercentPenalty) {
           total -=
@@ -122,10 +121,8 @@ export function render(criteria, taskName, information) {
         } else {
           if (scoreId == 1){
             percentData[task.text] = task.max.slice(0, -1);
-            console.log('add', percentData);
           } else {
             delete percentData[task.text];
-            console.log('del', percentData);
           }
         }
         const percentSum = Object
@@ -211,7 +208,6 @@ export function render(criteria, taskName, information) {
       taskMaxScore.classList.add('task-max-score');
       const scoreDesc =
         el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
-      console.log(el.max.length, el.max);
       taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p ${(el.max.length > 3) ? 'class="wide-digit"' : ''}>${el.max}</p>`;
       const taskDesc = document.createElement('div');
       taskDesc.classList.add('task-description');
