@@ -349,10 +349,6 @@ main {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
 .title h3 {
   color: #222;
   text-transform: none;
@@ -645,4 +641,27 @@ code {
   background: #00000026;
   font-size: .85em;
   line-height: 150%;
+}
+
+.lang-selector {
+  display: flex;
+  margin-right: 20px;
+}
+
+.lang-selector li {
+  margin: 0 4px;
+}
+
+.lang-selector li a {
+  cursor: pointer;
+}
+
+.disabled-link a {
+  text-decoration: none !important;
+  cursor: default !important;
+  color: #162b3f;
+}
+
+.hidden {
+  display: none;
 }

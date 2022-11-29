@@ -41,6 +41,7 @@ export class RenderTasks {
       e.preventDefault();
       this.tasksList.remove();
       document.querySelector('.back').classList.remove('hidden');
+      document.querySelector('.lang-selector').classList.add('hidden');
       render(tasksObj.criteria, tasksObj.taskName, tasksObj.information);
     };
     taskLink.appendChild(link);
