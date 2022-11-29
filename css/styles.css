@@ -564,6 +564,10 @@ label:hover {
   font-size: 35px;
 }
 
+.task-max-score .wide-digit {
+  font-size: 24px;
+}
+
 .feedback-buttons {
   position: relative;
   text-align: right;
@@ -632,4 +636,13 @@ label:hover {
 .taskContainer .last-child {
   width: 60%;
   text-align: left;
+}
+
+code {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: #00000026;
+  font-size: .85em;
+  line-height: 150%;
 }

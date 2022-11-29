@@ -83,12 +83,14 @@ export function render(criteria, taskName, information) {
   // reset state
   reset.click();
 
+  const percentData = {};
+
   domList.addEventListener('click', (e) => {
     const parent = e.target.parentElement;
     const id = e.target.dataset.id;
 
     const task = filteredCriteria[id];
-
+    
     if (e.target.tagName === 'INPUT') {
       const radio = e.target;
       const scoreId = radio.dataset.score;
@@ -105,18 +107,34 @@ export function render(criteria, taskName, information) {
         if (task.status === undefined) checkDone();
 
         // Calculate actual Total Score
+        const isPercentPenalty = task.max[task.max.length - 1] === '%';
+        console.log(isPercentPenalty);
         const scores = [0, +(task.max / 2).toFixed(1), task.max];
-        if (task.status >= 0) {
+        if (task.status >= 0 && !isPercentPenalty) {
           total -=
-            task.type !== 'penalty'
-              ? scores[task.status]
-              : scores[task.status] * 2;
+          task.type !== 'penalty'
+          ? scores[task.status]
+          : scores[task.status] * 2;
         }
-        total +=
-          task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
+        if(!isPercentPenalty) {
+          total +=
+            task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
+        } else {
+          if (scoreId == 1){
+            percentData[task.text] = task.max.slice(0, -1);
+            console.log('add', percentData);
+          } else {
+            delete percentData[task.text];
+            console.log('del', percentData);
+          }
+        }
+        const percentSum = Object
+          .keys(percentData)
+          .reduce((sum, key) => sum - percentData[key], 0);
+        const totalWithPercent = total - total * ((percentSum) * 0.01);
         task.status = scoreId;
 
-        scoreboard.innerHTML = total < 0 ? 0 : total;
+        scoreboard.innerHTML = totalWithPercent < 0 ? 0 : totalWithPercent.toFixed(1);
 
         if (+scoreId === 1 && task.type == 'subtask') {
           task.needFeedback = true;
@@ -193,10 +211,11 @@ export function render(criteria, taskName, information) {
       taskMaxScore.classList.add('task-max-score');
       const scoreDesc =
         el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
-      taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p>${el.max}</p>`;
+      console.log(el.max.length, el.max);
+      taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p ${(el.max.length > 3) ? 'class="wide-digit"' : ''}>${el.max}</p>`;
       const taskDesc = document.createElement('div');
       taskDesc.classList.add('task-description');
-      taskDesc.innerHTML = `<p class='task-title'>${el.text}</p>`;
+      taskDesc.innerHTML = `<p class='task-title'>${getFormatedText(el.text)}</p>`;
       taskDesc.innerHTML +=
         "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
 
@@ -484,4 +503,17 @@ export function render(criteria, taskName, information) {
     document.execCommand('copy');
     document.body.removeChild(el);
   };
+}
+
+//chande `some code` to <code>some code</code>
+function getFormatedText(text) {
+  return text
+    .split('`')
+    .map((text, i, arr) =>
+      (i < (arr.length - 1))
+        ? [text, ((i % 2) === 0 ? '<code>' : '</code>')]
+        : text
+    )
+    .flat()
+    .join('')
 }
