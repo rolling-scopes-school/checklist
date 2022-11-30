@@ -1,0 +1,161 @@
+{
+  "taskName": "Node.js basics Q4-2022",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/nodejs-basics/assignment.md",
+  "information": "Scoring: Node.js basics",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "For check simplification you have npm-scripts in \"package.json.\"\nNB! Some scripts have predefined data (e.g. environment variables, CLI arguments). Feel free to change it during the check if necessary.\n\nMax score: 206"
+    },
+    {
+      "type": "title",
+      "title": "File system (src/fs)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`create.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "subtask", 
+      "text": "`copy.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`rename.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`delete.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "subtask", 
+      "text": "`list.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "subtask", 
+      "text": "`read.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Command line interface(src/cli)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`env.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "subtask", 
+      "text": "`args.js` implemented properly",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Modules(src/modules)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`cjsToEsm.cjs` refactored properly",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Hash (src/hash)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`calcHash.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Streams (src/streams)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`read.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`write.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`transform.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Zlib (src/zip)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`compress.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`decompress.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },
+    {
+      "type": "title",
+      "title": "Worker Threads (src/wt)"
+    },
+    {
+      "type": "subtask", 
+      "text": "`worker.js` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "`main.js` implemented properly",
+      "max": 30
+    },
+    {
+      "type": "title",
+      "title": "Child Processes (src/cp)"
+    },
+    {
+      "type": "subtask", 
+      "text": "spawns child process",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "child process `stdin` receives input from master process `stdin`",
+      "max": 10
+    },
+    {
+      "type": "subtask", 
+      "text": "child process `stdout` sends data to master process `stdout`",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Forfeits"
+    },
+    {
+      "type": "penalty", 
+      "text": "Any external tools/libraries are used",
+      "max": "-95%"
+    },
+    {
+      "type": "penalty", 
+      "text": "Commits after deadline (except commits that affect only Readme.md, .gitignore, etc.)",
+      "max": "-30%"
+    }
+  ]
+}

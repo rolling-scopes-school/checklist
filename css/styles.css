@@ -349,10 +349,6 @@ main {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
 .title h3 {
   color: #222;
   text-transform: none;
@@ -564,6 +560,10 @@ label:hover {
   font-size: 35px;
 }
 
+.task-max-score .wide-digit {
+  font-size: 24px;
+}
+
 .feedback-buttons {
   position: relative;
   text-align: right;
@@ -632,4 +632,37 @@ label:hover {
 .taskContainer .last-child {
   width: 60%;
   text-align: left;
+}
+
+code {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: #00000026;
+  font-size: .85em;
+  line-height: 150%;
+}
+
+.lang-selector {
+  display: flex;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+.lang-selector li {
+  margin: 0 4px;
+}
+
+.lang-selector li a {
+  cursor: pointer;
+}
+
+.disabled-link a {
+  text-decoration: none !important;
+  cursor: default !important;
+  color: #162b3f;
+}
+
+.hidden {
+  display: none;
 }

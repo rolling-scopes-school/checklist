@@ -1,19 +1,17 @@
+import lang from '../lang/lang.json'
+
 export function render(criteria, taskName, information) {
   let isFeedback = false;
   let toClipBoard = '';
   let isCtrl = false;
   let totalTasks = 0;
   let done = 0;
+  let langData = lang[getLang()]
 
-  const checkMarks = [
-    'не выполнено',
-    'выполнено частично',
-    'выполнено полностью',
-  ];
-  const penaltiesMarks = ['нет', 'да'];
-  const askFeedback =
-    'Вы отметили: <em>выполнено частично</em>. Обязательно оставьте фидбек!';
-  const askChange = 'Вы изменили оценку. Возможно стоит изменить отзыв?';
+  const checkMarks = langData['check-marks'];
+  const penaltiesMarks = langData['penalty-marks'];
+  const askFeedback = langData['partially-completed-checked'];
+  const askChange = langData['changed-assessment'];
 
   const feedback = document.querySelector('.feedback button');
   feedback.parentElement.classList.remove('hidden');
@@ -46,6 +44,8 @@ export function render(criteria, taskName, information) {
   });
 
   let total = 0;
+  let totalWithPercent = 0;
+  const percentData = {};
   const renderList = [];
   criteria.forEach((el, i) => {
     el.status === 'main'
@@ -62,6 +62,10 @@ export function render(criteria, taskName, information) {
   const reset = document.querySelector('.reset');
   reset.addEventListener('click', (e) => {
     total = 0;
+    totalWithPercent = 0;
+    Object
+      .keys(percentData)
+      .forEach((key) => delete percentData[key]);
     isFeedback = false;
     filteredCriteria.map((item) => {
       item && delete item.status;
@@ -72,7 +76,7 @@ export function render(criteria, taskName, information) {
       el.querySelectorAll('input').forEach((input) => (input.checked = false));
       const form = el.querySelector('form');
       form && form.remove();
-      el.querySelector('.add-feedback').innerHTML = 'Добавить отзыв';
+      el.querySelector('.add-feedback').innerHTML = langData['add-review'];
     });
     checkDone('reset');
     scoreboard.innerHTML = 0;
@@ -88,7 +92,7 @@ export function render(criteria, taskName, information) {
     const id = e.target.dataset.id;
 
     const task = filteredCriteria[id];
-
+    
     if (e.target.tagName === 'INPUT') {
       const radio = e.target;
       const scoreId = radio.dataset.score;
@@ -105,18 +109,31 @@ export function render(criteria, taskName, information) {
         if (task.status === undefined) checkDone();
 
         // Calculate actual Total Score
+        const isPercentPenalty = task.max[task.max.length - 1] === '%';
         const scores = [0, +(task.max / 2).toFixed(1), task.max];
-        if (task.status >= 0) {
+        if (task.status >= 0 && !isPercentPenalty) {
           total -=
-            task.type !== 'penalty'
-              ? scores[task.status]
-              : scores[task.status] * 2;
+          task.type !== 'penalty'
+          ? scores[task.status]
+          : scores[task.status] * 2;
         }
-        total +=
-          task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
+        if(!isPercentPenalty) {
+          total +=
+            task.type !== 'penalty' ? scores[scoreId] : scores[scoreId] * 2;
+        } else {
+          if (scoreId == 1){
+            percentData[task.text] = task.max.slice(0, -1);
+          } else {
+            delete percentData[task.text];
+          }
+        }
+        const percentSum = Object
+          .keys(percentData)
+          .reduce((sum, key) => sum - percentData[key], 0);
+        totalWithPercent = (total - total * ((percentSum) * 0.01)).toFixed(1);
         task.status = scoreId;
 
-        scoreboard.innerHTML = total < 0 ? 0 : total;
+        scoreboard.innerHTML = totalWithPercent < 0 ? 0 : totalWithPercent;
 
         if (+scoreId === 1 && task.type == 'subtask') {
           task.needFeedback = true;
@@ -192,13 +209,15 @@ export function render(criteria, taskName, information) {
       const taskMaxScore = document.createElement('div');
       taskMaxScore.classList.add('task-max-score');
       const scoreDesc =
-        el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
-      taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p>${el.max}</p>`;
+        el.type == 'penalty'
+          ? langData['penalty'] 
+          : langData['score'];
+      taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p ${(el.max.length > 3) ? 'class="wide-digit"' : ''}>${el.max}</p>`;
       const taskDesc = document.createElement('div');
       taskDesc.classList.add('task-description');
-      taskDesc.innerHTML = `<p class='task-title'>${el.text}</p>`;
+      taskDesc.innerHTML = `<p class='task-title'>${getFormatedText(el.text)}</p>`;
       taskDesc.innerHTML +=
-        "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
+        `<a class='add-feedback' href='#' onclick='addFeedback(event);'>${langData['add-review']}</a>`;
 
       const overlay = document.createElement('div');
       overlay.classList.add('overlay');
@@ -285,28 +304,30 @@ export function render(criteria, taskName, information) {
         });
         askLeaveFeedback(parent, askFeedback);
       }
-      content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вам необходимо оставить обязательный фидбек ко всем пунктам, где отмечено - <em>Выполнено частично</em>!</div></div>`;
+      content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>${langData['obligatory-feedback']}<em>${langData['partially-completed']}</em>!</div></div>`;
     } else {
       if (totalTasks !== done) {
-        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${
+        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>${langData['not-all-items']}</div><div>${langData['remaining']}${
           totalTasks - done
-        } из ${totalTasks}</div></div>`;
+        }${langData['out-of']}${totalTasks}${langData['remaining-end']}</div></div>`;
       } else {
         info.innerHTML =
-          '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
+          `<div class="copy"><a href="#" onclick="copyToClipboard(event);">${langData['copy-to-clipboard']}</a></div>`;
         let resultList = filteredCriteria.filter(
           (item) => item && item.status != undefined
         );
-        let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
-        content.innerHTML += `<p><strong>Ваша оценка - ${
-          total >= 0 ? total : 0
-        } ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
+        let points = totalWithPercent % 10 > 1 && totalWithPercent % 10 <= 4 
+          ? langData['point']
+          : langData['points'];
+        content.innerHTML += `<p><strong>${langData['your-mark']}${
+          totalWithPercent >= 0 ? totalWithPercent : 0
+        } ${points}</strong> \r\n</p><p>${langData['review-by-points']}\r\n</p>`;
 
         const resultDescriptions = {
-          0: 'Не выполненные/не засчитанные пункты:',
-          1: 'Частично выполненные пункты:',
-          2: 'Выполненные пункты:',
-          penalty: 'Штрафы:',
+          0: langData['result-descriptions'][0],
+          1: langData['result-descriptions'][1],
+          2: langData['result-descriptions'][2],
+          penalty: langData['penalties'],
         };
         Object.keys(resultDescriptions).forEach((desc) => {
           let partialResult = [];
@@ -326,7 +347,7 @@ export function render(criteria, taskName, information) {
             partialResult.map((item, i) => {
               content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
                 item.feedback
-                  ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
+                  ? `<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>${langData['review']}</strong>` +
                     item.feedback +
                     '</p></p>'
                   : '</p>'
@@ -364,7 +385,7 @@ export function render(criteria, taskName, information) {
     const textarea = document.createElement('textarea');
     textarea.setAttribute(
       'placeholder',
-      'Use Ctrl + Enter to save this feedback or ESC to cancel'
+      langData['use-ctrl-enter']
     );
     if (filteredCriteria[id].feedback) {
       textarea.value = filteredCriteria[id].feedback;
@@ -372,13 +393,13 @@ export function render(criteria, taskName, information) {
     box.appendChild(textarea);
 
     const closeText = document.createElement('a');
-    closeText.innerText = 'Отмена';
+    closeText.innerText = langData['cancel'];
     closeText.onclick = () => {
       box.remove();
       resetRadioState(id);
     };
     const saveText = closeText.cloneNode();
-    saveText.innerText = 'Сохранить';
+    saveText.innerText = langData['save'];
     saveText.onclick = () => {
       handleAreaEvent(id, textarea, link, box);
       checkFeedback(id);
@@ -419,7 +440,7 @@ export function render(criteria, taskName, information) {
       parent.querySelector('a').click();
       askLeaveFeedback(
         parent,
-        'Фидбек не может быть пустым! Минимальная длина 8 символов'
+        langData['not-empty-feedback']
       );
       setTimeout(() => askLeaveFeedback(parent, askFeedback), 3000);
       return;
@@ -457,11 +478,11 @@ export function render(criteria, taskName, information) {
     filteredCriteria[id].feedback = textarea.value;
     if (textarea.value) {
       link.classList.add('feedback-add');
-      link.innerHTML = 'Изменить отзыв';
+      link.innerHTML = langData['change-review'];
     } else {
       delete filteredCriteria[id].feedback;
       link.classList.remove('feedback-add');
-      link.innerHTML = 'Добавить отзыв';
+      link.innerHTML = langData['add-review'];
     }
     box.remove();
   }
@@ -469,10 +490,10 @@ export function render(criteria, taskName, information) {
   window.copyToClipboard = (e) => {
     e.preventDefault();
     e.target.classList.add('not-link');
-    e.target.innerText = 'Скопировано!';
+    e.target.innerText = langData['copied'];
     setTimeout(() => {
       e.target.classList.remove('not-link');
-      e.target.innerText = 'Скопировать в буфер';
+      e.target.innerText = langData['copy-to-clipboard'];
     }, 1000);
     const el = document.createElement('textarea');
     el.value = toClipBoard;
@@ -484,4 +505,25 @@ export function render(criteria, taskName, information) {
     document.execCommand('copy');
     document.body.removeChild(el);
   };
+}
+
+//chande `some code` to <code>some code</code>
+function getFormatedText(text) {
+  return text
+    .split('`')
+    .map((text, i, arr) =>
+      (i < (arr.length - 1))
+        ? [text, ((i % 2) === 0 ? '<code>' : '</code>')]
+        : text
+    )
+    .flat()
+    .join('')
+}
+
+export const LANG = 'rs-checklist-lang'
+const DEFAULT_LANG = 'ru'
+
+export function getLang () {
+  const langRes = localStorage.getItem(LANG);
+  return langRes ? langRes : DEFAULT_LANG;
 }
