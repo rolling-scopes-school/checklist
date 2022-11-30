@@ -309,7 +309,7 @@ export function render(criteria, taskName, information) {
       if (totalTasks !== done) {
         content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>${langData['not-all-items']}</div><div>${langData['remaining']}${
           totalTasks - done
-        }${langData['out-of']}${totalTasks}</div></div>`;
+        }${langData['out-of']}${totalTasks}${langData['remaining-end']}</div></div>`;
       } else {
         info.innerHTML =
           `<div class="copy"><a href="#" onclick="copyToClipboard(event);">${langData['copy-to-clipboard']}</a></div>`;
