@@ -303,7 +303,7 @@
     },
     {
       "type": "penalty",
-      "text": "если вам на cross-check попалась работа которая выполнялась не командой из 2-х человек, вам необходимо заполнить форму ( https://docs.google.com/forms/d/e/1FAIpQLSel2rRvRBcPW9w7Eiq_Wnc0v6LVxv-wwE72l10Q8VRZhmorQQ/closedform ), администраторы курса в таком случае могут применить штраф до 300 баллов",
+      "text": "если вам на cross-check попалась работа которая выполнялась не командой из 2-х человек, вам необходимо заполнить <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSel2rRvRBcPW9w7Eiq_Wnc0v6LVxv-wwE72l10Q8VRZhmorQQ/closedform\" target=\"_blank\">форму</a>, администраторы курса в таком случае могут применить штраф до 300 баллов",
       "max": -300
     }
   ]
