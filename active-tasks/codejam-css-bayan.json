@@ -1,7 +1,7 @@
 {
   "taskName": "CSS Bayan",
   "github": "https://github.com/DrDiman/CSS-Bayan-task",
-  "information": "",
+  "information": "Sizes of the each block, fonts, content and design are up to developer. Differences can vary significantly. The score do not downgrade for that. The main goal to save positions and behavior of the accordion and the other technical requirements. Feel free to create/find/choose memes by your own, but preferably at least 4 memes.",
   "criteria": [
     {
       "type": "subtask",
@@ -70,7 +70,7 @@
     },
     {
       "type": "subtask",
-      "text": "Cursor over the memes (hover) effect only exists for devices that can support hover",
+      "text": "Cursor over the memes (hover) effect only exists for devices that can support hover. This means that the touch device (phone, tablet) doesn't have hover effects, and desktop does have hover effects",
       "max": 10
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "type": "subtask",
-      "text": "All blocks/parts of the accordion are in base flow of the dom elements. All elements are not positioned with top, left, right, bottom. float is not used. The value of position is only static",
+      "text": "All blocks/parts of the accordion are in base flow of the dom elements. All elements are not positioned with top, left, right, bottom. float is not used. The value of position is only static. Note: usage of display: none is ALLOWED",
       "max": 5
     },
     {
