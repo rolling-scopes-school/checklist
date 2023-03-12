@@ -1,0 +1,126 @@
+{
+  "taskName": "CSS Bayan",
+  "github": "https://github.com/DrDiman/CSS-Bayan-task",
+  "information": "Sizes of the each block, fonts, content and design are up to developer. Differences can vary significantly. The score do not downgrade for that. The main goal to save positions and behavior of the accordion and the other technical requirements. Feel free to create/find/choose memes by your own, but preferably at least 4 memes.",
+  "criteria": [
+    {
+      "type": "subtask",
+      "text": "Public repository with name \"cssBayan\" created",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Branch gh-pages created",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The \"cssBayan\" folder has been created in the gh-pages branch. Deploy is available via link, link example: https://${YOUR_GITHUB_NAME}.github.io/cssBayan/cssBayan/index.html",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "There are at least 5 commits in the gh-pages branch with the history of the project development",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The commits are called accordingly to the guideline (https://docs.rs.school/#/git-convention), each commit contains a time-stamp. Time-stamp can be at any language. Accordingly to your time-stamp should be clear, when this commit was done: day of the week, month, day, year, time with seconds (the order can vary) e.g. Commit message example: feat: add basic page layout (Mon, Sep 13, 2021 10:25:24 PM)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Pull Request from gh-pages branch to main branch is open. Pull Request name is equal to the task name. Description of the Pull Request was done accordingly to the guideline (https://docs.rs.school/#/pull-request-review-process?id=%D0%A2%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-pull-request-pr). The link to this Pull Request was submitted to the cross check form. This Pull Request was NOT merged",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The accordion component is centered on the screen, with equal indents on the left and right",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Icons, meme texts and meme images are exist",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Placement of the meme, icons and meme text are the same as in provided example gif images",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Smooth change (transition) of the meme images and icons is done",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive design with three breakpoints for mobile, tablet, and desktop exist. Accordion is displayed correctly at mobile 320x568, tablet 820x1180, desktop 1920x1080. (Note: breakpoints don't have to be 320x568, 820x1180, 1920x1080)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "All visual effects when the cursor is hovering over the memes, when the mouse is down on a meme, and when a meme is selected are implemented",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The entire row (text, icon, and meme image) clickable",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Cursor over the memes (hover) effect only exists for devices that can support hover. This means that the touch device (phone, tablet) doesn't have hover effects, and desktop does have hover effects",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The cursor when it is hovering over the rows of the accordion is changing",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Only flexible dimensions are used (rem, em, %, vh, vw, fr and etc.). The accordion is responsive",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "All blocks/parts of the accordion are in base flow of the dom elements. All elements are not positioned with top, left, right, bottom. float is not used. The value of position is only static. Note: usage of display: none is ALLOWED",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Pseudo-elements are not used (note 1: pseudo-classes are ALLOWED; note 2: pseudo-elements ONLY from FontAwesome are allowed)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Initially, the first meme should be expanded",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Font size is changed at each device (mobile, tablet, desktop)",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of the JS scripts or any other libraries",
+      "max": -100500
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of the apfruscated (not human-readable) CSS/HTML",
+      "max": -100500
+    },
+    {
+      "type": "penalty",
+      "text": "Cheating, peer copy pasting",
+      "max": -100500
+    }
+  ]
+}
