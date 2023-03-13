@@ -542,8 +542,8 @@ label:hover {
 }
 
 .task-max-score {
-  width: 65px;
   margin: 10px 10px 10px 0;
+  padding: 5px 10px;
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
@@ -556,7 +556,7 @@ label:hover {
   line-height: 13px;
   display: block;
   text-align: center;
-  margin: 5px;
+  margin-bottom: 5px;
 }
 
 .task-max-score p {
