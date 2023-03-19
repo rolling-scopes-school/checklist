@@ -16,7 +16,7 @@
     },
     {
       "type": "title",
-      "title": "Проверка верстки +6"
+      "title": "Проверка верстки +7"
     },
     {
       "type": "subtask",
@@ -31,6 +31,11 @@
     {
       "type": "subtask",
       "text": "страница содержит ровно один элемент 'h1'",
+      "max": 1
+    },
+    {
+      "type": "subtask",
+      "text": "добавлен favicon",
       "max": 1
     },
     {
@@ -74,7 +79,7 @@
     },
     {
       "type": "title",
-      "title": "Требования к css +7"
+      "title": "Требования к css +6"
     },
     {
       "type": "subtask",
@@ -90,11 +95,6 @@
       "type": "subtask",
       "text": "фоновый цвет тянется на всю ширину страницы",
       "max": 2
-    },
-    {
-      "type": "subtask",
-      "text": "добавлен favicon",
-      "max": 1
     },
     {
       "type": "title",
@@ -136,7 +136,7 @@
     },
     {
       "type": "title",
-      "title": "Проверка верстки +6"
+      "title": "Проверка верстки +7"
     },
     {
       "type": "subtask",
@@ -151,6 +151,11 @@
     {
       "type": "subtask",
       "text": "страница содержит ровно один элемент 'h1'",
+      "max": 1
+    },
+    {
+      "type": "subtask",
+      "text": "добавлен favicon",
       "max": 1
     },
     {
@@ -174,7 +179,7 @@
     },
     {
       "type": "title",
-      "title": "Требования к css +5"
+      "title": "Требования к css +4"
     },
     {
       "type": "subtask",
@@ -185,11 +190,6 @@
       "type": "subtask",
       "text": "фоновый цвет тянется на всю ширину страницы",
       "max": 2
-    },
-    {
-      "type": "subtask",
-      "text": "добавлен favicon",
-      "max": 1
     },
     {
       "type": "title",
