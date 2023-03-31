@@ -54,7 +54,7 @@
 
       {
         "type": "penalty",
-        "text": "React Hoofk Form isn't used",
+        "text": "React Hook Form isn't used",
         "max": -15
       },
       {
