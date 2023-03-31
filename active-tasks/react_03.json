@@ -23,7 +23,7 @@
       },
       {
         "type": "subtask",
-        "text": "Search input on main page saves entered value on component onmount and restores it on component mount",
+        "text": "Search input on main page saves entered value on component unmount and restores it on component mount",
         "max": 4
       },
       {
