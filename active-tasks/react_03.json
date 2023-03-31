@@ -1,6 +1,6 @@
 {
     "taskName": "React 2023-01",
-    "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module02",
+    "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module03",
     "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
     "criteria": [
       {
@@ -23,23 +23,18 @@
       },
       {
         "type": "subtask",
-        "text": "There is an additional route for forms",
-        "max": 1
+        "text": "Search input on main page saves entered value on component unmount and restores it on component mount",
+        "max": 4
       },
       {
         "type": "subtask",
-        "text": "Form contains 6 mandatory fields (text and date inputs. dropdown, checkbox, radio, file upload)",
-        "max": 2
-      },
-      {
-        "type": "subtask",
-        "text": "Validation works on submit",
+        "text": "Form contains 6 mandatory fields (text and date inputs. dropdown, checkbox, radio, file upload). There is a validation",
         "max": 2
       },
       {
         "type": "subtask",
         "text": "After submitting the form result is provided on a card, confirmation is shown, form is cleared",
-        "max": 3
+        "max": 2
       },
       {
         "type": "subtask",
@@ -54,6 +49,12 @@
       {
         "type": "penalty",
         "text": "TypeScript isn't used",
+        "max": -15
+      },
+
+      {
+        "type": "penalty",
+        "text": "React Hook Form isn't used",
         "max": -15
       },
       {
