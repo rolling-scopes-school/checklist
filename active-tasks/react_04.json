@@ -1,0 +1,100 @@
+{
+    "taskName": "React 2023-01",
+    "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04",
+    "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
+    "criteria": [
+      {
+        "type": "title",
+        "title": "Cross code review"
+      },
+      {
+        "type": "subtask",
+        "text": "Linting can be run and doesn't produce any errors or warnings",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "Tests can be run and the test coverage is equal or higher than 60%",
+        "max": 3
+      },
+      {
+        "type": "title",
+        "title": "Cross check"
+      },
+      {
+        "type": "subtask",
+        "text": "When value is entered into the search bar and submitted, the call will be send to an api with an entered value",
+        "max": 1
+      },
+      {
+        "type": "subtask",
+        "text": "If the value has been entered previoulsy, search should restore it from the LS and make a call to an api with this previoulsy entered value next time page is opened",
+        "max": 1
+      },
+      {
+        "type": "subtask",
+        "text": "When response is received, the data should be displyed on the main page using tiles",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "More details for each item are displayed using modal",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "Pagination and sorting are implemented on the page, clicks on respective controls (move to the next page, change sorting order) produce new requests to an api",
+        "max": 3
+      },
+      {
+        "type": "subtask",
+        "text": "While request is being made, loading indicator is shown to an user",
+        "max": 1
+      },
+      {
+        "type": "penalty",
+        "text": "Direct DOM manipulations",
+        "max": -15
+      },
+      {
+        "type": "penalty",
+        "text": "TypeScript isn't used",
+        "max": -15
+      },
+      {
+        "type": "penalty",
+        "text": "Snapshot testing",
+        "max": -5
+      },
+      {
+        "type": "penalty",
+        "text": "Usage of any, 2 per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "A lot of ts-ignore (more than 3)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "Code smells (god component, a lot of duplication)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "A lot of comments (commented code blocks, redundant comments, etc)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "Errors in console in dev tools, 2 per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "Warnings in console in dev tools, 1 per each",
+        "max": -1
+      }
+    ]
+  }
