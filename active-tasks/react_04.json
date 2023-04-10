@@ -24,7 +24,7 @@
       {
         "type": "subtask",
         "text": "When value is entered into the search bar and submitted, the call will be send to an api with an entered value",
-        "max": 1
+        "max": 2
       },
       {
         "type": "subtask",
@@ -34,16 +34,11 @@
       {
         "type": "subtask",
         "text": "When response is received, the data should be displyed on the main page using tiles",
-        "max": 2
+        "max": 3
       },
       {
         "type": "subtask",
         "text": "More details for each item are displayed using modal",
-        "max": 2
-      },
-      {
-        "type": "subtask",
-        "text": "Pagination and sorting are implemented on the page, clicks on respective controls (move to the next page, change sorting order) produce new requests to an api",
         "max": 3
       },
       {
