@@ -1,0 +1,95 @@
+{
+    "taskName": "React 2023-01",
+    "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04",
+    "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
+    "criteria": [
+      {
+        "type": "title",
+        "title": "Cross code review"
+      },
+      {
+        "type": "subtask",
+        "text": "Linting can be run and doesn't produce any errors or warnings",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "Tests can be run and the test coverage is equal or higher than 80%",
+        "max": 3
+      },
+      {
+        "type": "subtask",
+        "text": "e2e tests using cypress are present and passing, test coverage is equal or higher than 80%",
+        "max": 3
+      },
+      {
+        "type": "subtask",
+        "text": "SSR is enabled, hydration happens on the client-side",
+        "max": 3
+      },
+      {
+        "type": "title",
+        "title": "Cross check"
+      },
+      {
+        "type": "subtask",
+        "text": "Search makes calls to api, results are shown in tiles, search value and the results are saved in the app state",
+        "max": 4
+      },
+      {
+        "type": "penalty",
+        "text": "Direct DOM manipulations",
+        "max": -15
+      },
+      {
+        "type": "penalty",
+        "text": "TypeScript isn't used",
+        "max": -15
+      },
+      {
+        "type": "penalty",
+        "text": "renderToPipeableStream wasn't used",
+        "max": -5
+      },
+      {
+        "type": "penalty",
+        "text": "Snapshot testing",
+        "max": -5
+      },
+      {
+        "type": "penalty",
+        "text": "Snapshot testing",
+        "max": -5
+      },
+      {
+        "type": "penalty",
+        "text": "Usage of any, 2 per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "A lot of ts-ignore (more than 3)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "Code smells (god component, a lot of duplication)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "A lot of comments (commented code blocks, redundant comments, etc)",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "Errors in console in dev tools, 2 per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "Warnings in console in dev tools, 1 per each",
+        "max": -1
+      }
+    ]
+  }
