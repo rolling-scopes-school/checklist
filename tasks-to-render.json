@@ -39,7 +39,7 @@
   "37": "active-tasks/random-jokes.json",
   "38": "active-tasks/react-schedule.json",
   "39": "active-tasks/react-xcheck.json",
-  "40": "active-tasks/react_01.json",
+  "40": "active-tasks/react_class.json",
   "41": "active-tasks/rs-clone-presentation.json",
   "42": "active-tasks/rs-clone.json",
   "43": "active-tasks/rs-ds-2-linear-regression.json",
@@ -66,5 +66,6 @@
   "64": "active-tasks/travel-part3.json",
   "65": "active-tasks/virtual-keyboard.json",
   "66": "active-tasks/virtual-piano.json",
-  "67": "active-tasks/wildlife.json"
+  "67": "active-tasks/wildlife.json",
+  "68": "active-tasks/react_redux.json"
 }
