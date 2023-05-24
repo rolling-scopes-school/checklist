@@ -103,11 +103,6 @@
       "type": "penalty",
       "text": "Using Angular / React / Vue / Typescript",
       "max": -180
-    },
-    {
-      "type": "penalty",
-      "text": "<body> in the index.html is not empty",
-      "max": -180
     }
   ]
 }
