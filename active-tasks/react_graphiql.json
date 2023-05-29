@@ -111,21 +111,6 @@
       },
       {
         "type": "penalty",
-        "text": "Linting not enabled",
-        "max": -45
-      },
-      {
-        "type": "penalty",
-        "text": "Linting errors, per each",
-        "max": -3
-      },
-      {
-        "type": "penalty",
-        "text": "Commented line of code, if there is acommented block of code consider it as times of a number of actual lines, per each",
-        "max": -2
-      },
-      {
-        "type": "penalty",
         "text": "@ts-ignore or any usage (search through github repo), per each",
         "max": -1
       },
