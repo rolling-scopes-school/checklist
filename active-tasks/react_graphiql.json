@@ -1,0 +1,138 @@
+{
+    "taskName": "React 2023-01",
+    "github": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/graphiql.md",
+    "information": "The maximum number of points is 90. Cross-check criterias:",
+    "criteria": [
+      {
+        "type": "title",
+        "title": "Welcome route (max 10 points)"
+      },
+      {
+        "type": "subtask",
+        "text": "The welcome page should contain general information about the developers, project, and course",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "n the upper right corner there are 2 buttons: Sign In and Sign Up",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "If login token is valid and unexpired (user exists in db), change the Sign In and Sign Up buttons to the \"Go to Main Page\" button",
+        "max": 2
+      },
+      {
+        "type": "subtask",
+        "text": "When the token expires (user has been deleted from the db) - the user should be redirected to the \"Welcome page\" automatically",
+        "max": 3
+      },
+      {
+        "type": "subtask",
+        "text": "Pressing the Sign In / Sign up button redirects a user to the route with the Sign In / Sign up form",
+        "max": 1
+      },
+      {
+        "type": "title",
+        "title": "Sign In / Sign Up (max 20 points)"
+      },
+      {
+        "type": "subtask",
+        "text": "Buttons for Sign In / Sign Up / Sign Out are everywhere where they should be according to requirements",
+        "max": 5
+      },
+      {
+        "type": "subtask",
+        "text": "Client-side validation should is implemented",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "Upon successful login, the user is redirected to the Main page",
+        "max": 3
+      },
+      {
+        "type": "subtask",
+        "text": "Already logged on attempt to reach those routes should be redirected to the Main page",
+        "max": 2
+      },
+      {
+        "type": "title",
+        "title": "GraphiQL route (max 50 points)"
+      },
+      {
+        "type": "subtask",
+        "text": "Working editor allowing to edit and execute the query",
+        "max": 15
+      },
+      {
+        "type": "subtask",
+        "text": "Working documentation explorer, should be visible only when sdl request will succeed (please, check the response status before providing a score)",
+        "max": 15
+      },
+      {
+        "type": "subtask",
+        "text": "Variables section. Should be closed/opened. Variables should be used in query on request",
+        "max": 10
+      },
+      {
+        "type": "subtask",
+        "text": "Response section",
+        "max": 10
+      },
+      {
+        "type": "title",
+        "title": "General requirements (max 10 points)"
+      },
+      {
+        "type": "subtask",
+        "text": "Localization",
+        "max": 5
+      },
+      {
+        "type": "subtask",
+        "text": "Sticky header",
+        "max": 5
+      },
+      {
+        "type": "penalty",
+        "text": "React default favicon",
+        "max": -5
+      },
+      {
+        "type": "penalty",
+        "text": "The presence of errors and warnings in the console, per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "The presence in the console of the results of the console.log execution, per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "Linting not enabled",
+        "max": -45
+      },
+      {
+        "type": "penalty",
+        "text": "Linting errors, per each",
+        "max": -3
+      },
+      {
+        "type": "penalty",
+        "text": "Commented line of code, if there is acommented block of code consider it as times of a number of actual lines, per each",
+        "max": -2
+      },
+      {
+        "type": "penalty",
+        "text": "@ts-ignore or any usage (search through github repo), per each",
+        "max": -1
+      },
+      {
+        "type": "penalty",
+        "text": "Making commits after the deadline",
+        "max": -20
+      }
+    ]
+  }
