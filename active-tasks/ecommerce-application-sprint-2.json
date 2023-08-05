@@ -1,0 +1,208 @@
+{
+  "taskName": "eCommerce-Application Sprint 2",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/eCommerce-Application/Sprints/Sprint%232.md",
+  "information": "eCommerce-Application",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "⭐ CrossCheck Criteria (315 points)"
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "title",
+      "title": "🖥️ Login Page Implementation (130 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "📝 1. Input Validation (40 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Implement client-side validation for the login form, including email and password fields.",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "❌ Display clear error messages indicating any validation issues, such as an improperly formatted email.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "🔗 2. Integration with Authentication Service (45 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Integrate the login form with a chosen authentication service (CommerceTools) to handle user authentication.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "❌ Implement error handling for failed authentication attempts, such as incorrect email or password, and display user-friendly error messages.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "🔄 3. Redirection (30 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "🚀 Redirect users to the application's main page upon successful login.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "🚀 Redirect users who are already logged in to the main page if they try to access the login page.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "🔑 4. Handle Authentication Token (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Obtain the authentication token securely after a successful login attempt by sending a request to the token endpoint (e.g., https://auth.europe-west1.gcp.commercetools.com/oauth/project_key/customers/token), allowing for seamless user authentication across the application.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "➡️ 5. Navigation to Registration Page (5 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Add a button or link on the login page that allows users to navigate to the registration page.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "🖊️ Registration Page Implementation (120 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "📝 1. Input Validation (45 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Implement client-side validation for all required fields in the registration form, such as email, password, first name, last name, date of birth, and address fields (e.g., street, city, postal code, and country) for proper use with CommerceTools.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "❌ Display clear error messages indicating any validation issues, such as an improperly formatted email or a weak password.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "🔗 2. Integration with Authentication Service (25 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Integrate the registration form with a chosen authentication service, such as commercetools, to handle user registration.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "❌ Implement error handling for failed registration attempts, and display user-friendly error messages.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "🔄 3. State Management, Automatic Login, and Redirection (15 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "🚀 Redirect users to the application's main page upon successful account creation and automatic login.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "🛒 4. Integration with commercetools for User Profiles and Addresses (30 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "🏠 Allow users to set a default address during registration.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "🏠 Enable users to select different billing and shipping addresses or choose a single address for both billing and shipping during the registration process.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "⬅️ 5. Navigation to Login Page (5 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Add a button or link on the registration page that allows users to navigate to the login page.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "🖥️ Main Page Enhancements (10 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "🌐 Centralized Navigation (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Add links to all the functional pages of the application on the main page. These should include, but are not limited to, the login and registration pages. ",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🚀 Each link should redirect the user correctly to the corresponding page without any errors. ",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "🚦 Routing Implementation (30 points - Total)"
+    },
+    {
+      "type": "subtask",
+      "text": "📌 Implement routing for navigation between login, registration, and main pages.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "❌ Implement a 404 (Not Found) page for invalid route requests.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "🎯 Evaluation Criteria for Header (25 points - Total)"
+    },
+    {
+      "type": "subtask",
+      "text": "🚀 Navigation to login and registration pages for unauthorized users",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "☑️ Ability to access the main page for all users",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🚫 Logout functionality for authorized users",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties for Cross-Check Criteria (40 points - Total): ❌"
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of Responsive Application Design: If the application does not provide a responsive layout suitable for various devices and screen sizes, a penalty of 20 points will be applied. 📱🖥️🛑",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Errors in the Console: Except for request errors, console errors, including favicon error, will result in a penalty of 20 points. Ensure your code is debugged and free of unnecessary errors for a smooth user experience. 🐛🔍🛑",
+      "max": -20
+    }
+  ]
+}
