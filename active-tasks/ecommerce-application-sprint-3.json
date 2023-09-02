@@ -1,0 +1,191 @@
+{
+  "taskName": "eCommerce-Application Sprint 3",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/eCommerce-Application/Sprints/Sprint%233.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "CrossCheck Criteria (370 points) ⭐"
+    },
+    {
+      "type": "title",
+      "title": "Catalog Page Implementation (150 points - Total) 📚"
+    },
+    {
+      "type": "title",
+      "title": "1. Display Product List (45 points) 📋"
+    },
+    {
+      "type": "subtask",
+      "text": "Use the commercetools API to fetch a list of products with essential details, such as name, image, and description.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "Display prices with and without discount for discounted products, ensuring that the discounted price is visually distinct and clearly indicates that it is the current price.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "2. Product Filtering, Sorting, and Searching (65 points) 🔍"
+    },
+    {
+      "type": "subtask",
+      "text": "Utilize the commercetools API to offer robust filtering options for users to refine the product list based on attributes such as price range, brand, color, size, or other relevant characteristics.",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Enable users to sort the product list by various properties, such as price and name.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Implement an efficient and user-friendly search feature that allows users to quickly find and display relevant products based on their search query using the chosen API.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "3. Interactive Product Cards (15 points) 🃏"
+    },
+    {
+      "type": "subtask",
+      "text": "Design product cards that change their appearance when the user hovers over them, enhancing the browsing experience.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Upon clicking a product card, redirect the user to a detailed product information page for the selected product.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "4. Category Navigation (25 points) 🧭"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement easy-to-use and clear navigation options for users to explore and switch between different product categories or subcategories using the commercetools API.",
+      "max": 25
+    },
+    {
+      "type": "title",
+      "title": "Detailed Product Page Implementation (100 points - Total) 🔎"
+    },
+    {
+      "type": "title",
+      "title": "1. Display Product Information (65 points) 📝"
+    },
+    {
+      "type": "subtask",
+      "text": "Use the commercetools API to fetch and display the product name, description, and images on the Detailed Product page.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "Implement an image slider for product images fetched from the chosen API, allowing users to view multiple images of the product.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "Display the product price fetched from the chosen API, and if the product is on sale, display both the original and discounted prices.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "2. Enlarged Image Modal with Slider (35 points) 🖼️"
+    },
+    {
+      "type": "subtask",
+      "text": "Allow users to click on the product image to open an enlarged version of the image in a modal window.",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Enable users to navigate through all product images from the commercetools API using a slider inside the modal window.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "User Profile Page Implementation (70 points - Total) 👥"
+    },
+    {
+      "type": "title",
+      "title": "1. Display User Profile Information (30 points) 📋"
+    },
+    {
+      "type": "subtask",
+      "text": "Present the user's personal information, including first name, last name, date of birth, and a list of their addresses in the User Profile page.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Provide a user-friendly interface for users to switch to an edit mode, where they can update their personal details, email, and addresses.",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "2. Edit User Profile Information (40 points) ✏️"
+    },
+    {
+      "type": "subtask",
+      "text": "In the edit mode, allow users to update their personal information, including first name, last name, and date of birth and email.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Enable users to change their password.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Allow users to manage their addresses, including adding new addresses, deleting existing ones, and updating address details.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Routing Implementation (40 points - Total) 🛣️"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement routing for navigation between Catalog page, Product detail page.",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "Implement routing for navigation to User Profile page.",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Evaluation Criteria for Header (10 points - Total) 🖥️"
+    },
+    {
+      "type": "subtask",
+      "text": "Consistent header layout with necessary information like branding and user navigation across all the pages.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "User Profile link or button in the header, enabling navigation to User Profile page.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties for Cross-Check Criteria (70 points - Total): ❌"
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of Responsive Application Design: If the application does not provide a responsive layout suitable for various devices and screen sizes, a penalty of 20 points will be applied. 📱🖥️🛑",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Errors in the Console: Except for request errors, console errors, including favicon error, will result in a penalty of 20 points. Ensure your code is debugged and free of unnecessary errors for a smooth user experience. 🐛🔍🛑",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of Data from commercetools-sunrise-data: If a project is found to be using data directly from commercetools-sunrise-data, a penalty of 30 points will be applied. The intent is to encourage developers to use unique data sources and avoid ready-made datasets. 📊❌🛑",
+      "max": -30
+    }
+  ]
+}
