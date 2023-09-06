@@ -87,7 +87,7 @@
     {
       "type": "subtask",
       "text": "Display the product price fetched from the chosen API, and if the product is on sale, display both the original and discounted prices.",
-      "max": 10
+      "max": 15
     },
     {
       "type": "title",
