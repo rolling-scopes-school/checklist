@@ -1,0 +1,205 @@
+{
+  "taskName": "eCommerce-Application Sprint 4",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/eCommerce-Application/Sprints/Sprint%234.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "✅ CrossCheck Criteria (285 points) ✅"
+    },
+    {
+      "type": "title",
+      "title": "Catalog Page Enhancements (70 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "1. Interactive Product Cards (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Include an \"Add to Cart\" button on each product card",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "2. Shopping Cart Integration (35 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Integrate the Catalog Product page with the chosen API (commercetools or any other simple API) to enable users to add products to their shopping cart directly from the product list",
+      "max": 35
+    },
+    {
+      "type": "title",
+      "title": "3. Performance Optimization (25 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement lazy loading, pagination, or infinite scroll to efficiently load and display a large number of products without significant delays or performance issues, leveraging the commercetools API for product data retrieval",
+      "max": 25
+    },
+    {
+      "type": "title",
+      "title": "Detailed Product Page Implementation (30 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "1. Add or Remove Product from Cart (30 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "If the product is not already in the user's shopping cart, provide an \"Add to Cart\" button that adds the product with the selected options to their cart using the commercetools API",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "If the product is already in the user's shopping cart, provide a \"Remove from Cart\" button that allows users to remove the product from their cart using the commercetools API",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Basket Page Implementation (110 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "1. Display Basket Items (25 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Use the commercetools API to fetch and display the list of items added to the basket along with essential details such as the name, image, and price",
+      "max": 25
+    },
+    {
+      "type": "title",
+      "title": "2. Modify Product Quantity (15 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Allow users to modify the quantity of each product in the cart, updating the corresponding data using the commercetools API and recalculating the total cost accordingly",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "3. Remove Product from Cart (15 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Provide a \"Remove from Cart\" button for each product, enabling users to delete items from the cart and updating the cart data using the commercetools API",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "4. Recalculate Total Cost (15 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Automatically recalculate the total cost of the items in the shopping cart when users modify product quantities or remove items from the cart, using the updated data from the commercetools API",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "5. Display Empty Cart Message and Link to Catalog (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "When the shopping cart is empty, display a clear message indicating the cart is empty",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Provide a link to the catalog of products within the empty cart message, guiding users to easily continue shopping and explore other parts of the website",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "6. Apply Promo Code and Display Updated Prices (20 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement a feature that allows users to apply a promo code to their order, offering discounts on eligible items, and updating the total cost of the cart accordingly using the commercetools API",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Display both the original price and the discounted price after applying the promo code, ensuring that the two prices are visually distinct",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "7. Clear Shopping Cart (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Provide a \"Clear Shopping Cart\" button that removes all items from the user's shopping cart and updates the cart data using the commercetools API",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "About Us Page Implementation (35 points - Total)"
+    },
+    {
+      "type": "title",
+      "title": "1. Introduction to the Development Team (25 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Create a comprehensive introduction to the development team, highlighting each member's contributions to the project, their effective collaboration methods, as well as personal details such as names, roles, short bios, relevant photos, and GitHub profile links",
+      "max": 25
+    },
+    {
+      "type": "title",
+      "title": "2. RS School Logo and Link (10 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Feature and link the RS School logo on the \"About Us\" page, making it visible and recognizable, and allowing users to learn more about the educational program by linking it to the school's website",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Routing Implementation (20 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement routing for seamless navigation to the Basket page from all other pages, ensuring that the Basket page is accessible whether the user is logged in or not and supporting browser navigation buttons",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Implement routing for seamless navigation to the About Us page from all other pages, ensuring that the About Us page is accessible whether the user is logged in or not and supports browser navigation buttons",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Evaluation Criteria for Header (20 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement a basket icon in the header navigation, providing a link to the Basket page and displaying the quantity of items in the cart",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Incorporate an icon or link in the header navigation leading to the About Us page",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "❌ Penalties for Cross-Check Criteria (70 points - Total) ❌"
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of Responsive Application Design: If the application does not provide a responsive layout suitable for various devices and screen sizes, a penalty of 20 points will be applied. 📱🖥️🛑",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Errors in the Console: Except for request errors, console errors, including favicon error, will result in a penalty of 20 points. Ensure your code is debugged and free of unnecessary errors for a smooth user experience. 🐛🔍🛑",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of Data from commercetools-sunrise-data: If a project is found to be using data directly from commercetools-sunrise-data, a penalty of 30 points will be applied. The intent is to encourage developers to use unique data sources and avoid ready-made datasets. 📊❌🛑",
+      "max": -30
+    }
+  ]
+}
