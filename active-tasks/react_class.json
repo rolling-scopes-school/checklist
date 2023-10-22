@@ -1,75 +1,76 @@
 {
-    "taskName": "React 2023-01",
-    "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module01",
-    "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
-    "criteria": [
-      {
-        "type": "title",
-        "title": "Cross code review"
-      },
-      {
-        "type": "subtask",
-        "text": "Linting can be run and doesn't produce any errors or warnings",
-        "max": 3
-      },
-      {
-        "type": "subtask",
-        "text": "Tests can be run and the test coverage is equal or higher than 40%",
-        "max": 3
-      },
-      {
-        "type": "title",
-        "title": "Cross check"
-      },
-      {
-        "type": "subtask",
-        "text": "Routing is enabled, header shows current route. There are 404 and 'About us' routes",
-        "max": 4
-      },
-      {
-        "type": "subtask",
-        "text": "Search bar is on the main page, value from the search is saved in LocalStorage on component unmount",
-        "max": 4
-      },
-      {
-        "type": "subtask",
-        "text": "Cards are present on the main page",
-        "max": 1
-      },
-      {
-        "type": "penalty",
-        "text": "Direct DOM manipulations",
-        "max": -15
-      },
-      {
-        "type": "penalty",
-        "text": "TypeScript isn't used",
-        "max": -15
-      },
-      {
-        "type": "penalty",
-        "text": "Snapshot testing",
-        "max": -10
-      },
-      {
-        "type": "penalty",
-        "text": "Usage of any",
-        "max": -10
-      },
-      {
-        "type": "penalty",
-        "text": "A lot of ts-ignore",
-        "max": -10
-      },
-      {
-        "type": "penalty",
-        "text": "Code smells (god component, a lot of duplication)",
-        "max": -5
-      },
-      {
-        "type": "penalty",
-        "text": "A lot of comments (commented code blocks, redundant comments, etc)",
-        "max": -5
-      }
-    ]
-  }
+  "taskName": "React 2023-01",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module01",
+  "information": "The maximum number of points is 100. Those are the cross-code-review and cross-check criterias:",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Cross code review"
+    },
+    {
+      "type": "subtask",
+      "text": "Eslint is set up, when lint command is run it doesn't produce any errors (if there are warnings score might be less)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Prettier is set up, format:fix command fixes issues",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Husky is set up, linting is run on pre-commit",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Page is split into 2 sections, top one has Search input and 'Search' button, main section displays the list of results from the selected API when the page is opened for the first time (loader should be shown while the app makes a call to the API)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "When the user types something into the Search input and clicks 'Search' button, a loader is displayed, and the list is changed according to the response results for a provided search term",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "The search term typed into the Search input is saved in local storage when the user clicks on 'Search' button (check it by closing the tab and opening the app in a new one - the initial call should contain the previously entered search term)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Application is wrapped with ErrorBoundary, which logs errors to the console and shows a fallback UI. There should be a button to throw an error",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "TypeScript isn't used",
+      "max": -95
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of any",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of ts-ignore",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Direct DOM manipulations inside the React components",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "React hooks are used to get access to either state or to the component lifecycle",
+      "max": -70
+    },
+    {
+      "type": "penalty",
+      "text": "Presence of code smells (God-object, chunks of duplicate code), commented code sections",
+      "max": -10
+    }
+  ]
+}
