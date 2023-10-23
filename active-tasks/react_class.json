@@ -71,6 +71,16 @@
       "type": "penalty",
       "text": "Presence of code smells (God-object, chunks of duplicate code), commented code sections",
       "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of Redux or other state management libraries",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of component libraries, e.g. Material UI, Ant Design",
+      "max": -100
     }
   ]
 }
