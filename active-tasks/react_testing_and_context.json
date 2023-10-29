@@ -1,7 +1,7 @@
 {
-  "taskName": "React Redux",
-  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04",
-  "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
+  "taskName": "React Tests and Context API",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module03",
+  "information": "The maximum number of points is 100. Those are the cross-code-review and cross-check criterias:",
   "criteria": [
     {
       "type": "title",
@@ -9,38 +9,38 @@
     },
     {
       "type": "subtask",
-      "text": "Redux is integrated into the app with the help of Redux Toolkit",
-      "max": 25
-    },
-    {
-      "type": "subtask",
-      "text": "Search is saved in the store",
+      "text": "Custom state management using the Context API is implemented",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "Items per page is saved in the store",
+      "text": "The Search component value is stored in the context",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "View mode is saved in the store",
+      "text": "The list of items received from the API is stored in the context",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The context is used in components that need access to the data",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "React Testing Library and Jest or Vitest are added and configured",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "Loading indicators are shown, loading flags are saved in the store",
+      "text": "Test cases",
+      "max": 60
+    },
+    {
+      "type": "subtask",
+      "text": "Husky runs tests on pre-push",
       "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "When either search or items per page is changed, the application makes a new call using RTK Query to fetch the data",
-      "max": 25
-    },
-    {
-      "type": "subtask",
-      "text": "Tests had been modified to test the functionality using Redux and RTK Query",
-      "max": 20
     },
     {
       "type": "penalty",
@@ -66,6 +66,11 @@
       "type": "penalty",
       "text": "Presence of code-smells (God-object, chunks of duplicate code), commented code sections",
       "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of Redux or other state management libraries",
+      "max": -100
     },
     {
       "type": "penalty",

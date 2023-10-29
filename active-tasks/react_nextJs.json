@@ -1,6 +1,6 @@
 {
-  "taskName": "React Redux",
-  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04",
+  "taskName": "React Next.js",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module05",
   "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
   "criteria": [
     {
@@ -9,37 +9,27 @@
     },
     {
       "type": "subtask",
-      "text": "Redux is integrated into the app with the help of Redux Toolkit",
+      "text": "The app migrated to Next.js",
       "max": 25
     },
     {
       "type": "subtask",
-      "text": "Search is saved in the store",
-      "max": 5
-    },
-    {
-      "type": "subtask",
-      "text": "Items per page is saved in the store",
-      "max": 5
-    },
-    {
-      "type": "subtask",
-      "text": "View mode is saved in the store",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "Loading indicators are shown, loading flags are saved in the store",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "When either search or items per page is changed, the application makes a new call using RTK Query to fetch the data",
+      "text": "All retaining functionality works as expected from previous tasks",
       "max": 25
     },
     {
       "type": "subtask",
-      "text": "Tests had been modified to test the functionality using Redux and RTK Query",
+      "text": "Pages API has been used for all pages",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "All pages with state receive it via getServerSideProps",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Tests had been modified to work with SSR",
       "max": 20
     },
     {
@@ -76,6 +66,21 @@
       "type": "penalty",
       "text": "Test coverage is less than 80%",
       "max": -30
+    },
+    {
+      "type": "penalty",
+      "text": "Next.js isn't used",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of client state on page",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Pages API isn't used",
+      "max": -50
     }
   ]
 }
