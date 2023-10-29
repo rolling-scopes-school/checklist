@@ -74,6 +74,11 @@
     },
     {
       "type": "penalty",
+      "text": "Commits after the deadline",
+      "max": -40
+    },
+    {
+      "type": "penalty",
       "text": "Test coverage is less than 80%",
       "max": -30
     }

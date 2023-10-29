@@ -64,6 +64,11 @@
     },
     {
       "type": "penalty",
+      "text": "Commits after the deadline",
+      "max": -40
+    },
+    {
+      "type": "penalty",
       "text": "Validation is implemented without Yup",
       "max": -25
     }
