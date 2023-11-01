@@ -10,17 +10,17 @@
     {
       "type": "subtask",
       "text": "Conversion of class components to functional components with hooks",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "Pagination is present in both URL and on the page",
       "max": 20
     },
     {
       "type": "subtask",
+      "text": "Pagination is present in both URL and on the page",
+      "max": 30
+    },
+    {
+      "type": "subtask",
       "text": "User-initiated change of items per page triggers a new request, displaying the first page",
-      "max": 15
+      "max": 20
     },
     {
       "type": "subtask",
