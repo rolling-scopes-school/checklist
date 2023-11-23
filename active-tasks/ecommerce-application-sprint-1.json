@@ -1,0 +1,140 @@
+{
+  "taskName": "eCommerce-Application Sprint 1",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/eCommerce-Application/Sprints/Sprint%231.md",
+  "information": "eCommerce-Application",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Mentor Evaluation Criteria (150 points - Total):"
+    },
+    {
+      "type": "title",
+      "title": "1. Repository Setup (29 points) 🧐"
+    },
+    {
+      "type": "subtask",
+      "text": "Create a GitHub repository for the project, complete with a README file, .gitignore, and necessary dependencies. 📚",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Set up a clear and organized folder structure within the repository, ensuring a maintainable and scalable codebase. 🏗️",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Invite all team members and the mentor as collaborators, ensuring everyone has access to contribute to the repository. 👥",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Create a pull request template with a clear structure for describing proposed changes and the rationale behind them. 📝",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "2. Task Board Setup (Trello, Jira, etc.) (14 points) 📋"
+    },
+    {
+      "type": "subtask",
+      "text": "Create a project task board using a project management tool (e.g., Trello or Jira), organizing tasks into lists or columns corresponding to their status (e.g., To Do, In Progress, Done). ✔️",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Break down project tasks into smaller, manageable subtasks and assign them to team members, ensuring a clear delegation of responsibilities. 🧩",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Share the task board with the team members and the mentor, ensuring everyone can track progress and update the status of their tasks. 🤝",
+      "max": 3
+    },
+    {
+      "type": "title",
+      "title": "3. CommerceTools Project and API Client Setup (30 points) 💻"
+    },
+    {
+      "type": "subtask",
+      "text": "Create the project in CommerceTools, setting up the currencies, languages, and other configurations in the Merchant Center. 💼",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Create the API client for CommerceTools, enabling access to the platform's APIs and managing permissions and scopes required for the project. 🔐",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "4. Development Environment Configuration (43 points) ⚙️"
+    },
+    {
+      "type": "subtask",
+      "text": "Set up and configure a bundler (e.g., Webpack, Vite, Parcel, or other) for the project, supporting both development and production build modes. 📦",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Configure TypeScript to enforce strong typing and improve code quality throughout the project. 🧮",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Set up ESLint to enforce consistent coding styles and identify potential issues in the codebase. 📏",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Configure Prettier to automatically format code, ensuring a consistent and readable code style. ✨",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Initialize Husky to manage Git hooks, automating tasks such as code formatting and linting checks during the commit process. 🐕",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Install and configure Jest as the testing framework for the project, enabling comprehensive testing of code functionality. 🧪",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "5. Development Scripts (15 points) 🖊️"
+    },
+    {
+      "type": "subtask",
+      "text": "Create a script for running ESLint across the codebase, enabling quick and efficient identification of coding style issues and potential errors. 🐞",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Create a script for running Prettier across the codebase, simplifying code formatting and ensuring uniform code style. 🎨",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Create a script for running Jest tests, streamlining the process of executing tests and generating reports on test outcomes. 🧾",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "6. Comprehensive README (19 points) 📝"
+    },
+    {
+      "type": "subtask",
+      "text": "Add a thorough README file in the repository, describing the project, its purpose, and the technology stack used. 📘",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Clearly document all available scripts (e.g., for running ESLint, Prettier, and Jest tests) and their usage in the README file. 📜",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Provide detailed instructions for setting up and running the project locally, ensuring newcomers and contributors can quickly get started. 🚀",
+      "max": 4
+    }
+  ]
+}

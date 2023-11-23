@@ -1,0 +1,86 @@
+{
+  "taskName": "React Routing",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module02",
+  "information": "The maximum number of points is 100. Those are the cross-code-review and cross-check criterias:",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Cross code review"
+    },
+    {
+      "type": "subtask",
+      "text": "Conversion of class components to functional components with hooks",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Pagination is present in both URL and on the page",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "User-initiated change of items per page triggers a new request, displaying the first page",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Upon clicking, open details panel on the right side of the page",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Use router outlet, left side of the page should continue displaying the list of results",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Initiate an additional API call, display a loader, and update the URL",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Details panel should be closed either on the 'close' button click or on the main panel click",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "TypeScript isn't used",
+      "max": -95
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of any",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of ts-ignore",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Direct DOM manipulations inside the React components",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Presence of code-smells (God-object, chunks of duplicate code), commented code sections",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of Redux or other state management libraries",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Usage of component libraries, e.g. Material UI, Ant Design",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after the deadline",
+      "max": -40
+    }
+  ]
+}

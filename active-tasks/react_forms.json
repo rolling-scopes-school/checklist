@@ -1,6 +1,6 @@
 {
-  "taskName": "React Redux",
-  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module04",
+  "taskName": "React Forms",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module06",
   "information": "The maximum number of points is 15. Those are the cross-code-review and cross-check criterias:",
   "criteria": [
     {
@@ -9,38 +9,33 @@
     },
     {
       "type": "subtask",
-      "text": "Redux is integrated into the app with the help of Redux Toolkit",
-      "max": 25
+      "text": "3 routes (main and 2 routes for forms), Redux is set up and used to collect data from both forms, redirect to main route after submitting the form",
+      "max": 15
     },
     {
       "type": "subtask",
-      "text": "Search is saved in the store",
-      "max": 5
-    },
-    {
-      "type": "subtask",
-      "text": "Items per page is saved in the store",
-      "max": 5
-    },
-    {
-      "type": "subtask",
-      "text": "View mode is saved in the store",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "Loading indicators are shown, loading flags are saved in the store",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "When either search or items per page is changed, the application makes a new call using RTK Query to fetch the data",
-      "max": 25
-    },
-    {
-      "type": "subtask",
-      "text": "Tests had been modified to test the functionality using Redux and RTK Query",
+      "text": "Validation works for both forms according to the requirements (error messages, blocking submit button), Yup is used for validation (10 points if works only for one form)",
       "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Name, age, email, gender picker, accept T&C are implemented for both forms and collect data (if something doesn't work, the score can be less)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Input for image is implemented for both forms, the image is saved as base64 and displayed on the main route after redirect",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Passwords (with password strength) are implemented for both forms",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Autocomplete works for both forms",
+      "max": 15
     },
     {
       "type": "penalty",
@@ -59,11 +54,6 @@
     },
     {
       "type": "penalty",
-      "text": "Direct DOM manipulations inside the React components",
-      "max": -50
-    },
-    {
-      "type": "penalty",
       "text": "Presence of code-smells (God-object, chunks of duplicate code), commented code sections",
       "max": -10
     },
@@ -79,8 +69,8 @@
     },
     {
       "type": "penalty",
-      "text": "Test coverage is less than 80%",
-      "max": -30
+      "text": "Validation is implemented without Yup",
+      "max": -25
     }
   ]
 }
