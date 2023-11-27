@@ -1,0 +1,506 @@
+{
+  "taskName": "Angular final project: Connections",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Cross-Check form"
+    },
+    {
+      "type": "title",
+      "title": "1. Registration"
+    },
+    {
+      "type": "subtask",
+      "text": "page with dedicated url",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "validation for name field with error messages",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "validation for password field with error messages",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "redirection to sign-in page after successful registration",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "error messages for failed http-request is shown",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "created and used dedicated @ngrx/effects for authorization processes",
+      "max": 25
+    },
+    {
+      "type": "penalty",
+      "text": "redirection to sign-in page after failed registration",
+      "max": -25
+    },
+    {
+      "type": "title",
+      "title": "2. Login"
+    },
+    {
+      "type": "subtask",
+      "text": "default page for unauthorized user",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "validation for name field with error messages",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "validation for password field with error messages",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "redirection to the main page after successful authentication",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "error messages for failed http-request is shown",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "created and used dedicated @ngrx/effects for authorization processes",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "token, uid and email value is saved in localStorage and used again after page reloading",
+      "max": 30
+    },
+    {
+      "type": "penalty",
+      "text": "redirection to sign-in page after failed registration",
+      "max": -30
+    },
+    {
+      "type": "title",
+      "title": "3. Profile"
+    },
+    {
+      "type": "subtask",
+      "text": "user id, email, creation time, user name data of current user in displayed on the page",
+      "max": 70
+    },
+    {
+      "type": "subtask",
+      "text": "error message is shown if http-request failed",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "data is not saved in the store",
+      "max": -30
+    },
+    {
+      "type": "penalty",
+      "text": "http-request is sent every time if user opens profile",
+      "max": -30
+    },
+    {
+      "type": "title",
+      "title": "4. Profile edition"
+    },
+    {
+      "type": "subtask",
+      "text": "button Edit makes name field editable",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "button Cancel returns initial state",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "button Save (via @ngrx/effects) sends new http-request to save new data and update store",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "buttons Cancel and Save is visible ony for editable form",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "button Edit is visible only for static page",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "error message is displayed if http-request fails",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "http-request to retrieve profile data is sent",
+      "max": -25
+    },
+    {
+      "type": "penalty",
+      "text": "data in the store is updated even if http-request fails",
+      "max": -30
+    },
+    {
+      "type": "title",
+      "title": "5. Logout"
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on Logout button the http-request is sent with DELETE method",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "user is redirected to Sign-In page after successful logout process",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "all data in cookies, localStorage is deleted",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "error messages are displayed if http-request fails",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "6. Group and people list"
+    },
+    {
+      "type": "subtask",
+      "text": "default page for authorized user",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "page is divided on 2 vertical sections with independent content",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "6.1. Group list"
+    },
+    {
+      "type": "subtask",
+      "text": "the list of available groups is loaded if user opens this page first time",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "the list item created by current user should contain Delete button",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "the confirmation modal appears after clicking on Delete button on list item with Cancel,Delete button inside. If user clicks Cancel the modal disappears. If user clicks Delete the http-request is sent and item is removed from the list after succeeded response",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on Update button sends corresponding http-request and update group list if succeeded",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "countdown appears for 1 minute after clicking on Update button (except if error occurs)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on Create button the modal window is opened. There is reactive form with validation and submit button",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "submit button in modal window should be disabled until form is valid",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on submit button in modal window the appropriate http-request is sent to create new group. Modal window is closed only if http-request succeeded",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "error messages are displayed if any http-request fails",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on list item the user is redirected to group dialog page",
+      "max": 15
+    },
+    {
+      "type": "penalty",
+      "text": "list of groups is loaded every time if user returns back into main page",
+      "max": -40
+    },
+    {
+      "type": "penalty",
+      "text": "list of groups is loaded after successful created new group or deleted group",
+      "max": -40
+    },
+    {
+      "type": "title",
+      "title": "6.2. People list"
+    },
+    {
+      "type": "subtask",
+      "text": "the list of people is loaded if user opens this page first time",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "the list item with which current user already has active conversation has special background",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on Update button sends corresponding http-request and update people list if succeeded",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "countdown appears for 1 minute after clicking on Update button (except if error occurs)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "clicking on list item the user is redirected to personal conversation page. New conversation (via certain http-request) is created if it has not already created before transition",
+      "max": 50
+    },
+    {
+      "type": "title",
+      "title": "7. Group dialog"
+    },
+    {
+      "type": "subtask",
+      "text": "the page is protected by a guard only for authorized user",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "the error message is displayed if group with provided id does not exist",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "'Return back' is a link, not a button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "the full message history is loaded if user visit this page first time",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "only the last messages (using 'since' parameter) are loaded if user opens this group conversation again",
+      "max": 50
+    },
+    {
+      "type": "subtask",
+      "text": "only the last messages (using 'since' parameter) are loaded if user clicks on Update button",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "messages in corresponding area are sorted by time. New messages are appended at the bottom",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "message item contains readable time, user name and text. Own messages are displayed on the right. Other messages are displayed on the left",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "countdown appears for 1 minute after clicking on Update button (except if error occurs)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "group is created by current user should contain Delete button",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "the confirmation modal appears after clicking on Delete button with Cancel,Delete button inside. If user clicks Cancel the modal disappears. If user clicks Delete the http-request is sent and the user is redirected to main page after succeeded response",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "form field has 'required' validator. Send new message button is disabled until field has text",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "new messages are loaded (using 'since' parameter) after successful sending new message with @ngrx/effects by user",
+      "max": 40
+    },
+    {
+      "type": "title",
+      "title": "8. Personal conversation"
+    },
+    {
+      "type": "subtask",
+      "text": "the page is protected by a guard only for authorized user",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "the error message is displayed if conversation with provided id does not exist",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "'Return back' is a link, not a button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "the full message history is loaded if user visit this page first time",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "only the last messages (using `since` parameter) are loaded if user opens this group conversation again",
+      "max": 50
+    },
+    {
+      "type": "subtask",
+      "text": "only the last messages (using 'since' parameter) are loaded if user clicks on Update button",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "messages in corresponding area are sorted by time. New messages are appended at the bottom",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "message item contains readable time, user name and text. Own messages are displayed on the right. Other messages are displayed on the left",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "countdown appears for 1 minute after clicking on Update button (except if error occurs)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "the confirmation modal appears after clicking on Delete button with Cancel,Delete button inside. If user clicks Cancel the modal disappears. If user clicks Delete the http-request is sent and the user is redirected to main page after succeeded response",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "form field has 'required' validator. 'Send new message' button is disabled until field has text",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "new messages are loaded (using 'since' parameter) after successful sending new message with @ngrx/effects by user",
+      "max": 40
+    },
+    {
+      "type": "title",
+      "title": "9. 404 page"
+    },
+    {
+      "type": "subtask",
+      "text": "error message is displayed about wrong url/page",
+      "max": 50
+    },
+    {
+      "type": "penalty",
+      "text": "url is changed",
+      "max": -30
+    },
+    {
+      "type": "title",
+      "title": "10. Dark/Light theme"
+    },
+    {
+      "type": "subtask",
+      "text": "chosen state is saved in `localStorage` and used after reloading",
+      "max": 60
+    },
+    {
+      "type": "subtask",
+      "text": "light/dark styles are applied to main page",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "light/dark styles are applied to group dialog page",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "light/dark styles are applied to personal conversation page",
+      "max": 40
+    },
+    {
+      "type": "penalty",
+      "text": "used services or any functional approach besides css inheritance",
+      "max": -50
+    },
+    {
+      "type": "title",
+      "title": "General"
+    },
+    {
+      "type": "penalty",
+      "text": "any uncaught errors",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "used 'any' instead of dedicated interface/type",
+      "max": -120
+    },
+    {
+      "type": "penalty",
+      "text": "used some additional npm package",
+      "max": -100
+    }
+  ]
+}
