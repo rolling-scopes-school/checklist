@@ -16,12 +16,12 @@
     },
     {
       "type": "subtask",
-      "text": "validation for name field with error messages",
+      "text": "validation for 'name' field with error messages",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "validation for password field with error messages",
+      "text": "validation for 'password' field with error messages",
       "max": 5
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "type": "subtask",
-      "text": "validation for name field with error messages",
+      "text": "validation for 'email' field with error messages",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "validation for password field with error messages",
+      "text": "validation for 'password' field with error messages",
       "max": 5
     },
     {
