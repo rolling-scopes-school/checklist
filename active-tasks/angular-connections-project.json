@@ -16,7 +16,7 @@
     },
     {
       "type": "subtask",
-      "text": "validation for 'name' field with error messages",
+      "text": "validation for 'name' and 'email' fields with error messages",
       "max": 5
     },
     {
@@ -27,22 +27,37 @@
     {
       "type": "subtask",
       "text": "redirection to sign-in page after successful registration",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "toast messages with appropriate text are displayed if http-request fails or succeed",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "error messages for failed http-request is shown",
+      "text": "'Submit' button is disabled if form is invalid. Also, it should be disabled after http error with type `PrimaryDuplicationException` until the user changes the field value",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "created and used dedicated @ngrx/effects for authorization processes",
-      "max": 25
+      "text": "'Submit' button is disabled and `email` field has error message of taken account if user type the same email address that he tried to send before and got an error `PrimaryDuplicationException`",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "'Submit' button is disabled after clicking until any http error is returned (http success is not considered because redirection into login page should be in that case)",
+      "max": 10
     },
     {
       "type": "penalty",
       "text": "redirection to sign-in page after failed registration",
-      "max": -25
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "user can click `Submit` button more than once even if previous http-request is not completed",
+      "max": -20
     },
     {
       "type": "title",
@@ -70,23 +85,33 @@
     },
     {
       "type": "subtask",
-      "text": "error messages for failed http-request is shown",
+      "text": "toast messages with appropriate text are displayed if http-request fails or succeed",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "created and used dedicated @ngrx/effects for authorization processes",
-      "max": 20
+      "text": "'Submit' button is disabled if form is invalid. Also, it should be disabled after http error with type `NotFoundException` until the user changes `email` or `password` field value",
+      "max": 10
     },
     {
       "type": "subtask",
-      "text": "token, uid and email value is saved in localStorage and used again after page reloading",
+      "text": "'Submit' button is disabled after clicking until any http error is returned (http success is not considered because redirection into main page should be in that case)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`token`, `uid` and `email` value is saved in `localStorage` after successful sign in and used again in the following http-requests even after page reloading (it allows user to omit sign in again after page reloading)",
       "max": 10
     },
     {
       "type": "penalty",
       "text": "redirection to sign-in page after failed registration",
-      "max": -30
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "user can click 'Submit' button more than once even if previous http-request is not completed",
+      "max": -20
     },
     {
       "type": "title",
@@ -99,7 +124,7 @@
     },
     {
       "type": "subtask",
-      "text": "error message is shown if http-request failed",
+      "text": "error message with appropriate text are displayed if loading http-request fails (for instance, if internet connection is lost)",
       "max": 10
     },
     {
@@ -128,7 +153,7 @@
     },
     {
       "type": "subtask",
-      "text": "button Save (via @ngrx/effects) sends new http-request to save new data and update store",
+      "text": "button 'Save' sends new http-request to save new data and update store",
       "max": 20
     },
     {
@@ -143,7 +168,7 @@
     },
     {
       "type": "subtask",
-      "text": "error message is displayed if http-request fails",
+      "text": "toast messages with appropriate text are displayed if http-request fails or succeed",
       "max": 10
     },
     {
@@ -177,7 +202,7 @@
     },
     {
       "type": "subtask",
-      "text": "error messages are displayed if http-request fails",
+      "text": "toast messages with appropriate text are displayed if http-request fails or succeed",
       "max": 10
     },
     {
@@ -215,7 +240,7 @@
     },
     {
       "type": "subtask",
-      "text": "clicking on Update button sends corresponding http-request and update group list if succeeded",
+      "text": "clicking on 'Update' button sends corresponding http-request and update group list if succeeded",
       "max": 10
     },
     {
@@ -225,12 +250,12 @@
     },
     {
       "type": "subtask",
-      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "text": "'Update' button is disabled after clicking during updating and until the timer is active",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "clicking on Create button the modal window is opened. There is reactive form with validation and submit button",
+      "text": "clicking on 'Create' button the modal window is opened. There is form with validation and submit button",
       "max": 10
     },
     {
@@ -245,7 +270,7 @@
     },
     {
       "type": "subtask",
-      "text": "error messages are displayed if any http-request fails",
+      "text": "toast messages with appropriate text are displayed if http-request fails or succeed",
       "max": 10
     },
     {
@@ -255,13 +280,13 @@
     },
     {
       "type": "penalty",
-      "text": "list of groups is loaded every time if user returns back into main page",
-      "max": -40
+      "text": "list of groups is loaded automatically every time if user returns back into main page (until browser page is reloaded)",
+      "max": -25
     },
     {
       "type": "penalty",
-      "text": "list of groups is loaded after successful created new group or deleted group",
-      "max": -40
+      "text": "list of groups is loaded automatically after successful created new group or deleted group",
+      "max": -25
     },
     {
       "type": "title",
@@ -279,7 +304,7 @@
     },
     {
       "type": "subtask",
-      "text": "clicking on Update button sends corresponding http-request and update people list if succeeded",
+      "text": "clicking on 'Update' button sends corresponding http-request and update people list if succeeded",
       "max": 10
     },
     {
@@ -296,6 +321,16 @@
       "type": "subtask",
       "text": "clicking on list item the user is redirected to personal conversation page. New conversation (via certain http-request) is created if it has not already created before transition",
       "max": 15
+    },
+    {
+      "type": "penalty",
+      "text": "list of people is loaded automatically every time if user returns back into main page (until browser page is reloaded)",
+      "max": -25
+    },
+    {
+      "type": "penalty",
+      "text": "list of people is loaded automatically after successful created new conversation or deleted it",
+      "max": -25
     },
     {
       "type": "title",
@@ -363,12 +398,12 @@
     },
     {
       "type": "subtask",
-      "text": "form field has 'required' validator. Send new message button is disabled until field has text",
+      "text": "form field has 'required' validator. 'Send new message' button is disabled until field has text",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "new messages are loaded (using 'since' parameter) after successful sending new message with @ngrx/effects by user",
+      "text": "new messages are loaded (using `since` parameter) after successful sending new message",
       "max": 15
     },
     {
@@ -437,7 +472,7 @@
     },
     {
       "type": "subtask",
-      "text": "new messages are loaded (using 'since' parameter) after successful sending new message with @ngrx/effects by user",
+      "text": "new messages are loaded (using `since` parameter) after successful sending new message",
       "max": 15
     },
     {
@@ -489,17 +524,7 @@
     },
     {
       "type": "penalty",
-      "text": "any uncaught errors",
-      "max": -100
-    },
-    {
-      "type": "penalty",
-      "text": "used 'any' instead of dedicated interface/type",
-      "max": -100
-    },
-    {
-      "type": "penalty",
-      "text": "used some additional npm package",
+      "text": "any uncaught errors in the console",
       "max": -100
     }
   ]
