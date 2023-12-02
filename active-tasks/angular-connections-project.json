@@ -46,7 +46,7 @@
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled after clicking until any http error is returned (http success is not considered because redirection into login page should be in that case)",
+      "text": "'Submit' button is disabled after clicking while http-request is in progress",
       "max": 10
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled after clicking until any http error is returned (http success is not considered because redirection into main page should be in that case)",
+      "text": "'Submit' button is disabled after clicking while http-request is in progress",
       "max": 10
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "type": "penalty",
-      "text": "redirection to sign-in page after failed registration",
+      "text": "redirection to any page after failed login",
       "max": -20
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "type": "penalty",
-      "text": "data is not saved in the store",
+      "text": "data is not saved in the @ngrx/store",
       "max": -15
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "type": "subtask",
-      "text": "button 'Save' sends new http-request to save new data and update store",
+      "text": "button 'Save' sends new http-request to save new data and update @ngrx/store",
       "max": 20
     },
     {
@@ -178,7 +178,7 @@
     },
     {
       "type": "penalty",
-      "text": "data in the store is updated even if http-request fails",
+      "text": "data in the @ngrx/store is updated even if http-request fails",
       "max": -20
     },
     {
