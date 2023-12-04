@@ -1,0 +1,199 @@
+{
+  "taskName": "Coffee-House. Week-2 - Responsive Design",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week2.md",
+  "information": "",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере, в браузере Google Chrome последней версии.\nВсе сомнения трактуются в пользу студента.\nЕсли сомневаетесь снимать баллы или нет, не снимайте."
+    },
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 1440px: +14"
+    },
+    {
+      "type": "subtask",
+      "text": "`header` block on each page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Enjoy` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Favourites Coffee` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`About` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Mobile App` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Menu` block on `menu` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`footer` block on each page",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 768px: +14"
+    },
+    {
+      "type": "subtask",
+      "text": "`header` block on each page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Enjoy` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Favourites Coffee` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`About` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Mobile App` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Menu` block on `menu` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`footer` block on each page",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 380px: +14"
+    },
+    {
+      "type": "subtask",
+      "text": "`header` block on each page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Enjoy` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Favourites Coffee` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`About` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Mobile App` block on `home` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`Menu` block on `menu` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "`footer` block on each page",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "There is no horizontal scrollbar at all screen width up to 380px inclusive. All page content remains as per the design: it is not cropped, removed, or shifted to the side: +20"
+    },
+    {
+      "type": "subtask",
+      "text": "`home` page: no horizontal scroll bar between 1440px and 768px widths",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "`home` page: no horizontal scroll bar between 768px and 380px widths",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "`menu` page: no horizontal scroll bar between 1440px and 768px widths",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "`menu` page: no horizontal scroll bar between 768px and 380px widths",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "During smooth resizing of the browser window from 1440px to 380px, the layout occupies the full width of the window (including specified margins), elements adjust their sizes and positions appropriately without full scaling, no elements overlap, and images maintain their correct aspect ratios: +8"
+    },
+    {
+      "type": "subtask",
+      "text": "On `home` page",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "On `menu` page",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "At screen widths of 768px and below, the menu and navigation buttons in the header are concealed on both pages, and a burger menu icon is displayed\n(Note: Activation of the burger menu icon is not evaluated at this stage.)",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Hover effects are active on desktop devices (as per the `Desktop` device type in DevTools) and are disabled for mobile devices (as per the `Mobile` device type in DevTools) on both pages",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "The layout for both pages is validated and error-free according to the W3C Validator (https://validator.w3.org/)",
+      "max": 12
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "If the layout of the entire design or individual blocks is implemented using images, this will result in a penalty of -90 points.",
+      "max": -90
+    },
+    {
+      "type": "penalty",
+      "text": "The use of frameworks, libraries, and technologies that are prohibited in the technical requirements will also result in a penalty of -90 points.",
+      "max": -90
+    }
+  ]
+}
