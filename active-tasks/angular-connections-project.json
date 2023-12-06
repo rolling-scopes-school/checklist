@@ -124,17 +124,12 @@
     },
     {
       "type": "subtask",
-      "text": "error message with appropriate text are displayed if loading http-request fails (for instance, if internet connection is lost)",
+      "text": "error message with appropriate text are displayed on the page if loading http-request fails\n  (for instance, if internet connection is lost)",
       "max": 10
     },
     {
       "type": "penalty",
-      "text": "data is not saved in the @ngrx/store",
-      "max": -15
-    },
-    {
-      "type": "penalty",
-      "text": "http-request is sent every time if user opens profile",
+      "text": "/profile http-request is sent every time if user opens profile page",
       "max": -15
     },
     {
@@ -143,22 +138,22 @@
     },
     {
       "type": "subtask",
-      "text": "button Edit makes name field editable",
+      "text": "button 'Edit' makes 'name' field editable",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "button Cancel returns initial state",
+      "text": "button 'Cancel' returns initial page state (static appearance)",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "button 'Save' sends new http-request to save new data and update @ngrx/store",
+      "text": "clicking the button 'Save' sends 1 http-request to save new data without the ability to click it again (along with 'Cancel' button) until process is end",
       "max": 20
     },
     {
       "type": "subtask",
-      "text": "buttons Cancel and Save is visible ony for editable form",
+      "text": "buttons 'Cancel' and 'Save' are visible ony for editable form",
       "max": 5
     },
     {
@@ -173,12 +168,12 @@
     },
     {
       "type": "penalty",
-      "text": "http-request to retrieve profile data is sent",
+      "text": "http-request '/profile' to retrieve profile data is sent",
       "max": -20
     },
     {
       "type": "penalty",
-      "text": "data in the @ngrx/store is updated even if http-request fails",
+      "text": "edited data is applied to the static Profile page even if http-request fails",
       "max": -20
     },
     {
