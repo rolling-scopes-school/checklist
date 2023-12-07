@@ -10,7 +10,7 @@
     {
       "type": "subtask",
       "text": "Redux is integrated into the app with the help of Redux Toolkit",
-      "max": 25
+      "max": 30
     },
     {
       "type": "subtask",
@@ -21,11 +21,6 @@
       "type": "subtask",
       "text": "Items per page is saved in the store",
       "max": 5
-    },
-    {
-      "type": "subtask",
-      "text": "View mode is saved in the store",
-      "max": 10
     },
     {
       "type": "subtask",
@@ -40,7 +35,7 @@
     {
       "type": "subtask",
       "text": "Tests had been modified to test the functionality using Redux and RTK Query",
-      "max": 20
+      "max": 25
     },
     {
       "type": "penalty",
