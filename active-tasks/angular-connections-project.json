@@ -328,6 +328,11 @@
       "max": -25
     },
     {
+      "type": "penalty",
+      "text": "http-request to `/conversations/list` is sent every time clicking on 'Update' button",
+      "max": -20
+    },
+    {
       "type": "title",
       "title": "7. Group dialog"
     },
@@ -402,6 +407,16 @@
       "max": 15
     },
     {
+      "type": "penalty",
+      "text": "'Delete' button is not present on the page for own group after hard page reloading(refresh)",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "while user is on this dialog page, he reloads the page and navigates to the main page. Http-request to `/groups/list` is sent more than once",
+      "max": -25
+    },
+    {
       "type": "title",
       "title": "8. Personal conversation"
     },
@@ -469,6 +484,16 @@
       "type": "subtask",
       "text": "new messages are loaded (using `since` parameter) after successful sending new message",
       "max": 15
+    },
+    {
+      "type": "penalty",
+      "text": "'Delete' button is not present on the page hard page reloading(refresh)",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "while user is on this conversation page, he reloads the page and navigates to the main page. Http-request to `/conversations/list` or `/users` is sent more than once",
+      "max": -25
     },
     {
       "type": "title",
