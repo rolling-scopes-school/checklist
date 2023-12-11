@@ -1,0 +1,213 @@
+{
+  "taskName": "Coffee-House. Week-3 - Adding Functionality",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/coffee-house/coffee-house-week3.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере, в браузере Google Chrome последней версии.\nВсе сомнения трактуются в пользу студента.\nЕсли сомневаетесь снимать баллы или нет, не снимайте."
+    },
+    {
+      "type": "title",
+      "title": "Implementation of the burger menu on both pages: +22"
+    },
+    {
+      "type": "subtask",
+      "text": "At a page width of 768px or less, the navigation panel hides, and the burger icon appears",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "The burger menu occupies the entire available screen area below the `header` block",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "The burger icon is created using HTML and CSS without the use of images",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Links in the burger menu work, providing smooth scrolling to anchor points",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking on any link (interactive or non-interactive) in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "The placement and dimensions of elements in the burger menu match the layout (horizontal centering of menu items)",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When the page width increases to 769px or higher, the burger icon and the open burger menu hide, and the navigation panel appears",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Implementation of the carousel on the `home` page: +24"
+    },
+    {
+      "type": "subtask",
+      "text": "Carousel elements are automatically scroll to the left with a specified time interval by default. The time interval duration is at the student's choose, but the recommended value is 5-7 seconds",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "The current state until the next automatic switch is shown in the progress bar of the corresponding slide by filling it with color",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Only the progress bar of the current slide can be filled; the rest remain in their default state",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When hovering the mouse or touch-and-hold on the displayed carousel element, the time to the element switch is paused. When the mouse cursor moves out, or the hold ends, the time continues from where it stopped",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "The switch slides is accompanied by like the carousel animation (the method of animation execution is not verified)",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Manual switching in the corresponding direction is implemented by pressing left arrow button or right arrow button",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "For mobile devices, manual switching in the corresponding direction is additionally implemented by swiping left or right",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When manually switching, the progress bar state of the switched slide resets, and the progress bar of the displayed slide starts to fill",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When switching to the right after the third element, it returns to the first. When switching to the left after the first element, it returns to the third",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Categories of products on the `menu` page: +16"
+    },
+    {
+      "type": "subtask",
+      "text": "The `Coffee` category is active and the corresponding products are displayed when opening or reloading the `menu` page",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When switching categories, the products of the selected category are displayed",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "For screens with a width of 768px or less, when opening/reloading the page or switching categories, only 4 products are displayed. If there are more than 4 products in the displayed category, a `Load More` button is displayed below",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking the `Load More` button below the displayed products, the missing products are added, and the `Load More` button is hidden",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "When changing the screen width, the product display mode (8 products per page or 4 products with a `Load More` button) changes without page reloading",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": "The Modal on the `menu` page: +20"
+    },
+    {
+      "type": "subtask",
+      "text": "The Modal with the description of a specific product opens when clicking on any part of a card of product",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "The part of the page outside the Modal is darkened",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When the Modal is open, the vertical scroll of the page becomes inactive; when closed, it becomes active again",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Clicking on the area around the Modal and `Close` button closes it",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "The Modal is centered on both axes, sizes of modal elements and their layout match the design",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "After the Modal is opened, the 'Size' option 'S' is selected, and no option in the 'Additives' section is selected. The product's final price is the same as in the card",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Only one 'Size' option can be selected. Changing this option also changes the final price of the product based on the choice (+$0.00 for S, +$0.50 for M, +$1.00 for L)",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Multiple 'Additives' options can be selected, and each selected option increases the final price of the product by $0.50",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": "Video on the `home` page: +8"
+    },
+    {
+      "type": "subtask",
+      "text": "In the `Enjoy` block of the `home` page, a video is played in the background instead of an image, without sound and control elements, and without the ability to interact with it",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "After the video is finished, it automatically starts over",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "The layout of the entire design or individual blocks is implemented using images",
+      "max": -90
+    },
+    {
+      "type": "penalty",
+      "text": "The use of frameworks, libraries, and technologies that are prohibited in the technical requirements",
+      "max": -90
+    }
+  ]
+}
