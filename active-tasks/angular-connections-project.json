@@ -275,13 +275,8 @@
     },
     {
       "type": "penalty",
-      "text": "list of groups is loaded automatically every time if user returns back into main page (until browser page is reloaded)",
-      "max": -25
-    },
-    {
-      "type": "penalty",
-      "text": "list of groups is loaded automatically after successful created new group or deleted group",
-      "max": -25
+      "text": "list of groups via `/groups/list` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates group(s)",
+      "max": -30
     },
     {
       "type": "title",
@@ -319,17 +314,12 @@
     },
     {
       "type": "penalty",
-      "text": "list of people is loaded automatically every time if user returns back into main page (until browser page is reloaded)",
-      "max": -25
+      "text": "list of conversations via `/conversations/list` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
+      "max": -20
     },
     {
       "type": "penalty",
-      "text": "list of people is loaded automatically after successful created new conversation or deleted it",
-      "max": -25
-    },
-    {
-      "type": "penalty",
-      "text": "http-request to `/conversations/list` is sent every time clicking on 'Update' button",
+      "text": "list of users via `/users` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
       "max": -20
     },
     {
@@ -408,7 +398,7 @@
     },
     {
       "type": "penalty",
-      "text": "'Delete' button is not present on the page for own group after hard page reloading(refresh)",
+      "text": "'Delete' button is not present on the page for own group after hard page reloading(refreshing)",
       "max": -20
     },
     {
@@ -487,7 +477,7 @@
     },
     {
       "type": "penalty",
-      "text": "'Delete' button is not present on the page hard page reloading(refresh)",
+      "text": "'Delete' button is not present on the page hard page reloading(refreshing)",
       "max": -15
     },
     {
@@ -515,7 +505,7 @@
     },
     {
       "type": "subtask",
-      "text": "chosen state is saved in `localStorage` and used after reloading",
+      "text": "chosen state is saved in `localStorage` and used/applied after reloading. User can refresh the page and see the same theme",
       "max": 20
     },
     {
@@ -532,11 +522,6 @@
       "type": "subtask",
       "text": "light/dark styles are applied to personal conversation page",
       "max": 10
-    },
-    {
-      "type": "penalty",
-      "text": "used services or any functional approach besides css inheritance",
-      "max": -20
     },
     {
       "type": "title",
