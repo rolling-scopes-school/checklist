@@ -41,12 +41,12 @@
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled and `email` field has error message of taken account if user type the same email address that he tried to send before and got an error `PrimaryDuplicationException`",
+      "text": "'Submit' button is disabled (user cannot click it) and `email` field has error message of taken account if user type the same email address that he tried to send before and got an error `PrimaryDuplicationException`",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled after clicking while http-request is in progress",
+      "text": "'Submit' button is disabled (user cannot click it) after clicking while http-request is in progress",
       "max": 10
     },
     {
@@ -90,12 +90,12 @@
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled if form is invalid. Also, it should be disabled after http error with type `NotFoundException` until the user changes `email` or `password` field value",
+      "text": "'Submit' button is disabled (user cannot click it) if form is invalid. Also, it should be disabled after http error with type `NotFoundException` until the user changes `email` or `password` field value",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "'Submit' button is disabled after clicking while http-request is in progress",
+      "text": "'Submit' button is disabled (user cannot click it) after clicking while http-request is in progress",
       "max": 10
     },
     {
@@ -245,7 +245,7 @@
     },
     {
       "type": "subtask",
-      "text": "'Update' button is disabled after clicking during updating and until the timer is active",
+      "text": "'Update' button is disabled (user cannot click it) after clicking during updating and until the timer is active",
       "max": 5
     },
     {
@@ -255,7 +255,7 @@
     },
     {
       "type": "subtask",
-      "text": "submit button in modal window should be disabled until form is valid",
+      "text": "submit button in modal window should be disabled (user cannot click it) until form is valid",
       "max": 5
     },
     {
@@ -304,7 +304,7 @@
     },
     {
       "type": "subtask",
-      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "text": "'Update' button is disabled (user cannot click it) after clicking during updating and until the timer is active",
       "max": 5
     },
     {
@@ -373,7 +373,7 @@
     },
     {
       "type": "subtask",
-      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "text": "'Update' button is disabled (user cannot click it) after clicking during updating and until the timer is active",
       "max": 5
     },
     {
@@ -388,7 +388,7 @@
     },
     {
       "type": "subtask",
-      "text": "form field has 'required' validator. 'Send new message' button is disabled until field has text",
+      "text": "form field has `required` validator. 'Send new message' button is disabled (user cannot click it) until field has text",
       "max": 5
     },
     {
@@ -403,7 +403,7 @@
     },
     {
       "type": "penalty",
-      "text": "while user is on this dialog page, he reloads the page and navigates to the main page. Http-request to `/groups/list` is sent more than once",
+      "text": "while user is on this dialog page, he reloads the page and navigates to the main page. Http-request to `/groups/list` is sent more than once (if user do not click 'Update' button)",
       "max": -25
     },
     {
@@ -457,7 +457,7 @@
     },
     {
       "type": "subtask",
-      "text": "Update button is disabled after clicking during updating and until the timer is active",
+      "text": "'Update' button is disabled (user cannot click it) after clicking during updating and until the timer is active",
       "max": 5
     },
     {
@@ -467,7 +467,7 @@
     },
     {
       "type": "subtask",
-      "text": "form field has 'required' validator. 'Send new message' button is disabled until field has text",
+      "text": "form field has `required` validator. 'Send new message' button is disabled (user cannot click it) until field has text",
       "max": 5
     },
     {
@@ -482,7 +482,7 @@
     },
     {
       "type": "penalty",
-      "text": "while user is on this conversation page, he reloads the page and navigates to the main page. Http-request to `/conversations/list` or `/users` is sent more than once",
+      "text": "while user is on this conversation page, he reloads the page and navigates to the main page. Http-request to `/conversations/list` or `/users` is sent more than once (if user do not click 'Update' button)",
       "max": -25
     },
     {
