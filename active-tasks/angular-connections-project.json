@@ -407,6 +407,11 @@
       "max": -25
     },
     {
+      "type": "penalty",
+      "text": "user can enter the page of existing dialog and see the messages even if he is not authorized",
+      "max": -15
+    },
+    {
       "type": "title",
       "title": "8. Personal conversation"
     },
@@ -484,6 +489,11 @@
       "type": "penalty",
       "text": "while user is on this conversation page, he reloads the page and navigates to the main page. Http-request to `/conversations/list` or `/users` is sent more than once (if user do not click 'Update' button)",
       "max": -25
+    },
+    {
+      "type": "penalty",
+      "text": "user can enter the page of existing dialog and see the messages even if he is not authorized",
+      "max": -15
     },
     {
       "type": "title",
