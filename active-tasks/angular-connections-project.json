@@ -275,7 +275,7 @@
     },
     {
       "type": "penalty",
-      "text": "list of groups via `/groups/list` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates group(s)",
+      "text": "list of groups via `/groups/list` is automatically ('Update' button is not pressed) loaded more than once until user logs out or refreshes the browser's page. For instance, when user navigates through the pages, sends new messages, deletes or creates group(s)",
       "max": -30
     },
     {
@@ -314,12 +314,12 @@
     },
     {
       "type": "penalty",
-      "text": "list of conversations via `/conversations/list` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
+      "text": "list of conversations via `/conversations/list` is automatically ('Update' button is not pressed) loaded more than once until user logs out or refreshes the browser's page. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
       "max": -20
     },
     {
       "type": "penalty",
-      "text": "list of users via `/users` is automatically loaded more than once during 1 browser session (until the user refreshes the page) if user do not click 'Update' button. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
+      "text": "list of users via `/users` is automatically ('Update' button is not pressed) loaded more than once until user logs out or refreshes the browser's page. For instance, when user navigates through the pages, sends new messages, deletes or creates conversation(s)",
       "max": -20
     },
     {
