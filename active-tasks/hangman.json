@@ -90,7 +90,7 @@
     },
     {
       "type": "subtask",
-      "text": "When clicking 'play again' button, the newly selected question-answer pair is identical to the previous/current one",
+      "text": "When clicking 'play again' button, the newly selected question-answer pair is identical to the previous one",
       "max": -20
     },
     {
