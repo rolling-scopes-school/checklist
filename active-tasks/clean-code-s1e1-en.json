@@ -1,0 +1,165 @@
+{
+  "taskName": "Clean Code S1E1",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md",
+  "information": "To check the task you can open the repository locally (git clone) or check it directly on GitHub.",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nПроверяйте лояльно!\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем.\nЕсли сомневаетесь снимать баллы или нет, не снимайте."
+    },
+    {
+      "type": "title",
+      "title": "Check leniently, this task requires a lot of work. All arguable moments should be resolved in the higher score way. Stay human!"
+    },
+    {
+      "type": "title",
+      "title": "If there are changes in margins and paddings because of HTML tags replacement, that insignificantly change the UI, that's not a mistake, no penalties should be applied."
+    },
+    {
+      "type": "title",
+      "title": "⭐ CrossCheck Criteria (45 points)"
+    },
+    {
+      "type": "title",
+      "title": "HTML & CSS. Beginner level: +30"
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 1.1. Indentation: implemented in the whole project. Two spaces are used for one indentation. Tabs are not used. And two indentation types (tabs and spaces) are not mixed together.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project. All HTML-tags, attributes and their values, CSS selectors, CSS properties and their values must be in lowercase. <!DOCTYPE html> is an exception to this rule.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 1.3. Quotes in HTML & CSS files: implemented in the whole project. Only double quotes are used for HTML attributes and CSS properties.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 2.1. HTML. Formatting: implemented in the whole project. Every block, table or list element starts with a new line, regardless of their styles. Each nested element is indented respecting the nesting ladder. Inline elements can (but do not have to) be put onto a new line and indented to improve code readability.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 2.2. Document Type. <!DOCTYPE html> is the first tag in the HTML file which corresponds to a basic HTML5 document.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as`&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 2.4. 'type' attribute: implemented in the whole project. `type` attributes are not used when connecting styles and scripts (they can only be used when connecting not CSS or JS).",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.1. Single style for selectors naming: implemented in the whole project. The naming style is consistent throughout the project. All the selectors (classes / ids) are named according to BEM or using lower case words separated by a hyphen.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.2. Meaningful naming of identifiers and classes: implemented in the whole project. Meaningful classes and identifiers names reflect their purpose (!but NOT APPEARANCE!). Templates can also be used in which case they indicate the purpose of the element as well.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.3. Keep the names of identifiers and classes concise: implemented in the whole project. For identifiers and classes, names that are long enough to indicate their purpose and as short as possible are used.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.4. Tag selectors: implemented in the whole project. Tag selectors are not used (except for intentionally resetting the default styles).",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.5. Indentation in blocks: implemented in the whole project. Any content in a block (blocks are separated by curly braces {}) is always indented.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.6. Space after property name: implemented in the whole project. One space is always used after (not before) a colon in properties.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.7. Semicolon after properties: implemented in the whole project. Semicolon is used after each property.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Basic rule 3.8. Separate selectors and properties: implemented in the whole project. Each selector and property in a group is separated with a line break.",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "HTML & CSS. Advanced level: +15"
+    },
+    {
+      "type": "subtask",
+      "text": "Extended rule 1.1. HTML. Semantics: implemented in the whole project. HTML tags are used the way they were intended to be used. `div` elements are replaced by appropriate semantic tags where possible.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Extended rule 1.2. Media alternatives: implemented in the whole project. Alternative content for multimedia is specified for each element. Each img element has an alt-attribute with a meaningful alternative text which reflects its content. If the picture is used only for decorative purposes, an empty alt attribute (alt=\"\") is used.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Extended rule 2.1. BEM: implemented in the whole project. BEM notation is used to form all class names throughout the project.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "A well-reasoned cheating suspicion: the number of commits, their order, commit messages and their respective changes are identical to another student's work.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "All the changes are reflected in ONE commit.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The commit contains changes based on several NOT overlapping rules.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The format of commit messages contradicts the format specified in the requirements.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The branch name is not the one which is specified in the requirements, or the work is done in main(master) branch.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The original functionality of the app specified in the requirements is not kept intact in full measure.<br>https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md#application-functionality",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The Pull Request is opened NOT to its own repository.",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "The Pull Request does not follow the PR description specified in the requirements.",
+      "max": -45
+    }
+  ]
+}
