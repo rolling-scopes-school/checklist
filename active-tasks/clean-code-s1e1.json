@@ -1,143 +1,164 @@
 {
-  "taskName": "Clean code S1E1",
-  "information": "<strong>Для проверки задания можно открыть репозиторий локально (git clone...) или просмотреть его на платформе GitHub.<br><br>Проверяйте лояльно, это задание требует кропотливой работы. Все спорные моменты округляйте в сторону проверяемого.<br><br>Изменения в отступах, незначительно изменяющие внешний вид приложения, связанные с заменой html-тегов в ходе выполнения и исправленные отступы не считаются ошибкой.</strong>",
+  "taskName": "Clean Code S1E1",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md",
+  "information": "To check the task you can open the repository locally (git clone) or check it directly on GitHub.",
   "criteria": [
     {
       "type": "title",
-      "title": "Максимальный балл за задание - 45"
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nПроверяйте лояльно!\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем.\nЕсли сомневаетесь снимать баллы или нет, не снимайте."
+    },
+    {
+      "type": "title",
+      "title": "Check leniently, this task requires a lot of work. All arguable moments should be resolved in the higher score way. Stay human!"
+    },
+    {
+      "type": "title",
+      "title": "If there are changes in margins and paddings because of HTML tags replacement, that insignificantly change the UI, that's not a mistake, no penalties should be applied."
+    },
+    {
+      "type": "title",
+      "title": "⭐ CrossCheck Criteria (45 points)"
+    },
+    {
+      "type": "title",
+      "title": "HTML & CSS. Beginner level: +30"
     },
     {
       "type": "subtask",
-      "text": "Правило '1.1 Отступы' из html-and-css выполняется во всем проекте: табуляция не используется, все отступы выполнены пробельным символом",
+      "text": "Basic rule 1.1. Indentation: implemented in the whole project. Two spaces are used for one indentation. Tabs are not used. The two indentation types (tabs and spaces) are not mixed together.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '1.2 Нижний регистр написания' из html-and-css выполняется во всем проекте: все HTML теги, атрибуты из значения, селекторы и их значения записаны в нижнем регистре",
+      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project. All HTML-tags, attributes and their values, CSS selectors, CSS properties and their values must be in lowercase. <!DOCTYPE html> is an exception to this rule.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '1.3 Кавычки в HTML/CSS документе' из html-and-css выполняется во всем проекте: в HTML и СSS файлах используются только двойные кавычки",
+      "text": "Basic rule 1.3. Quotes in HTML & CSS files: implemented in the whole project. Only double quotes are used for HTML attributes and CSS properties.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '2.1 Форматирование' из html-and-css выполняется во всем проекте: все блочные, табличные и списочные элементы перенесены на отдельную строку и выделены отступами в соответствии с лестничной иерархией вложенности.",
+      "text": "Basic rule 2.1. HTML. Formatting: implemented in the whole project. Every block, table or list element starts with a new line, regardless of their styles. Each nested element is indented respecting the nesting ladder. Inline elements can (but do not have to) be put onto a new line and indented to improve code readability.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '2.2 Тип документа / Document Type' из html-and-css выполняется во всем проекте: doctype присутствует первым тегом в html документе и соответствует типу html5",
+      "text": "Basic rule 2.2. Document Type. <!DOCTYPE html> is the first tag in the HTML file which corresponds to a basic HTML5 document.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '2.3 Символы-мнемоники' из html-and-css выполняется во всем проекте: символы-мнемоники не используются в html файлах",
+      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as`&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '2.4 Атрибут 'type'' из html-and-css выполняется во всем проекте: CSS-стили и JS-скрипты подключены без использования данного атрибута",
+      "text": "Basic rule 2.4. 'type' attribute: implemented in the whole project. `type` attributes are not used when connecting styles and scripts (they can only be used when connecting not CSS or JS).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.1 Единый стиль именования селекторов (классов / id)' из html-and-css выполняется во всем проекте: все селекторы именованы в едином стиле, при этом или в соответствии с БЭМ, или все слова в нижнем регистре и разделены между собой дефисом",
+      "text": "Basic rule 3.1. Single style for selectors naming: implemented in the whole project. The naming style is consistent throughout the project. All the selectors (classes / ids) are named either according to BEM or using lower case words separated by a hyphen.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.2 Значимые названия идентификаторов и классов' из html-and-css выполняется во всем проекте: все имена классов и идентификаторов имеют или осмысленные имена в соответствии с их функциональным значением (!но НЕ ВНЕШНИМ ВИДОМ!), или шаблонное имя (также соответствующее назначению элемента)",
+      "text": "Basic rule 3.2. Meaningful naming of identifiers and classes: implemented in the whole project. Meaningful classes and identifiers names reflect their purpose (!but NOT APPEARANCE!). Templates can also be used in which case they indicate the purpose of the element as well.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.3 Лаконичность названий идентификаторов и классов' из html-and-css выполняется во всем проекте: все имена id и классов понятны, достаточно длинные для понимания их назначения и при этом лаконичны",
+      "text": "Basic rule 3.3. Keep the names of identifiers and classes concise: implemented in the whole project. For identifiers and classes, names that are long enough to indicate their purpose and as short as possible are used.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.4 Теговые селекторы' из html-and-css выполняется во всем проекте: теговые селекторы не используются (за исключением намеренного сброса дефолтных стилей)",
+      "text": "Basic rule 3.4. Tag selectors: implemented in the whole project. Tag selectors are not used (except for intentionally resetting the default styles).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.5 Отступы в блоках' из html-and-css выполняется во всем проекте: содержимое всех блоков отделены отступами",
+      "text": "Basic rule 3.5. Indentation in blocks: implemented in the whole project. Any content in a block (blocks are separated by curly braces {}) is always indented.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.6 Пробел после названий свойств' из html-and-css выполняется во всем проекте: значения CSS-свойств отделены пробелами после двоеточия",
+      "text": "Basic rule 3.6. Space after property name: implemented in the whole project. One space is always used after (not before) a colon in properties.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.7 Точка с запятой после свойств' из html-and-css выполняется во всем проекте: после каждого CSS-правила стоит точка с запятой",
+      "text": "Basic rule 3.7. Semicolon after properties: implemented in the whole project. Semicolon is used after each property.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Правило '3.8 Разделение селекторов и свойств' из html-and-css выполняется во всем проекте: каждый селектор в групповом перечислении CSS-блока отделен переносом строки",
+      "text": "Basic rule 3.8. Separate selectors and properties: implemented in the whole project. Each selector and property in a group is separated with a line break.",
       "max": 2
     },
     {
+      "type": "title",
+      "title": "HTML & CSS. Advanced level: +15"
+    },
+    {
       "type": "subtask",
-      "text": "Правило '1.1 Семантика' из html-and-css-extended соблюдено: все html-теги используются в соответствии с их назначением. При этом использование div-элементов сведено к минимуму, где возможно они заменены на семантические html5 элементы",
+      "text": "Extended rule 1.1. HTML. Semantics: implemented in the whole project. HTML tags are used the way they are intended to be used. `div` elements are replaced by appropriate semantic tags where possible.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "Правило '1.2 Альтернатива для мультимедиа' из html-and-css-extended соблюдено: каждый мультимедиа элемент (в данном задании img) имеет alt-атрибут с осмысленным содержанием, соответствующим контенту элементы. При этом чисто декоративные картинки имеют alt с пустым значением.",
+      "text": "Extended rule 1.2. Media alternatives: implemented in the whole project. Alternative content for multimedia is specified for each element. Each img element has an alt-attribute with a meaningful alternative text which reflects its content. If the picture is used only for decorative purposes, an empty alt attribute (alt=\"\") is used.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "Правило '2.1 БЭМ' из html-and-css-extended соблюдено: все классы именованы согласно БЭМ нотации",
+      "text": "Extended rule 2.1. BEM: implemented in the whole project. BEM notation is used to form all class names throughout the project.",
       "max": 5
     },
     {
       "type": "title",
-      "title": "Штрафные баллы"
+      "title": "Penalties"
     },
     {
       "type": "penalty",
-      "text": "Обоснованное подозрение на списывание: число коммитов, порядок, текст сообщения и их содержание полностью совпадает с чужой работой",
+      "text": "A well-reasoned cheating suspicion: the number of commits, their order, commit messages, and their respective changes are identical to another student's work.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Все правки сделаны в ОДНОМ коммите",
+      "text": "All the changes are reflected in ONE commit.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Коммит содержит изменения по нескольким правилам, НЕ перекрывающим друг друга",
+      "text": "The commit contains changes based on several NOT overlapping rules.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Формат коммит сообщений составлен вразрез указанным в задании требованиям",
+      "text": "The format of commit messages contradicts the format specified in the requirements.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Использовано неправильное название ветки или все сделано в main(master) ветке",
+      "text": "The branch name is not the one which is specified in the requirements, or the work is done in the main(master) branch.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Исходная функциональность приложения, указанная в ТЗ, не сохранена в полном объеме<br>https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md#функциональность-приложения",
+      "text": "The original functionality of the app specified in the requirements is not kept intact in full measure.<br>https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md#application-functionality",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Pull Request сделан НЕ в свой репозиторий",
+      "text": "The Pull Request is opened NOT to its own repository.",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Pull Request оформлен вразрез указанным в задании правилам",
+      "text": "The Pull Request does not follow the PR description specified in the requirements.",
       "max": -45
     }
   ]

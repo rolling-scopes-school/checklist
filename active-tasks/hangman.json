@@ -1,0 +1,112 @@
+{
+  "taskName": "Hangman",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage1/tasks/hangman/README.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере, в браузере Google Chrome последней версии.\nВсе сомнения трактуются в пользу студента."
+    },
+    {
+      "type": "title",
+      "title": "⭐ CrossCheck Criteria (150 points)"
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive/adaptive UI from 1440px to 360px viewport",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The generation of DOM elements is implemented. `body` in the `index.html` is empty (can contain only `script` tag). This requirement can be checked by pressing Ctrl+U (Windows) or Option(⌥)+Command(⌘)+U (Mac)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "The game starts with the correct default view (empty gallows, underscores for the secret word, etc.) and a random question",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The user can play the game by using the virtual keyboard",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "The user can play the game by using the physical keyboard",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "When the letter is correct, it appears instead of the corresponding underscore. If the letter repeats in the word, all the corresponding underscores must be replaced by it",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "When the letter is incorrect: the incorrect guesses counter is updated",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When the letter is incorrect: a body part is added to the gallows",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The clicked/pressed letter is disabled",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The body parts appear on the gallows in the logical order (head, body, left arm, right arm, left leg, right leg)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When the user runs out of 6 attempts or wins the game, the modal window appears",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The modal window includes the message about the game's outcome (winning or losing), the secret word and the 'play again' button",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "When the user clicks the 'play again' button, the game starts over by showing a new question and resetting the gallows, the incorrect guesses counter and the underscores for the secret word",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "subtask",
+      "text": "The question-answer pair remains the same upon refreshing the page (please, refresh the page multiple times to verify this requirement)",
+      "max": -20
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking 'play again' button, the newly selected question-answer pair is identical to the previous one",
+      "max": -20
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking 'play again' button, the elements on the page are reset by reloading the page instead of updating them dynamically",
+      "max": -50
+    },
+    {
+      "type": "subtask",
+      "text": "`body` in the `index.html` is not empty (contains something else besides the allowed `script` tag)",
+      "max": -150
+    },
+    {
+      "type": "subtask",
+      "text": "Anything mentioned as not allowed in the 'Technical requirements' section is used",
+      "max": -150
+    }
+  ]
+}
