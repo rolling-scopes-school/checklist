@@ -50,7 +50,7 @@
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as`&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
+      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as `&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
       "max": 2
     },
     {
