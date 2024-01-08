@@ -30,7 +30,7 @@
     },
     {
       "type": "subtask",
-      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project. All HTML-tags, attributes and their values, CSS selectors, CSS properties and their values must be in lowercase. <!DOCTYPE html> is an exception to this rule.",
+      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project. All HTML-tags, attributes and their values, CSS selectors, CSS properties and their values must be in lowercase. `<!DOCTYPE html>` is an exception to this rule.",
       "max": 2
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.2. Document Type. <!DOCTYPE html> is the first tag in the HTML file which corresponds to a basic HTML5 document.",
+      "text": "Basic rule 2.2. Document Type. `<!DOCTYPE html>` is the first tag in the HTML file which corresponds to a basic HTML5 document.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as`&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
+      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as `&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
       "max": 2
     },
     {
