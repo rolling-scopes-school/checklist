@@ -1,0 +1,200 @@
+{
+  "taskName": "HTML-builder",
+  "github": "https://github.com/rolling-scopes-school/HTML-builder",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "01 read file"
+    },
+    {
+      "type": "subtask",
+      "text": "Script outputs the contents of the file \"text.txt\" to the console.",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Make sure that a \"ReadStream\" is used to read the file.\nIf a stream is not used for reading the file, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "In the root directory of the repository, execute the command \"node 01-read-file\" and make sure that the contents of the \"text.txt\" file are output to the console (the presence/absence of empty lines at the end of the file is not checked).\nIn case of errors or empty output when there is text in \"text.txt\", the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Change the contents of the \"text.txt\" file and run the command \"node 01-read-file\" again. The result should correspond to the current state of \"text.txt\", otherwise, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "02 write file"
+    },
+    {
+      "type": "subtask",
+      "text": "Script outputs a greeting to the console, waits for text input, and writes the entered text to a file.\nAfter entering text, the entered text should be written to the previously created file in the \"02-write-file\" directory. The process does not terminate and awaits new input.\nAfter the next input, the initially created text file is appended with new text, and the process continues to wait for input.",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Make sure that there is only one file named \"index.js\" in the \"02-write-file\" folder. If not, remove all unnecessary files from the task folder.\nIn the root directory of the repository, execute the command \"node 02-write-file\" and ensure that a prompt for entering text appears in the console, and a text file has been created in the \"02-write-file\" directory.\nIn case of errors or instant completion of the task execution, it is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "After entering the text, make sure that the input is correctly recorded in the created text file.\nIf this does not happen or the process ends without expecting further input, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Use the \"ctrl/cmd + c\" key combination. A farewell phrase should be displayed in the console with subsequent process termination.\nIf the process does not end or a farewell phrase is not displayed apply the penalty.",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Run the script and enter \"exit\". A farewell phrase should be displayed in the console with subsequent process termination.\nIf the process does not end or a farewell phrase is not displayed apply the penalty.",
+      "max": -10
+    },
+    {
+      "type": "title",
+      "title": "03 files in folder"
+    },
+    {
+      "type": "subtask",
+      "text": "Script outputs information about files contained in the \"secret-folder\" to the console.\nThe data should be presented in the format `<file name>`-`<file extension>`-`<file size>`.\nExample: example - txt - 128.369kb.❗️Note: no rounding for file size is necessary; conversion to kB is optional!❗️If the conversion is made, division by both 1000 and 1024 is correct\nInformation should only be displayed for files located in \"03-files-in-folder/secret-folder\". The presence of information about directories is considered an error.",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "In the root directory of the repository, execute the command \"node 03-files-in-folder\". Information about files inside the \"secret-folder\" should be displayed in the console (❗️information about files in subfolders should not be displayed).\nIf you encounter an error during execution or receive incorrect information about files, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Add one or more files of different sizes to the \"secret-folder\".\nAdd two folders to the \"secret-folder\". In the name of one of the folders, specify a fake extension (e.g., my-folder.js).\nRun the script with the command  \"node 03-files-in-folder\" and check the correctness of the displayed data.\nIf the information about added files is incorrect or if data about directories is displayed, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "04 copy directory"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement the function, which copies the contents of the files folder to the \"files-copy\" folder. When files are added/removed/modified in the \"files\" folder and the \"node 04-copy-directory\" is rerun, the contents of the \"files-copy\" folder are updated.",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the \"index.js\" file for the presence of the experimental function \"fsPromises.cp()\".\nIf this function is used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Open the \"files\" folder and make sure it is not empty. Otherwise, create several files at your discretion.\nIn the root directory of the repository, execute the command \"node 04-copy-directory\".\nAfter the script execution is complete, check the \"04-copy-directory\" folder for the presence of the created \"files-copy\" folder with an exact copy of the content of the original \"files\" folder.\nIf this folder is missing or its content does not match the content of the \"files\" folder, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Add several new files to the \"files\" folder and delete one of the previously existing ones. Run the command \"node 04-copy-directory\".\nEnsure that the content of the \"files-copy\" folder is updated and corresponds to the content of the \"files\" folder.\nIf an error occurred during execution or the state of the \"files-copy\" folder was not updated, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "05 merge styles"
+    },
+    {
+      "type": "subtask",
+      "text": "Script compiles the contents of the \"styles\" folder into a single file. The output file should be named \"bundle.css\" and located inside the \"project-dist folder\".\nWhen styles files are added/removed/modified in the \"styles\" folder and the script is rerun, the \"bundle.css\" file is overwritten and contains the up-to-date styles.\nAny files with extensions other than \"css\" or directories are ignored.\nStyles in the \"bundle.css\" file created during the compilation process should not be corrupted.",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Ensure that only the \"index.html\" file is present in the \"project-dist\" folder. If there are any extraneous files, delete them.\nIn the root directory of the repository, execute the command  \"node 05-merge-styles\". For a better understanding of the script's operation, you can open the \"index.html\" file using the \"Live Server\" extension.\n If there are errors during the script's execution, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Check the content of the \"bundle.css\" file. The content of the file and the styling format in it should match the source files, and styles should not be merged.❗️The sequence of styles is not checked!\nIf \"bundle.css\" contains incorrect styles, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Change the content of the \"styles\" folder by removing one or more style files, or replace the \"styles\" folder and \"project-dist/index.html\" with the content of the \"test-files\" folder (the previously generated \"bundle.css\" file should remain in \"project-dist\").\nIn the \"styles\" folder, add a file with an extension other than \"css\" and content like \"ext-test-string\" (or any other string of your choice).\nRun the script and ensure that the \"bundle.css\" file is overwritten and contains up-to-date and correct styles.\nIf this does not happen, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Search for the string \"ext-test-string\" (or the string written in a file with an extension other than \"css\") in the \"bundle.css\" file using the \"ctrl/cmd + f\" key combination.\nIf the string is present in the file, the task is considered not completed.",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "06 build page"
+    },
+    {
+      "type": "subtask",
+      "text": "Implement the script building an HTML Page from components and styles.\nWhen adding a component to the \"components\" folder and the corresponding tag to the original \"template.html\" file, rerunning the script should update the \"index.html\" file in the \"project-dist\" folder. The \"style.css\" file and \"assets\" folder should also maintain an up-to-date state.\nWhen writing two or more template tags consecutively in the \"template.html\" file, separated only by spaces without line breaks, there should be no code execution errors. For example, {{about}} {{articles}} should be interpreted as two separate components.\nThe original \"template.html\" file should not be modified during script execution.\nWriting content to the template from any files except those with the \".html\" extension is an error.",
+      "max": 50
+    },
+    {
+      "type": "penalty",
+      "text": "Check the code for the presence of synchronous methods of the \"fs module\" (you can use the \"ctrl/cmd + f\" key combination and enter \"Sync\" in the search field that appears) and \"setTimeout()\".\nIf synchronous methods or a timer are used, the task is considered not completed.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Check the \"index.js\" file for the presence of the experimental function \"fsPromises.cp()\".\nIf this function is used, the task is considered not completed.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "In the root directory of the repository, execute the command  \"node 06-build-page\".\nAfter the script terminates its execution, a \"project-dist\" folder should be created in the \"06-build-page\" directory, containing the \"index.html\" and \"style.css\" files, as well as the \"assets\" folder.\nIf this does not happen, the task is considered not completed.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Ensure that the \"index.html\" file contains markup from the \"template.html\" file with the replacement of template tags with the markup of similarly named component files from the \"components\" folder. The markup of component files should be strictly in the places corresponding to the template tags. There should be no template tags themselves in the \"index.html\" file.\nIf this is not the case, the task is considered not completed.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Check the \"style.css\" file for the correct assembly of styles from the \"styles\" folder. Similar to the task \"05-merge-styles\", styles should maintain formatting and not interfere with each other.\nIf the styles are assembled incorrectly, the task is considered not completed.\n❗️Note that when using \"liveServer\", you may notice minor styling issues in the footer.❗️This case is not considered an error.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Open the \"assets\" folder. Ensure that its content and the content of subfolders inside it exactly match the content of the \"assets\" folder in \"06-build-page/assets\".\nIf this is not the case, the task is considered not completed.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Add the test files from the \"test-files\" folder to the project:\n\"06-build-page/test-files/components/about.html\" -> \"06-build-page/components/about.html\"\n\"06-build-page/test-files/images/squirrel-2.jpg -> 06-build-page/assets/img/squirrel-2.jpg\"\n\"06-build-page/test-files/styles/about.css -> 06-build-page/styles/about.css\"\nDon't forget to specify the new template tag in the \"template.html\" file. Then, check the criteria again.",
+      "max": 0
+    }
+  ]
+}
