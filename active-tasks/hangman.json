@@ -84,27 +84,27 @@
       "title": "Penalties"
     },
     {
-      "type": "subtask",
+      "type": "penalty",
       "text": "The question-answer pair remains the same upon refreshing the page (please, refresh the page multiple times to verify this requirement)",
       "max": -20
     },
     {
-      "type": "subtask",
+      "type": "penalty",
       "text": "When clicking 'play again' button, the newly selected question-answer pair is identical to the previous one",
       "max": -20
     },
     {
-      "type": "subtask",
+      "type": "penalty",
       "text": "When clicking 'play again' button, the elements on the page are reset by reloading the page instead of updating them dynamically",
       "max": -50
     },
     {
-      "type": "subtask",
+      "type": "penalty",
       "text": "`body` in the `index.html` is not empty (contains something else besides the allowed `script` tag)",
       "max": -150
     },
     {
-      "type": "subtask",
+      "type": "penalty",
       "text": "Anything mentioned as not allowed in the 'Technical requirements' section is used",
       "max": -150
     }
