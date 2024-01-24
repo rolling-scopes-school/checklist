@@ -1,0 +1,125 @@
+{
+  "taskName": "RSS Nonograms",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/tasks/nonograms",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие. Проверяются только требования, указанные в критериях. Если какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере в браузере Google Chrome последней версии. Все сомнения трактуются в пользу студента. Если сомневаетесь снимать баллы или нет, не снимайте."
+    },
+    {
+      "type": "title",
+      "title": "Basic scope +80 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Layout, design, responsive UI",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "at the beginning state of the game, the frame has size 5x5. The sequence of numbers is logically arranged and help the player solve the nonogram",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "cells and clues are divided by dividers as described in Basic block",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "when user clicks on cells using mouse left-click - it should be mark as dark. When user click on dark cell - it should be mark as empty (white) cell",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "the game should end when the player reveals all black cells correctly and related message is displayed at the end of the game",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Advanced scope +90 points"
+    },
+    {
+      "type": "subtask",
+      "text": "the game should have at least 5 templates for easy level (5x5) and the player is able to choose what picture he/she wants to solve",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "a player is able to fill in a cell in the grid changing the color of the grid to crossed-cell(X) using right mouse-click. Context menu doesn't appear",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "the game can be restarted without reloading the page",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": " game duration is displayed, stop-watch will start after first click on field (not on clues) and related message is displayed at the end of the game",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "sound accompaniment (on/off) for every events (see Advanced block)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "implemented saving the state of the latest game and \"Continue last game\" button",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Hacker scope +80 points"
+    },
+    {
+      "type": "subtask",
+      "text": "option to choose different themes for the game board (dark/light themes)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "ability to change the size (5x5, 10x10, 15x15) is implemented and there are least 5 templates for each level",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "implemented saving the latest 5 win results with sorting",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "\"random game\" button is implemented. When player clicks on button - the random template appears (both template and level must be chosen randomly by algorithm)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "\"Solution\" button is implemented. When player clicks on button - the field is filled in cells with right solution. Such games is not recorded into winning table",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "using JQuery - 0 points for the task",
+      "max": -250
+    },
+    {
+      "type": "penalty",
+      "text": "using Angular / React / Vue / Typescript - 0 points for the task",
+      "max": -250
+    },
+    {
+      "type": "penalty",
+      "text": "body in the index.html is not empty - 0 points for the task",
+      "max": -250
+    }
+  ]
+}
