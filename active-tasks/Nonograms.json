@@ -1,0 +1,113 @@
+{
+  "taskName": "Nonograms",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/nonograms/README.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Basic scope +80 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Layout, design, responsive UI (500px <= width)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "At the beginning state of the game, the frame has size 5x5. The sequence of numbers is logically arranged and help the player solve the nonogram",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Cells and clues are divided by dividers as described (for game field: every 5 cells in a rows and columns should be divided by divider (bold line). For clues: every 5 cells in a rows should be divided by divider (for left clues); every 5 cells in a columns should be divided by divider (for top clues). Clues should be divided from game field by bold line.)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When user clicks on cells using mouse left-click - it should be mark as dark. When user click on dark cell - it should be mark as empty cell",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "The game should end when the player reveals all dark cells correctly and related message is displayed at the end of the game ('Great! You have solved the nonogram!')",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Advanced scope +90 points"
+    },
+    {
+      "type": "subtask",
+      "text": "The game should have at least 5 templates for easy level (5x5) and the player is able to choose what picture he/she wants to solve. User should also easy understand what is the level of image.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "a player is able to fill in a cell in the grid changing the color of the grid to crossed-cell(X) using right mouse-click. Context menu doesn't appear. Filling empty cells with X is not obligatory to win the game",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "The game can be restarted without reloading the page(for example, by clicking on button Reset game). After clicking the button the level of game and template (picture) should not be changed - it means that only filled cells will be reset.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Game duration is displayed in format XX:XX, stop-watch will start after first click on field (not on clues) and related message is displayed at the end of the game",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Sound accompaniment (on/off) for all events (mark a cell as dark, flagging a cell as X, flagging a cell as empty and win game)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Implemented saving the state of the latest game, 'Continue last game' button and the player can continue playing from where he left off",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Hacker scope +80 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Option to choose different themes for the game board (dark/light themes)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Ability to change the size (5x5, 10x10, 15x15) is implemented and there are least 5 templates for each level",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Implemented saving the latest 5 win results table (3 parameters on each line) with sorting by time",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "'Random game' button is implemented. When player clicks on button - the random template appears (both template and level must be chosen randomly by algorithm)",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "'Solution' button is implemented. When player clicks on button - the field is filled in cells with right solution. Such games is not recorded into winning table and doesn't mean winning",
+      "max": 15
+    },
+    {
+      "type": "penalty",
+      "text": "JQuery usage",
+      "max": -250
+    },
+    {
+      "type": "penalty",
+      "text": "Angular / React / Vue / Typescript usage",
+      "max": -250
+    },
+    {
+      "type": "penalty",
+      "text": "<body> in the index.html is not empty",
+      "max": -250
+    }
+  ]
+}
