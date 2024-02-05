@@ -1,0 +1,185 @@
+{
+  "taskName": "File Manager",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },
+    {
+      "type": "title",
+      "title": "General: +16"
+    },
+    {
+      "type": "subtask",
+      "text": "Application accepts username and prints proper message",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Application exits if user pressed `ctrl+c` or sent `.exit` command and proper message is printed",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Operations fail: +30"
+    },
+    {
+      "type": "subtask",
+      "text": "Attempts to perform an operation on a non-existent file or work on a non-existent path result in the operation fail",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Operation fail doesn't crash application",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Navigation & working directory operations: +40"
+    },
+    {
+      "type": "subtask",
+      "text": "Go upper from current directory",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Go to dedicated folder from current directory",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "List all files and folders in current directory",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Basic operations with files: +60"
+    },
+    {
+      "type": "subtask",
+      "text": "Read file and print it's content in console",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Create empty file",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Rename file",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Copy file",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Move file",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Delete file",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Operating system info: +34"
+    },
+    {
+      "type": "subtask",
+      "text": "Get EOL (default system End-Of-Line)",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Get home directory",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Get current system user name",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Get CPU architecture for which Node.js binary has compiled",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Hash calculation: +20"
+    },
+    {
+      "type": "subtask",
+      "text": "Calculate hash for file",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Compress and decompress operations: +40"
+    },
+    {
+      "type": "subtask",
+      "text": "Compress file (using Brotli algorithm)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Decompress file (using Brotli algorithm)",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "All operations marked as to be implemented using certain streams should be performed using Streams API",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "No synchronous Node.js API with asynchronous analogues is used (e.g. not used `readFileSync` instead of `readFile`)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Codebase is written in ESM modules instead of CommonJS",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Codebase is separated (at least 7 modules)",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Any external tools/libraries are used",
+      "max": -314
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.)",
+      "max": -99
+    }
+  ]
+}
