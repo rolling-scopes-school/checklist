@@ -1,0 +1,126 @@
+{
+  "taskName": "CRUD API",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/crud-api/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "The repository with the application contains a `Readme.md` file containing detailed instructions for installing, running and using the application",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "GET `api/users` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "GET `api/users/{userId}` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "POST `api/users` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "PUT `api/users/{userId}` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "DELETE `api/users/{userId}` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Users are stored in the form described in the technical requirements",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Value of port on which application is running is stored in `.env` file",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "Task implemented on Typescript",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Processing of requests to non-existing endpoints implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Errors on the server side that occur during the processing of a request should be handled and processed properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Development mode: npm script `start:dev` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Production mode: npm script `start:prod` implemented properly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Hacker Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "There are tests for API (not less than 3 scenarios)",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "There is horizontal scaling for application with a load balancer",
+      "max": 50
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Any external tools except `nodemon`, `dotenv`, `cross-env`, `typescript`, `ts-node`, `ts-node-dev`, `eslint` and its plugins, `webpack` and its plugins, `prettier` and its plugins, `uuid`, `@types/*` as well as libraries used for testing",
+      "max": -211
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.)",
+      "max": -67
+    },
+    {
+      "type": "penalty",
+      "text": "Missing PR or its description is incorrect",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to `Readme.md` or similar files (`tsconfig.json`, `.gitignore`, `.prettierrc.json`, etc.)",
+      "max": -20
+    }
+  ]
+}
