@@ -1,0 +1,85 @@
+{
+  "taskName": "TypeScript Essentials",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage2/tasks/TypeScriptEssentials/README.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "CrossCheck Criteria (50 points) ⭐"
+    },
+    {
+      "type": "title",
+      "title": "Module Completion and Badge Collection (40 points - Total) 🏅📚"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Get Started with TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Declare Variable Types in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Implement Interfaces in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Develop Typed Functions by Using TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Declare and Instantiate Classes in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Define Generics in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Access External Libraries From TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 The module 'Organize Code Using TypeScript Namespaces' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Markdown File Compilation (5 points) 📄✨"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 A Markdown file listing all the earned badges is created, each badge is linked to its corresponding module for easy reference.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Reflections Evaluation Criteria (5 points) 🤔✍️"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 A personal reflection for each completed module is provided, what is learned and how it contributes to the student's development skills is discussed. This reflection is thoughtful, demonstrating a clear understanding of the module's content and its practical application in real-world scenarios.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "title",
+      "title": "Modification After Deadline (100% Deduction) ⏰❌"
+    },
+    {
+      "type": "penalty",
+      "text": "🎯 If any changes are made to the file after the submission deadline, a full penalty of 100% is applied. The last modified date of the deployed document can be verified using the `document.lastModified` command in the browser console.",
+      "max": -50
+    }
+  ]
+}
