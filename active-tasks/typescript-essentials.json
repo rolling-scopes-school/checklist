@@ -12,42 +12,42 @@
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Get Started with TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Complete the module 'Getting Started with TypeScript' and earn the corresponding badge. Ensure the badge is linked properly in the Markdown file.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Declare Variable Types in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Successfully complete the module on declaring variable types in TypeScript and add the earned badge to your Markdown compilation.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Implement Interfaces in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Implement interfaces in TypeScript as instructed in the module and integrate the corresponding badge in your Markdown documentation.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Develop Typed Functions by Using TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Develop typed functions in TypeScript, complete the module, and showcase the badge in your Markdown file.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Declare and Instantiate Classes in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Learn about declaring and instantiating classes in TypeScript, earn the badge, and display it in your Markdown compilation.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Define Generics in TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Complete the module on generics in TypeScript and include the earned badge in your Markdown file.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Access External Libraries From TypeScript' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Finish the module on working with external libraries in TypeScript and add the badge to your Markdown documentation.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "🎯 The module 'Organize Code Using TypeScript Namespaces' is completed and the corresponding badge is earned and added to the Markdown compilation.",
+      "text": "🎯 Organize code effectively using namespaces as taught in the module and showcase the badge in your Markdown file.",
       "max": 5
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "type": "subtask",
-      "text": "🎯 A Markdown file listing all the earned badges is created, each badge is linked to its corresponding module for easy reference.",
+      "text": "🎯 Create a Markdown file listing all the earned badges, each linked to its corresponding module for easy reference.",
       "max": 5
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "type": "subtask",
-      "text": "🎯 A personal reflection for each completed module is provided, what is learned and how it contributes to the student's development skills is discussed. This reflection is thoughtful, demonstrating a clear understanding of the module's content and its practical application in real-world scenarios.",
+      "text": "🎯 Provide a personal reflection for each completed module, discussing what you learned and how it contributes to your development skills. This reflection should be thoughtful, demonstrating a clear understanding of the module's content and its practical application in real-world scenarios.",
       "max": 5
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "type": "penalty",
-      "text": "🎯 If any changes are made to the file after the submission deadline, a full penalty of 100% is applied. The last modified date of the deployed document can be verified using the `document.lastModified` command in the browser console.",
+      "text": "🎯 If any changes are made to the file after the submission deadline, a full penalty of 100% will be applied. This ensures the integrity of the learning process and adherence to deadlines. It is crucial to manage time effectively and complete all tasks within the given timeframe. The last modified date of the deployed document can be verified using the `document.lastModified` command in the browser console.",
       "max": -50
     }
   ]
