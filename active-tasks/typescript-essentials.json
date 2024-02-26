@@ -1,0 +1,85 @@
+{
+  "taskName": "TypeScript Essentials",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage2/tasks/TypeScriptEssentials/README.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "CrossCheck Criteria (50 points) ⭐"
+    },
+    {
+      "type": "title",
+      "title": "Module Completion and Badge Collection (40 points - Total) 🏅📚"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Complete the module 'Getting Started with TypeScript' and earn the corresponding badge. Ensure the badge is linked properly in the Markdown file.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Successfully complete the module on declaring variable types in TypeScript and add the earned badge to your Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Implement interfaces in TypeScript as instructed in the module and integrate the corresponding badge in your Markdown documentation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Develop typed functions in TypeScript, complete the module, and showcase the badge in your Markdown file.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Learn about declaring and instantiating classes in TypeScript, earn the badge, and display it in your Markdown compilation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Complete the module on generics in TypeScript and include the earned badge in your Markdown file.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Finish the module on working with external libraries in TypeScript and add the badge to your Markdown documentation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Organize code effectively using namespaces as taught in the module and showcase the badge in your Markdown file.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Markdown File Compilation (5 points) 📄✨"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Create a Markdown file listing all the earned badges, each linked to its corresponding module for easy reference.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Reflections Evaluation Criteria (5 points) 🤔✍️"
+    },
+    {
+      "type": "subtask",
+      "text": "🎯 Provide a personal reflection for each completed module, discussing what you learned and how it contributes to your development skills. This reflection should be thoughtful, demonstrating a clear understanding of the module's content and its practical application in real-world scenarios.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "title",
+      "title": "Modification After Deadline (100% Deduction) ⏰❌"
+    },
+    {
+      "type": "penalty",
+      "text": "🎯 If any changes are made to the file after the submission deadline, a full penalty of 100% will be applied. This ensures the integrity of the learning process and adherence to deadlines. It is crucial to manage time effectively and complete all tasks within the given timeframe. The last modified date of the deployed document can be verified using the `document.lastModified` command in the browser console.",
+      "max": -50
+    }
+  ]
+}
