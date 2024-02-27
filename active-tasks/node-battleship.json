@@ -1,0 +1,162 @@
+{
+  "taskName": "Battleship",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/battleship/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },
+    {
+      "type": "title",
+      "title": "Websocket"
+    },
+    {
+      "type": "subtask",
+      "text": "Implemented workable websocket server",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Handle websocket clients connection/disconnection properly",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Websocket server message handler implemented properly",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Websocket server message sender implemented properly",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "User"
+    },
+    {
+      "type": "subtask",
+      "text": "Create user with password in temprorary database",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "User validation",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Room"
+    },
+    {
+      "type": "subtask",
+      "text": "Create game room",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Add user to game room",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Start game",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Finish game",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Update room's game state",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Update player's turn",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Update players winner table",
+      "max": 8
+    },
+    {
+      "type": "title",
+      "title": "Ships"
+    },
+    {
+      "type": "subtask",
+      "text": "Locate ship to the game board",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Game"
+    },
+    {
+      "type": "subtask",
+      "text": "Attack",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Random attack",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "Task implemented on Typescript",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Codebase is separated (at least 4 modules)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Make bot for single play (optionally)",
+      "max": 30
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Any external tools except `ws`, `cross-env`, `dotenv`, `tsx`, `typescript`, `ts-node`, `ts-node-dev`, `nodemon`, `eslint` and its plugins, `webpack` and its plugins, `prettier`, `@types/*` and testing tools (for example, `Jest`, `Mocha`, `AVA`, `Jasmine`, `Cypress`, `Storybook`, `Puppeteer`) are used",
+      "max": -179
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.)",
+      "max": -56
+    },
+    {
+      "type": "penalty",
+      "text": "Missing PR or its description is incorrect",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to `Readme.md` or similar files (`tsconfig.json`, `.gitignore`, `.prettierrc.json`, etc.)",
+      "max": -10
+    }
+  ]
+}
