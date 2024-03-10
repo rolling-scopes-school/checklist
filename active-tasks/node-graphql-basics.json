@@ -1,0 +1,69 @@
+{
+  "taskName": "GraphQL Basics",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/graphql-service/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "If the test was partially completed, then it is considered not completed. If the one test was not completed, then the subsequent ones are considered not completed."
+    },
+    {
+      "type": "subtask",
+      "text": "1.1 npm run test-queries",
+      "max": 144
+    },
+    {
+      "type": "subtask",
+      "text": "1.2 npm run test-mutations",
+      "max": 90
+    },
+    {
+      "type": "subtask",
+      "text": "2.1 npm run test-rule",
+      "max": 18
+    },
+    {
+      "type": "subtask",
+      "text": "3.1 npm run test-loader",
+      "max": 80
+    },
+    {
+      "type": "subtask",
+      "text": "3.2 npm run test-loader-prime",
+      "max": 28
+    },
+    {
+      "type": "penalty",
+      "text": "Fails: npm run test-integrity",
+      "max": -360
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.)",
+      "max": -108
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "No Pull Request",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request description is incorrect",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to Readme.md or similar files (`tsconfig.json`, `.gitignore`, `.prettierrc.json`, etc.)",
+      "max": -20
+    }
+  ]
+}
