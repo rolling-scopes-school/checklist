@@ -1,0 +1,98 @@
+{
+  "taskName": "Home Library Service: Part 1",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/rest-service/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "The repository with the application contains a `Readme.md` file containing detailed instructions for installing, running and using the application",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The application code that worked with `Users` instance divided into modules according to to its purpose and Nest.js architecture conventions (work with request and response in controller, business logic in service, etc.)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The application code that worked with `Tracks` instance divided into modules according to to its purpose and Nest.js architecture conventions (work with request and response in controller, business logic in service, etc.)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The application code that worked with `Albums` instance divided into modules according to to its purpose and Nest.js architecture conventions (work with request and response in controller, business logic in service, etc.)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The application code that worked with `Artists` instance divided into modules according to to its purpose and Nest.js architecture conventions (work with request and response in controller, business logic in service, etc.)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The application code that worked with `Favorites` instance divided into modules according to to its purpose and Nest.js architecture conventions (work with request and response in controller, business logic in service, etc.)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "+10 for each successfully passed test",
+      "max": 670
+    },
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },
+    {
+      "type": "subtask",
+      "text": "PORT value is stored into `.env` file",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "OpenAPI spec in `doc` folder corresponds with assignment",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "Changes in tests",
+      "max": -670
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only Readme.md, .gitignore, etc.)",
+      "max": -228
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "No Pull Request",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request description is incorrect",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Every lint error after `npm run lint` using local config (errors, not warnings)",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to Readme.md or similar files (`tsconfig.json`, `.gitignore`, `.prettierrc.json`, etc.)",
+      "max": -20
+    }
+  ]
+}
