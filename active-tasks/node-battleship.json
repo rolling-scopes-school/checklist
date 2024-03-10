@@ -130,10 +130,6 @@
       "max": 30
     },
     {
-      "type": "title",
-      "title": "Penalties"
-    },
-    {
       "type": "penalty",
       "text": "Any external tools except `ws`, `cross-env`, `dotenv`, `tsx`, `typescript`, `ts-node`, `ts-node-dev`, `nodemon`, `eslint` and its plugins, `webpack` and its plugins, `prettier`, `@types/*` and testing tools (for example, `Jest`, `Mocha`, `AVA`, `Jasmine`, `Cypress`, `Storybook`, `Puppeteer`) are used",
       "max": -179

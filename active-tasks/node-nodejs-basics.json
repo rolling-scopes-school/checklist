@@ -139,10 +139,6 @@
       "max": 10
     },
     {
-      "type": "title",
-      "title": "Penalties"
-    },
-    {
       "type": "penalty",
       "text": "Any external tools/libraries are used",
       "max": -196
