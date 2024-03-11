@@ -94,10 +94,6 @@
       "max": 50
     },
     {
-      "type": "title",
-      "title": "Penalties"
-    },
-    {
       "type": "penalty",
       "text": "Any external tools except `nodemon`, `dotenv`, `cross-env`, `typescript`, `ts-node`, `ts-node-dev`, `eslint` and its plugins, `webpack` and its plugins, `prettier` and its plugins, `uuid`, `@types/*` as well as libraries used for testing",
       "max": -211
