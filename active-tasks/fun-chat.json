@@ -1,0 +1,271 @@
+{
+  "taskName": "Fun Chat",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/stage2/tasks/fun-chat",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие!\nПроверяются только требования, указанные в критериях.\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере, в браузере Google Chrome последней версии.\nВсе сомнения трактуются в пользу студента."
+    },
+    {
+      "type": "title",
+      "title": "⭐ CrossCheck Criteria (+250 points)"
+    },
+    {
+      "type": "title",
+      "title": "📍 User Authentication Page (+30)"
+    },
+    {
+      "type": "subtask",
+      "text": "The authentication form validates the entered data based on at least two different criteria. Such as, for example, case sensitivity and the use of special characters. The selection of validation criteria and their display options is at the student's discretion and must be evaluated solely based on the quantity and functionality.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The user is unable to submit an authentication request with data that has not passed validation.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "In case of an authentication error (based on the server response), a message indicating the corresponding error sent by the server must be displayed.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "User authentication is possible both by clicking the button with the mouse or by pressing the 'Enter' key without the need to focus on the button.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Access is granted only to not authenticated users.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 Main Page (+10)"
+    },
+    {
+      "type": "subtask",
+      "text": "Access is granted only to authenticated users.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "📍 Header (on the main page) (+10)"
+    },
+    {
+      "type": "subtask",
+      "text": "Displays the current authenticated user's name.",
+      "max": 3
+    },
+    {
+      "type": "subtask",
+      "text": "Displays the app's name.",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Includes a logout button which when pressed terminates the current session and opens the authentication form (window/page).",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 Footer (on the main page) (+5)"
+    },
+    {
+      "type": "subtask",
+      "text": "Includes the school's logo and name, the author's name, a link to the author's GitHub, and the year of the app creation.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 User List (on the main page) (+30)"
+    },
+    {
+      "type": "subtask",
+      "text": "Displays all registered users and an indicator of each user's online status.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The currently authenticated user is not in the list.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Implements user search by name. The search will be case sensitive or case-insensitive at the student's discretion.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Displays information about the number of unread messages from each user.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "📍 User Dialogue (on the main page) (+75)"
+    },
+    {
+      "type": "subtask",
+      "text": "Provides information about the user with whom the dialogue is open, as well as indicating whether that user is online.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Provides a complete message history with the selected user, including messages from both the current user and the user with whom the dialogue is currently open.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Arranges messages chronologically based on the time of sending. The latest message is displayed near the message input and send component.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "In the absence of message history, a message in the message history field indicates that this is the beginning of the dialogue.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When sending a message to another user, the message history scrolls to the sent message (making the just-sent message visible to the user).",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When receiving a message from another user in an open dialogue, the message history scrolls to the received message (making the just-received message visible to the user).",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When opening a dialogue with unread messages, new messages are separated from the read messages by a dividing line, and the user can see the dividing line and at least one unread message.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When new unread messages appear (before meeting the conditions to remove the dividing line), the line must always stay within the dialogue area and not hide in the scroll area.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The dividing line between read and unread messages can be removed by each of the following actions: when scrolling the message history area, after clicking the message send button, or clicking inside the message history area.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "If no recipient is selected, the message send button and message input field must be inactive (or hidden), and there must be a message in the message history field indicating the need to select a recipient.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Sending a message to a user is possible both by clicking the send button with the mouse or by pressing the 'Enter' key without the need to focus on the send button.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The user can delete their own previously sent messages.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The user can edit the text of their own previously sent messages.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "📍 Message Content (on the main page) (+25)"
+    },
+    {
+      "type": "subtask",
+      "text": "Messages include the time of sending, sender's username, message delivery status, message text, and indication of whether the message has been edited.",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "The message 'delivered'/'read' status is visible only to the sender of the message.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A user cannot send a message without any content (without text).",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 Message Delivery and Read Status (on the main page) (+20)"
+    },
+    {
+      "type": "subtask",
+      "text": "The status changes to 'delivered' when the message recipient logs into the application or if the message is sent to the user who is online.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "The status changes to 'read' when the message recipient opens a dialogue with unread messages and performs any of the following actions: scrolls in the message history area, sends a new message, or clicks inside the message history area.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "📍 About Page (+10)"
+    },
+    {
+      "type": "subtask",
+      "text": "Contains brief information about the application and its author. The content is at the student's discretion.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Access is granted to all users.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 Interface and Visual Design (+15)"
+    },
+    {
+      "type": "subtask",
+      "text": "The browser tab must display the application icon.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The interface elements with which the user will interact must be responsive and the cursor must change when they are hovered over.",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive layout must be implemented for resolutions ranging from 1440 px to 380 px, inclusive.",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "📍 Server Connection (on all pages) (+20)"
+    },
+    {
+      "type": "subtask",
+      "text": "If a sudden disconnection from the server occurs, a message must be displayed to the user, and an attempt to restore the connection must be made.",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Upon reconnecting to the server, the application must perform the current user reauthorization without requiring user intervention.",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "For recurring application errors, a deduction is allowed only once for each distinct type of error.",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "For layout issues where the elements overlap or cover each other, a deduction is allowed only once for each distinct type of issue.",
+      "max": -5
+    }
+  ]
+}
