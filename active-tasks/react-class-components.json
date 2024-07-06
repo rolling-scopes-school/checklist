@@ -1,6 +1,6 @@
 {
-  "taskName": "React Components",
-  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module01",
+  "taskName": "React Class components",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/tasks/class-components.md",
   "information": "The maximum number of points is 100. Those are the cross-code-review and cross-check criterias:",
   "criteria": [
     {
@@ -24,28 +24,33 @@
     },
     {
       "type": "subtask",
-      "text": "Page is split into 2 sections, top one has Search input and 'Search' button, main section displays the list of results from the selected API when the page is opened for the first time (loader should be shown while the app makes a call to the API)",
+      "text": "Page is split into 2 sections, top one has Search input and 'Search' button, main section displays the list of results from the selected api when page is opened for the first time (loader should be shown while app makes a call to the api)",
       "max": 20
     },
     {
       "type": "subtask",
-      "text": "When the user types something into the Search input and clicks 'Search' button, a loader is displayed, and the list is changed according to the response results for a provided search term",
+      "text": "When user types something to the Search input and clicks 'Search' button, a loader is displayed and the list is changed according to the response results for a provided search term",
       "max": 15
     },
     {
       "type": "subtask",
-      "text": "The search term typed into the Search input is saved in local storage when the user clicks on 'Search' button (check it by closing the tab and opening the app in a new one - the initial call should contain the previously entered search term)",
+      "text": "The search term typed into the Search input is saved in the LS when user clicks on 'Search' button (check it by closing the tab and open the app in the new one - the initial call should contain previously entered search term)",
       "max": 15
     },
     {
       "type": "subtask",
-      "text": "Application is wrapped with ErrorBoundary, which logs errors to the console and shows a fallback UI. There should be a button to throw an error",
+      "text": "Application is wrapped with ErrorBoundary, which logs error to a console and shows a fallback UI. There should be a button to throw an error",
       "max": 10
     },
     {
       "type": "penalty",
       "text": "TypeScript isn't used",
       "max": -95
+    },
+    {
+      "type": "penalty",
+      "text": "eslint-plugin-react-compiler isn't used or isn't configured to throw errors",
+      "max": -50
     },
     {
       "type": "penalty",
@@ -81,6 +86,11 @@
       "type": "penalty",
       "text": "Usage of component libraries, e.g. Material UI, Ant Design",
       "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request doesn't follow guideline (including checkboxes in Score) PR example",
+      "max": -10
     }
   ]
 }
