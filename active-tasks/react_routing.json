@@ -1,6 +1,6 @@
 {
-  "taskName": "React Routing",
-  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/react/modules/module02",
+  "taskName": "React Routing. Tests",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/tasks/routing.md",
   "information": "The maximum number of points is 100. Those are the cross-code-review and cross-check criterias:",
   "criteria": [
     {
@@ -9,17 +9,22 @@
     },
     {
       "type": "subtask",
-      "text": "Conversion of class components to functional components with hooks",
-      "max": 20
-    },
-    {
-      "type": "subtask",
-      "text": "Pagination is present in both URL and on the page",
+      "text": "Tests are added to the project, can be run via a test command in the package.json, no errors are produced, test coverage >= 80% (at least for statements)",
       "max": 30
     },
     {
       "type": "subtask",
-      "text": "User-initiated change of items per page triggers a new request, displaying the first page",
+      "text": "Conversion of class components to functional components with hooks",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Custom hook to restore search query from LS",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Pagination is present in both URL and on the page",
       "max": 20
     },
     {
@@ -81,6 +86,11 @@
       "type": "penalty",
       "text": "Commits after the deadline",
       "max": -40
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request doesn't follow guideline (including checkboxes in Score)",
+      "max": -10
     }
   ]
 }
