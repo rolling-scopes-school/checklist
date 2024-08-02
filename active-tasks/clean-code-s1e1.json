@@ -123,42 +123,42 @@
     },
     {
       "type": "penalty",
-      "text": "A well-reasoned cheating suspicion: the number of commits, their order, commit messages, and their respective changes are identical to another student's work.",
+      "text": "Requrement \"Use a personal public repository on GitHub to complete the task. Make a fork of an existing project or just create a new one and copy the task project files.\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "All the changes are reflected in ONE commit.",
+      "text": "Requrement \"One commit should contain changes according to one point of the guides and should also have all the made changes in the commit message. Intersection of 2 or more rules in a single commit is acceptable if compliance of one rule automatically leads to compliance of others (all rules should be listed in commit message in this case).\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The commit contains changes based on several NOT overlapping rules.",
+      "text": "Requrement \"Each commit should be made according to the commit requirements.\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The format of commit messages contradicts the format specified in the requirements.",
+      "text": "Requrement \"Create a new branch from the main(master) and name it as clean-code-s1e1. All your changes should be made inside this new branch\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The branch name is not the one which is specified in the requirements, or the work is done in the main(master) branch.",
+      "text": "Requrement \"The original application functionality must remain the same after all your changes.\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The original functionality of the app specified in the requirements is not kept intact in full measure.<br>https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md#application-functionality",
+      "text": "Requrement \"Once the task is completed, create a Pull Request from the branch clean-code-s1e1 into main(master) of your personal public repository. Warning!: if you have forked the project, you will be advised to create a PR into the task description repository. You MUST change the repository and create the PR into main(master) branch of YOUR repository.\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The Pull Request is opened NOT to its own repository.",
+      "text": "Requrement \"Pull Request must be created according to the following rules.\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "The Pull Request does not follow the PR description specified in the requirements.",
+      "text": "Requrement \"❗ You should submit your Pull Request link once the task is completed.\" is not met",
       "max": -45
     }
   ]
