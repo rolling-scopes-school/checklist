@@ -79,11 +79,6 @@
     },
     {
       "type": "penalty",
-      "text": "Usage of client state on page",
-      "max": -20
-    },
-    {
-      "type": "penalty",
       "text": "Pages API isn't used",
       "max": -50
     }
