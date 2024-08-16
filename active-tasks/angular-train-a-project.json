@@ -1,0 +1,495 @@
+{
+  "taskName": "Angular final project: Train-A",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Cross-Check form for 600 points"
+    },
+    {
+      "type": "title",
+      "title": "Sign-In"
+    },
+    {
+      "type": "subtask",
+      "text": "Access control",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error message for incorrect password",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error message for email",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error message for empty field",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Disabled Sign In button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive design",
+      "max": 5
+    },
+    {
+      "type": "penalty",
+      "text": "Authenticated user can access Sign In page without logging out",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "User opens new tab and needs to log in again",
+      "max": -10
+    },
+    {
+      "type": "title",
+      "title": "Sign-Up"
+    },
+    {
+      "type": "subtask",
+      "text": "Access control",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Password validation error",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Email already exists error",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error message for empty field",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Disabled Sign Up button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive design",
+      "max": 5
+    },
+    {
+      "type": "penalty",
+      "text": "Authenticated user can access Sign Up page without logging out",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Registration was successful but login with new credentials failed",
+      "max": -10
+    },
+    {
+      "type": "title",
+      "title": "Profile"
+    },
+    {
+      "type": "subtask",
+      "text": "Editable user name",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Editable user email",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Logout functionality",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Change password functionality",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "User gets logout successfull message but still can access Profile page",
+      "max": -15
+    },
+    {
+      "type": "title",
+      "title": "Order"
+    },
+    {
+      "type": "subtask",
+      "text": "Order list display",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Start trip",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "End trip",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Trip duration",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Carriage type",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Price",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Cancel button",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Manager",
+      "max": 8
+    },
+    {
+      "type": "penalty",
+      "text": "Manager cannot see orders from other users",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Home/Search page"
+    },
+    {
+      "type": "title",
+      "title": "Home/Search page: Search section"
+    },
+    {
+      "type": "subtask",
+      "text": "Start city field autocomplete",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "End city field autocomplete",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Calendar field",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Submit button validation",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Home/Search page: Filter"
+    },
+    {
+      "type": "subtask",
+      "text": "Display dormat",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Clickable functionality",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Visual highlighting of selected tab",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Reflecting search results",
+      "max": 7
+    },
+    {
+      "type": "subtask",
+      "text": "Responsive Design",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Home/Search page: Result list"
+    },
+    {
+      "type": "subtask",
+      "text": "Display of train rides",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Information section",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Price section",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Message for no rides available",
+      "max": 3
+    },
+    {
+      "type": "title",
+      "title": "Home/Search page: Trip detail"
+    },
+    {
+      "type": "subtask",
+      "text": "Route button presence",
+      "max": 1
+    },
+    {
+      "type": "subtask",
+      "text": "Modal window trigger",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Modal window content",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "User interaction",
+      "max": 2
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Search Details page"
+    },
+    {
+      "type": "subtask",
+      "text": "Display start and end stations",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Carriage type tabs",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Train car list items",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Booking a seat",
+      "max": 20
+    },
+    {
+      "type": "penalty",
+      "text": "User refresh the page (F5) and navigates to the main page",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "User refresh the page (F5) and do not see rendered tabs or train car list items",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Admin: Stations"
+    },
+    {
+      "type": "subtask",
+      "text": "Station coordinates input",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Connecting stations",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Displaying existing stations",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Deleting stations",
+      "max": 5
+    },
+    {
+      "type": "penalty",
+      "text": "Not manager can access this page",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Manager can create a station with empty name or without coordinates",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Manager can create more than one station in the same place",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Admin: Carriages"
+    },
+    {
+      "type": "subtask",
+      "text": "Page layout",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Displaying carriage configuration form",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Dynamically rendering prototype",
+      "max": 25
+    },
+    {
+      "type": "subtask",
+      "text": "Saving and displaying new/updated carriages",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Not manager can access this page",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Admin: Routes"
+    },
+    {
+      "type": "subtask",
+      "text": "Display of routes",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Route management actions",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Deleting a route",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Assigning a ride",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Creating and updating routes",
+      "max": 45
+    },
+    {
+      "type": "subtask",
+      "text": "Saving routes",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Not manager can access this page",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    },
+    {
+      "type": "title",
+      "title": "Admin: Schedule/Rides"
+    },
+    {
+      "type": "subtask",
+      "text": "Navigation",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Page title",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "List of rides",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Editing times",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Editing prices",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Creating new rides",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Deleting a ride",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Not manager can access this page",
+      "max": -15
+    },
+    {
+      "type": "penalty",
+      "text": "Any uncaught errors in the console",
+      "max": -20
+    }
+  ]
+}
