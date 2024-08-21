@@ -1,0 +1,226 @@
+{
+  "taskName": "React REST/GraphiQL Client",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/react/modules/tasks/final.md",
+  "information": "The maximum number of points is 400. Cross-check criterias:",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Welcome route - max 50 points"
+    },
+    {
+      "type": "subtask",
+      "text": "The welcome page should contain general information about the developers, project, and course",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "In the upper right corner, there are 2 buttons: Sign In and Sign Up",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "If the login token is valid and unexpired, the Sign In and Sign Up buttons are replaced with the \"Main Page\" button",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "When the token expires - the user should be redirected to the \"Welcome page\" automatically",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Pressing the Sign In / Sign up button redirects a user to the route with the Sign In / Sign up form",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Sign In / Sign Up - max 50 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Buttons for Sign In / Sign Up / Sign Out are everywhere where they should be",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Client-side validation should be implemented",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Upon successful login, the user is redirected to the Main page",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "If the user is already logged in and tries to reach these routes, they should be redirected to the Main page",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "RESTfull client - max 120 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Functional editor enabling query editing and prettifying, request body provided in the url as base64-encoded on focus out",
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "Functional read-only response section, with information about HTTP status and the code",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Method selector, shows all the valid HTTP verbs, value is provided in the url on change",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Input for the url, entered value is provided in base64-encoded way on change",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Variables section that can shown or hidden, specified variables are included in the body",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Headers section, value is provided in the url on header add/change",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "GraphiQL route - max 80 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Functional editor enabling query editing and prettifying, request body provided in the url as base64-encoded on focus out",
+      "max": 35
+    },
+    {
+      "type": "subtask",
+      "text": "Read-only response section, with information about HTTP status and the code, reused from the RESTfull client",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Operational documentation explorer, visible only upon successful SDL request",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Variables section that can shown or hidden, specified variables are included in the body",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Header section that can be shown or hidden, value is provided in the url on header add/change",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "History route - max 50 points"
+    },
+    {
+      "type": "subtask",
+      "text": "History shows informational message with links to the clients when there are no requests in the local storage",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "User can navigate to the previoulsy executed HTTP request to the RESTfull client, HTTP method, url, body, headers, variables are restored",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "User can navigate to the previoulsy executed GraphQL request to the GraphiQL client, url, SDL url, body, headers, variables are restored",
+      "max": 20
+    },
+    {
+      "type": "title",
+      "title": "General requirements - max 50 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Multiple (at lest 2) languages support / i18n",
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Sticky header",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Errors are displayed in the user friendly format",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Vite/NextJS default favicon",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "HTTP 4xx and 5xx status codes displayed as errors not in the response section",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "The presence of errors and warnings in the console",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "The presence in the console of the results of the console.log execution",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "@ts-ignore or any usage (search through GitHub repo)",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "The presence of code-smells (God-object, chunks of duplicate code), commented code sections",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Making commits after the deadline",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of tests",
+      "max": -250
+    },
+    {
+      "type": "penalty",
+      "text": "Test coverage below 80%",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of linting",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of prettier",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Absence of husky git hooks",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request doesn't follow guideline (including checkboxes in Score)",
+      "max": -10
+    }
+  ]
+}
