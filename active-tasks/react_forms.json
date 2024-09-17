@@ -39,6 +39,11 @@
     },
     {
       "type": "penalty",
+      "text": "Usage of component libraries, e.g. Material UI, Ant Design",
+      "max": -100
+    },
+    {
+      "type": "penalty",
       "text": "TypeScript isn't used",
       "max": -95
     },
@@ -59,8 +64,8 @@
     },
     {
       "type": "penalty",
-      "text": "Usage of component libraries, e.g. Material UI, Ant Design",
-      "max": -100
+      "text": "Validation is implemented without Yup",
+      "max": -25
     },
     {
       "type": "penalty",
@@ -69,8 +74,8 @@
     },
     {
       "type": "penalty",
-      "text": "Validation is implemented without Yup",
-      "max": -25
+      "text": "Pull Request doesn't follow guideline (including checkboxes in Score)",
+      "max": -10
     }
   ]
 }
