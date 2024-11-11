@@ -1,0 +1,203 @@
+{
+  "taskName": "Christmas Shop. Part-2 - Responsive Design",
+  "github": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/christmas-shop/christmas-shop-part2.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 1440px: +16"
+    },
+    {
+      "type": "subtask",
+      "text": "header on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Hero section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "About section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Slider section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Best Gifts section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "CTA section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Gifts section on Gifts page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "footer on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 768px: +16"
+    },
+    {
+      "type": "subtask",
+      "text": "header on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Hero section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "About section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Slider section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Best Gifts section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "CTA section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Gifts section on Gifts page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "footer on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "The layout of the pages aligns the design at a screen width of 380px: +16"
+    },
+    {
+      "type": "subtask",
+      "text": "header on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Hero section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "About section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Slider section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Best Gifts section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "CTA section on Home page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "Gifts section on Gifts page: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "footer on each page: +2",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "There is no horizontal scrollbar at all screen width up to 380px inclusive. All page content remains as per the design: it is not cropped, removed, or shifted to the side: +24"
+    },
+    {
+      "type": "subtask",
+      "text": "Home page: no horizontal scroll bar between 1440px and 768px widths: +6",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Home page: no horizontal scroll bar between 768px and 380px widths: +6",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Gifts page: no horizontal scroll bar between 1440px and 768px widths: +6",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Gifts page: no horizontal scroll bar between 768px and 380px widths: +6",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "During smooth resizing of the browser window from 1440px to 380px, the layout occupies the full width of the window (including specified margins), elements adjust their sizes and positions appropriately without full scaling, no elements overlap, and images maintain their correct aspect ratios: +8"
+    },
+    {
+      "type": "subtask",
+      "text": "On Home page: +4",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "On Gifts page: +4",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "subtask",
+      "text": "At screen widths of 768px, the menu and navigation links in <header> are concealed on both pages, and a burger menu icon is displayed: +4\n(Note: Activation of the burger menu icon is not evaluated at this stage.)",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "subtask",
+      "text": "Hover effects are active on desktop devices (as per the Desktop device type in DevTools) and are disabled for mobile devices (as per the Mobile device type in DevTools) on both pages: +4",
+      "max": 4
+    },
+    {
+      "type": "title",
+      "title": ""
+    },
+    {
+      "type": "subtask",
+      "text": "The layout for both pages is validated and error-free according to the W3C Validator (https://validator.w3.org/): +12",
+      "max": 12
+    }
+  ]
+}
