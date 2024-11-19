@@ -149,7 +149,7 @@
     },
     {
       "type": "subtask",
-      "text": "n the footer, clicking on the card WRITE US should open the mail client: +2",
+      "text": "In the footer, clicking on the card WRITE US should open the mail client: +2",
       "max": 2
     },
     {
