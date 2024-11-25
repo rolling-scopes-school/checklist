@@ -13,8 +13,8 @@
     },
     {
       "type": "subtask",
-      "text": "When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross: +4",
-      "max": 4
+      "text": "When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross: +2",
+      "max": 2
     },
     {
       "type": "subtask",
@@ -23,8 +23,8 @@
     },
     {
       "type": "subtask",
-      "text": "When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon: +4",
-      "max": 4
+      "text": "When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon: +2",
+      "max": 2
     },
     {
       "type": "subtask",
@@ -38,7 +38,12 @@
     },
     {
       "type": "subtask",
-      "text": "When clicking on any link (interactive or non-interactive) in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon: +2",
+      "text": "When clicking on any link (interactive or non-interactive) in the menu, the burger menu hides, and the cross transforms into a burger icon: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When clicking on any link (interactive or non-interactive) in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon if a user stays on the same page: +2",
       "max": 2
     },
     {
@@ -48,7 +53,12 @@
     },
     {
       "type": "subtask",
-      "text": "When the page width increases to 769px and larger, the burger icon and the open burger menu hide, and the navigation panel appears: +2",
+      "text": "The page behind the open menu does not scroll: +2",
+      "max": 2
+    },
+    {
+      "type": "subtask",
+      "text": "When the page width increases to more than 768px, the burger icon and the open burger menu hide, and the navigation panel appears: +2",
       "max": 2
     },
     {
@@ -72,13 +82,18 @@
     },
     {
       "type": "subtask",
-      "text": "Scrolling the slider is accompanied by like the carousel animation (the method of animation execution is not verified): +4",
+      "text": "Scrolling the slider is accompanied by the carousel-like animation (the method of animation execution is not evaluated): +4",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The slider is fully scrolled with 3 presses of the arrow button in one direction for screen widths of 768px and larger, and with 6 presses of the arrow button in one direction for screen widths of 767px and less: +8",
-      "max": 8
+      "text": "The slider is fully scrolled with 3 presses of the arrow button in one direction for screen widths more than 768px, and with 6 presses of the arrow button in one direction for screen widths of 768px and less: +4",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "When the screen width changes, the slider returns to its initial position, and the slider can be fully scrolled with the correct number of the relevant arrow button clicks (it works without reloading the page): +4",
+      "max": 4
     },
     {
       "type": "title",
@@ -105,31 +120,36 @@
     },
     {
       "type": "subtask",
-      "text": "When opening and refreshing the page, 4 random cards are displayed in the block Best Gifts on the home page: +4",
+      "text": "When both opening or refreshing the page, 4 random cards are displayed in the block Best Gifts on the home page: +4",
       "max": 4
     },
     {
       "type": "title",
-      "title": "Implementation of the Category switching for products on the gifts page: +6"
+      "title": "Implementation of the Category switching for products on the gifts page: +8"
     },
     {
       "type": "subtask",
-      "text": "The ALL category is active and all gifts are displayed when opening or reloading the gifts page: +2",
+      "text": "The ALL category is active and all 36 gifts are displayed when both opening or reloading the gifts page. The order of sorting gifts does not matter: +2",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "When switching categories, the gifts of the selected category are displayed: +4",
+      "text": "When switching categories, the gifts of the selected category are displayed. The order of sorting gifts does not matter: +4",
       "max": 4
-    },
-    {
-      "type": "title",
-      "title": "Implementation of the Button UP on the gifts page: +14"
     },
     {
       "type": "subtask",
-      "text": "The button can only appear at a screen width of 768px and less: +4",
-      "max": 4
+      "text": "Only the selected category tab is active: +2",
+      "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Implementation of the Scroll-to-Top button on the gifts page: +12"
+    },
+    {
+      "type": "subtask",
+      "text": "The button can only appear at a screen width of 768px and less: +2",
+      "max": 2
     },
     {
       "type": "subtask",
@@ -138,7 +158,7 @@
     },
     {
       "type": "subtask",
-      "text": "The button appears after scrolling the page down: +4",
+      "text": "The button appears after scrolling the page down by 300px: +4",
       "max": 4
     },
     {
