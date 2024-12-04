@@ -9,11 +9,15 @@
     },
     {
       "type": "title",
-      "title": "Check leniently, this task requires a lot of work. All arguable moments should be resolved in the higher score way. Stay human!"
+      "title": "Be lenient, this task requires a lot of work. All disputable issues must be resolved in the higher score way. Stay human!"
     },
     {
       "type": "title",
-      "title": "If there are changes in margins and paddings because of HTML tags replacement, that insignificantly change the UI, that's not a mistake, no penalties should be applied."
+      "title": "Changes in margins or padding because of HTML tags replacement that insignificantly change the UI must not be considered a mistake, no penalties must be applied. There is also no need to verify the layout of the application with PerfectPixel."
+    },
+    {
+      "type": "title",
+      "title": "Please note that the fantasy font used in the application is commonly supported on Windows and Mac. If it doesn't display correctly on Linux, feel free to choose any other suitable font. A different similar font must not be considered a mistake, no penalties must be applied."
     },
     {
       "type": "title",
@@ -25,77 +29,77 @@
     },
     {
       "type": "subtask",
-      "text": "Basic rule 1.1. Indentation: implemented in the whole project. Two spaces are used for one indentation. Tabs are not used. The two indentation types (tabs and spaces) are not mixed together.",
+      "text": "Basic rule 1.1. Indentation: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project. All HTML-tags, attributes and their values, CSS selectors, CSS properties and their values must be in lowercase. `<!DOCTYPE html>` is an exception to this rule.",
+      "text": "Basic rule 1.2. Use lowercase: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 1.3. Quotes in HTML & CSS files: implemented in the whole project. Only double quotes are used for HTML attributes and CSS properties.",
+      "text": "Basic rule 1.3. Quotes in HTML & CSS files: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.1. HTML. Formatting: implemented in the whole project. Every block, table or list element starts with a new line, regardless of their styles. Each nested element is indented respecting the nesting ladder. Inline elements can (but do not have to) be put onto a new line and indented to improve code readability.",
+      "text": "Basic rule 2.1. HTML. Formatting: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.2. Document Type. `<!DOCTYPE html>` is the first tag in the HTML file which corresponds to a basic HTML5 document.",
+      "text": "Basic rule 2.2. Document Type: implemented in the project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.3. Named character references: implemented in the whole project. Named character references (such as `&mdash;`(—), `&rdquo;`(”)) are not used in the html file.",
+      "text": "Basic rule 2.3. Named character references: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 2.4. 'type' attribute: implemented in the whole project. `type` attributes are not used when connecting styles and scripts (they can only be used when connecting not CSS or JS).",
+      "text": "Basic rule 2.4. 'type' attribute: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.1. Single style for selectors naming: implemented in the whole project. The naming style is consistent throughout the project. All the selectors (classes / ids) are named either according to BEM or using lower case words separated by a hyphen.",
+      "text": "Basic rule 3.1. Single style for selectors naming: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.2. Meaningful naming of identifiers and classes: implemented in the whole project. Meaningful classes and identifiers names reflect their purpose (!but NOT APPEARANCE!). Templates can also be used in which case they indicate the purpose of the element as well.",
+      "text": "Basic rule 3.2. Meaningful naming of identifiers and classes: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.3. Keep the names of identifiers and classes concise: implemented in the whole project. For identifiers and classes, names that are long enough to indicate their purpose and as short as possible are used.",
+      "text": "Basic rule 3.3. Keep the names of identifiers and classes concise: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.4. Tag selectors: implemented in the whole project. Tag selectors are not used (except for intentionally resetting the default styles).",
+      "text": "Basic rule 3.4. Tag selectors: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.5. Indentation in blocks: implemented in the whole project. Any content in a block (blocks are separated by curly braces {}) is always indented.",
+      "text": "Basic rule 3.5. Indentation in blocks: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.6. Space after property name: implemented in the whole project. One space is always used after (not before) a colon in properties.",
+      "text": "Basic rule 3.6. Space after property name: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.7. Semicolon after properties: implemented in the whole project. Semicolon is used after each property.",
+      "text": "Basic rule 3.7. Semicolon after properties: implemented in the whole project.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Basic rule 3.8. Separate selectors and properties: implemented in the whole project. Each selector and property in a group is separated with a line break.",
+      "text": "Basic rule 3.8. Separate selectors and properties: implemented in the whole project.",
       "max": 2
     },
     {
@@ -104,17 +108,17 @@
     },
     {
       "type": "subtask",
-      "text": "Extended rule 1.1. HTML. Semantics: implemented in the whole project. HTML tags are used the way they are intended to be used. `div` elements are replaced by appropriate semantic tags where possible.",
+      "text": "Extended rule 1.1. HTML. Semantics: implemented in the whole project.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "Extended rule 1.2. Media alternatives: implemented in the whole project. Alternative content for multimedia is specified for each element. Each img element has an alt-attribute with a meaningful alternative text which reflects its content. If the picture is used only for decorative purposes, an empty alt attribute (alt=\"\") is used.",
+      "text": "Extended rule 1.2. Media alternatives: implemented in the whole project.",
       "max": 5
     },
     {
       "type": "subtask",
-      "text": "Extended rule 2.1. BEM: implemented in the whole project. BEM notation is used to form all class names throughout the project.",
+      "text": "Extended rule 2.1. BEM: implemented in the whole project.",
       "max": 5
     },
     {
@@ -123,42 +127,57 @@
     },
     {
       "type": "penalty",
-      "text": "Requrement \"Use a personal public repository on GitHub to complete the task. Make a fork of an existing project or just create a new one and copy the task project files.\" is not met",
+      "text": "Requrement \"Use a personal public repository on GitHub to complete the task. Make a fork of the existing project or create a new one named `clean-code-s1e1` and copy the task project files (in this case the commit message for adding the files must start with `init:`)\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"One commit should contain changes according to one point of the guides and should also have all the made changes in the commit message. Intersection of 2 or more rules in a single commit is acceptable if compliance of one rule automatically leads to compliance of others (all rules should be listed in commit message in this case).\" is not met",
+      "text": "Requrement \"One commit must contain changes related to a single point of the guidelines, the commit message must reflect all the changes made in the commit. Intersection of two or more rules in a single commit is acceptable only if compliance of one rule automatically leads to compliance of another one and it is impossible to separate them (all the rules must be listed in a commit message in this case)\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"Each commit should be made according to the commit requirements.\" is not met",
+      "text": "Requrement \"Prettier or other automatic code formatting tools must not be used\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"Create a new branch from the main(master) and name it as clean-code-s1e1. All your changes should be made inside this new branch\" is not met",
+      "text": "Requrement \"Each commit must be made according to the commit requirements and comply consistently with one of the commit message style options\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"The original application functionality must remain the same after all your changes.\" is not met",
+      "text": "Requrement \"Create a new branch from `main` and name it `clean-code-s1e1`. All your changes must be made inside this new branch\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"Once the task is completed, create a Pull Request from the branch clean-code-s1e1 into main(master) of your personal public repository. Warning!: if you have forked the project, you will be advised to create a PR into the task description repository. You MUST change the repository and create the PR into main(master) branch of YOUR repository.\" is not met",
+      "text": "Requrement \"The original application functionality must remain the same after all your changes or be fixed if necessary\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"Pull Request must be created according to the following rules.\" is not met",
+      "text": "Requrement \"Once the task is completed, create a Pull Request from the branch `clean-code-s1e1` into `main` of your personal public repository\" is not met",
       "max": -45
     },
     {
       "type": "penalty",
-      "text": "Requrement \"❗ You should submit your Pull Request link once the task is completed.\" is not met",
+      "text": "Requrement \"A Pull Request must be described according to the following rules\" is not met",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "Requrement \"`main` branch must not be modified\" is not met",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "Requrement \"The PR must be open\" is not met",
+      "max": -45
+    },
+    {
+      "type": "penalty",
+      "text": "Requrement \"Submit your Pull Request link once the task is completed\" is not met",
       "max": -45
     }
   ]
