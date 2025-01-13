@@ -1,0 +1,193 @@
+{
+  "taskName": "Simon says",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/stage1/tasks/simon-says",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Уважаемые проверяющие.\nПроверяются только требования, указанные в критериях.\nЕсли какой-то момент в критериях не описан, его не проверяем и не оцениваем."
+    },
+    {
+      "type": "title",
+      "title": "Работа приложения проверяется на компьютере в браузере Google Chrome последней версии\nВсе сомнения трактуются в пользу студента\nЕсли сомневаетесь снимать баллы или нет, не снимайте!"
+    },
+    {
+      "type": "subtask",
+      "text": "The game includes 5 rounds, and the rounds counter accurately displays the current round number and updates it after each successful round completion: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": " The initial game screen is implemented correctly (presents the \"Start\" button, the possibility to choose the level of difficulty and a virtual keyboard) and the virtual keyboard updates accordingly when the difficulty is changed: +10",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Clicking the “Start” button initiates the first round with a sequence of 2 symbols and disables the ability to change the difficulty after starting the game: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "When the first rounds starts, there is an indicator of the current level of difficulty and a rounds counter, an input that reflects the sequence typed by the user, as well as the \"Repeat the sequence\" and \"New game\" buttons. The \"Start\" button disappears: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Each sequence is shown by simulating the typing of the corresponding symbols on the virtual keyboard. Each symbol in the sequence is accurately simulated by highlighting its corresponding key on the virtual keyboard for at least 0.3 seconds: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The “Repeat the sequence” button is always enabled at the beginning of each new round, can be clicked only once per round and becomes disabled after a single use: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The “Repeat the sequence” button reproduces the current sequence when clicked, the feedback message, if any, is removed, and the input with previously inserted sequence (if it's not empty) is cleared so that the user can start typing the sequence again from the beginning: +10",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "While the sequence is being displayed through the typing simulation, no user input (clicking or pressing keys) is possible, and all buttons are disabled. After the typing simulation completes, all buttons are re-enabled and user input is permitted. However, if the user has previously clicked the “Repeat the sequence” button during the current round, that button stays disabled: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The user can play the game by using the virtual keyboard, and the corresponding keys are highlighted upon clicking: +20",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "The user can play the game by using the physical keyboard, and the corresponding virtual keys are briefly highlighted upon pressing: +20",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Each symbol entered by the user is immediately displayed in a dedicated, non-editable input field. The input reflects all the symbols inserted by the user, in the order they were entered: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Only one incorrect attempt per round is allowed, and after a second incorrect attempt, the “Repeat the sequence” button becomes disabled (if it's not already): +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": " The \"New game\" button is always accessible (except during the typing simulation), allowing the user to restart the game from the initial game screen at any moment: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A correct answer is automatically recognized after the user presses the last key in the sequence, while an incorrect one is immediately detected upon the first wrong key press in the sequence: +10",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "There is clear feedback after each answer, whether correct or incorrect. Feedback for an incorrect answer appears immediately after the first incorrectly clicked or pressed key, while feedback for a correct answer is displayed after the entire sequence has been repeated correctly.: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Upon a correct answer, the “Repeat the Sequence” button is replaced with a “Next” button to proceed to the following round: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Clicking the “Next” button starts the next round with a new, randomly generated sequence that is two symbols longer than the previous one. The \"Next\" button is replaced by the \"Repeat the sequence\" button: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "After successfully completing the 5th round, there is final feedback indicating the game is over and the “Repeat the sequence” button, if still enabled, becomes disabled: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The user’s last chosen difficulty level is saved and preselected by default when the user starts a new game: +5",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The app is supported at the requested width (desktop 1440px <= width, tablet 768px <= width < 1440px and mobile 360px <= width < 768px) (e.g., no DOM elements overlap, disappear, etc.):: +10",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Unexpected errors in the console caused by the application(the deduction is only allowed once for each distinct kind of error): -10 per error",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Feedback messages displayed in page do not disappear when the user clicks the “Repeat the sequence” (if still present and enabled)/\"Next\" or \"New game\" buttons: -10",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Feedback messages displayed as separate popups/dialogs do not have a closing button, or the interaction with the page is not disabled when the message is displayed: -10",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "More than one key at a time is highlighted when guessing the sequence or more than one key is processed at a time: -10",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "The symbols that are not part of the current difficulty level are not ignored: -20",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Upper and lower case letters are not treated as the same symbol: -20",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Once the answer is detected as correct or incorrect, the application still handles new user input on virtual or physical keyboards: -20",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Hiding and displaying additional elements cause the main elements to shift or move: -20",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "The sequence is not randomly generated for each new round and/or the two new symbols are simply added to the previous sequence: -50",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "window.location.reload is used to restart the game when it's over: -50",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "The application is not done in English: -150",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "Anything mentioned as not allowed in the 'Technical requirements' section is used: -150",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "body in the index.html is not empty (can contain only script tag). This requirement can be checked by pressing Ctrl+U (Windows) or Option(⌥)+Command(⌘)+U (Mac): -150",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "Not all elements are generated using createElement() function or JS code is minified, not allowing to check this requirement: -150",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "Using alert, prompt, confirm: -150",
+      "max": -150
+    }
+  ]
+}
