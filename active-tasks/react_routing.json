@@ -9,7 +9,7 @@
     },
     {
       "type": "subtask",
-      "text": "Tests are added to the project, can be run via a test command in the package.json, no errors are produced, test coverage >= 80% (at least for statements)",
+      "text": "Tests are added to the project, can be run via a test command in the package.json, no errors are produced, test coverage >= 70% (at least for statements)",
       "max": 30
     },
     {
@@ -81,6 +81,21 @@
       "type": "penalty",
       "text": "Usage of component libraries, e.g. Material UI, Ant Design",
       "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Test coverage below 70% but >=60% (at least for statements)",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Test coverage below 60% (at least for statements)",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Test coverage include test for App.tsx",
+      "max": -50
     },
     {
       "type": "penalty",
