@@ -1,7 +1,6 @@
 {
   "taskName": "Decision Making Tool",
   "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage2/tasks/decision-making-tool/README.md",
-   
   "criteria": [
     {
       "type": "title",
@@ -483,7 +482,7 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a `duration` `<input>` element for setting the rotation duration in seconds. The appearance of this input should clearly indicate its purpose (contain appropriate label and/or placeholder. e.g., \"⏲\", \"duration\", \"time\", \"seconds\", etc.)",
+      "text": "Displays a `duration` `input` element for setting the rotation duration in seconds. The appearance of this input should clearly indicate its purpose (contain appropriate label and/or placeholder. e.g., \"⏲\", \"duration\", \"time\", \"seconds\", etc.)",
       "max": 1
     },
     {
@@ -556,7 +555,7 @@
     },
     {
       "type": "subtask",
-      "text": "In the `picking state`, `picked option` must **dynamically** display the `title` of the option currently pointed to by the wheel `cursor`.",
+      "text": "In the `picking state`, `picked option` must dynamically display the `title` of the option currently pointed to by the wheel `cursor`.",
       "max": 4
     },
     {
@@ -584,7 +583,7 @@
     },
     {
       "type": "subtask",
-      "text": "Displays the `wheel` element as a single `<canvas>` element.",
+      "text": "Displays the `wheel` element as a single `canvas` element.",
       "max": 1
     },
     {
