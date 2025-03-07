@@ -743,6 +743,40 @@
       "type": "subtask",
       "text": "The `back button` click must navigate to the `List of Options` route.",
       "max": 2
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "penalty",
+      "text": "Non-empty `body` in the `index.html` (only `script` tag is allowed)",
+      "max": -255
+    },
+    {
+      "type": "penalty",
+      "text": "for Wheel section Wheel general requirement \"`Displays the `wheel` element as a single `canvas` element.`\" is not met.",
+      "max": -255
+    },
+    {
+      "type": "penalty",
+      "text": "The app is not a SPA. There are page reloads when navigating within the application.",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "The app is not supported at `640px <= width <= 1280px` at least (e.g., DOM elements go out of the bounds of parent elements, overlap, etc.).",
+      "max": -50
+    },
+    {
+      "type": "penalty",
+      "text": "Using `alert`, `prompt`, `confirm`.",
+      "max": -255
+    },
+    {
+      "type": "penalty",
+      "text": "Per error. For repeated app errors, the deduction is only allowed once for each distinct kind of error.",
+      "max": -10
     }
   ]
 }
