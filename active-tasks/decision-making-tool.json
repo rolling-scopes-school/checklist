@@ -26,7 +26,7 @@
     },
     {
       "type": "subtask",
-      "text": "List of Options must be directly accessible via a direct link.",
+      "text": "`List of Options` must be directly accessible via a direct link.",
       "max": 2
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "type": "subtask",
-      "text": "Displays the List with Options",
+      "text": "Displays the `List` with `Options`.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "In the initial state, the list contains exactly 1 empty option ({\"id\": \"#1\", \"title\": \"\", \"weight\": \"\"}). The initial state here means the state of the application when the user first encounters it (this can be simulated by pre-closing all current incognito tabs, if any, and opening a new one.",
+      "text": "In the `initial state`, the list contains exactly 1 empty option (`{\"id\": \"#1\", \"title\": \"\", \"weight\": \"\"}`). The `initial state` here means the state of the application when the user first encounters it (this can be simulated by pre-closing all current incognito tabs, if any, and opening a new one.",
       "max": 2
     },
     {
@@ -78,32 +78,32 @@
     },
     {
       "type": "subtask",
-      "text": "Each option's id must be displayed.",
+      "text": "Each option's `id` must be displayed.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "Each option's id must be unique.",
+      "text": "Each option's `id` must be unique.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Each option's id must be in #n format (#1, #2, #3, and so on).",
+      "text": "Each option's `id` must be in `#n` format (`#1`, `#2`, `#3`, and so on).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Each option's id must be generated programmatically at creation (user cannot change it directly in this element).",
+      "text": "Each option's `id` must be generated programmatically at creation (user cannot change it directly in this element).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Each option's id must be constant and not affected by deletion of any other option.",
+      "text": "Each option's `id` must be constant and not affected by deletion of any other option.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "When the list of options becomes completely empty, the id counter must be reset.",
+      "text": "When the list of options becomes completely empty, the `id` counter must be reset.",
       "max": 1
     },
     {
@@ -112,12 +112,12 @@
     },
     {
       "type": "subtask",
-      "text": "Each option's title must be displayed.",
+      "text": "Each option's `title` must be displayed.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "Each option's title must be able to be edited by the user.",
+      "text": "Each option's `title` must be able to be edited by the user.",
       "max": 2
     },
     {
@@ -126,17 +126,17 @@
     },
     {
       "type": "subtask",
-      "text": "Each option's weight must be displayed.",
+      "text": "Each option's `weight` must be displayed.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "Each option's weight must be able to be edited by the user.",
+      "text": "Each option's `weight` must be able to be edited by the user.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Each option's weight must take only numbers.",
+      "text": "Each option's `weight` must take only numbers.",
       "max": 2
     },
     {
@@ -145,12 +145,12 @@
     },
     {
       "type": "subtask",
-      "text": "Each option's delete button must be displayed. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"delete\", \"remove\", etc.).",
+      "text": "Each option's `delete button` must be displayed. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"delete\", \"remove\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "Option's delete button click must delete the current option from the list.",
+      "text": "Option's `delete button` click must delete the current option from the list.",
       "max": 2
     },
     {
@@ -159,7 +159,7 @@
     },
     {
       "type": "subtask",
-      "text": "The width of the \"columns\" (id, title, weight, delete button) should match in \"rows\" option. (flex/grid/table can be useful here. How you do it is up to you.)",
+      "text": "The width of the \"columns\" (`id`, `title`, `weight`, `delete button`) should match in \"rows\" (`option`). (`flex`/`grid`/`table` can be useful here. How you do it is up to you.)",
       "max": 2
     },
     {
@@ -172,12 +172,12 @@
     },
     {
       "type": "subtask",
-      "text": "Displays an add option button for creating a \"new option\". The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"add option\", \"new option\", \"+\", etc.).",
+      "text": "Displays an `add option button` for creating a \"new option\". The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"add option\", \"new option\", \"+\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The add option button click must create a \"new option\" (empty title, empty weight) and add it to the bottom of the list.",
+      "text": "The `add option button` click must create a \"new option\" (empty `title`, empty `weight`) and add it to the bottom of the list.",
       "max": 2
     },
     {
@@ -186,12 +186,12 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a paste list button for displaying the paste list modal window. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"paste list\", \"load list from clipboard\", etc.).",
+      "text": "Displays a `paste list button` for displaying the `paste list` modal window. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"paste list\", \"load list from clipboard\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The paste list button click must open the paste list modal window.",
+      "text": "The `paste list button` click must open the `paste list` modal window.",
       "max": 2
     },
     {
@@ -200,12 +200,12 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a clear list button for removing all options from the list. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"clear list\", \"reset list\", etc.).",
+      "text": "Displays a `clear list button` for removing all options from the list. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"clear list\", \"reset list\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The clear list button click must remove all current options from the list.",
+      "text": "The `clear list button` click must remove all current options from the list.",
       "max": 2
     },
     {
@@ -214,17 +214,17 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a save list button for saving all current options to the .json file. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"save list to file\", \"save list as json\", etc.).",
+      "text": "Displays a `save list button` for saving all current options to the `.json` file. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"save list to file\", \"save list as json\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The save list button click must collect the all current options data, convert it to a json object and save it to a .json file.",
+      "text": "The `save list button` click must collect the all current options data, convert it to a json object and save it to a `.json` file.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The id, title and weight values of options must be saved.",
+      "text": "The `id`, `title` and `weight` values of options must be saved.",
       "max": 2
     },
     {
@@ -238,22 +238,22 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a load list button for loading options from the .json file. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"load list from file\", \"load list from json\", etc.).",
+      "text": "Displays a `load list button` for loading options from the `.json` file. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"load list from file\", \"load list from json\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The load list button click must open the interface to select the file.",
+      "text": "The `load list button` click must open the interface to select the file.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The type of files to be selected must be limited to a single file of type .json.",
+      "text": "The type of files to be selected must be limited to a single file of type `.json`.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The current list of options must be completely replaced by the list from the .json file you uploaded (your app must be able to read and correctly parse the file created by your save list button click).",
+      "text": "The current list of options must be completely replaced by the list from the `.json` file you uploaded (your app must be able to read and correctly parse the file created by your `save list button` click).",
       "max": 4
     },
     {
@@ -267,17 +267,17 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a start button for navigating to the Decision picker route. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"start\", \"pick decision\", \"open decision picker\", etc.).",
+      "text": "Displays a `start button` for navigating to the `Decision picker` route. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"start\", \"pick decision\", \"open decision picker\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The start button click must navigate to the Decision picker route if there are at least two valid options. An option is considered valid if its title is not empty and its weight is greater than 0.",
+      "text": "The `start button` click must navigate to the `Decision picker` route if there are at least two `valid options`. An option is considered valid if its `title` is not empty and its `weight` is greater than `0`.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The start button click must open the add valid options modal window, instructing the user to add at least two valid options if there are less than two valid options in the list. An option is considered valid if its title is not empty and its weight is greater than 0.",
+      "text": "The `start button` click must open the `add valid options` modal window, instructing the user to add at least two `valid options` if there are less than two `valid options` in the list. An option is considered valid if its `title` is not empty and its `weight` is greater than `0`.",
       "max": 2
     },
     {
@@ -290,52 +290,52 @@
     },
     {
       "type": "subtask",
-      "text": "The paste list modal window must display a paste field element for inserting new options data as text in a CSV-like format",
+      "text": "The `paste list` modal window must display a `paste field` element for inserting new options data as text in a CSV-like format",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The paste list modal window should display its confirm button. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Confirm\", \"Submit\", \"✔\", etc.).",
+      "text": "The `paste list` modal window should display its `confirm button`. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Confirm\", \"Submit\", \"✔\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The paste list modal window should display its cancel button. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Cancel\", \"Close\", \"⨉\", \"x\", etc.).",
+      "text": "The `paste list` modal window should display its `cancel button`. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Cancel\", \"Close\", \"⨉\", \"x\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The paste field element must be able to be edited by the user.",
+      "text": "The `paste field` element must be able to be edited by the user.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The confirm button click must parse the text from the paste field, create new options from that data and add those new options to the bottom of the list as well as close the paste list modal window.",
+      "text": "The `confirm button` click must parse the text from the `paste field`, create `new options` from that data and add those `new options` to the bottom of the list as well as close the `paste list` modal window.",
       "max": 8
     },
     {
       "type": "subtask",
-      "text": "The cancel button click must close the paste list modal window without affecting the list.",
+      "text": "The `cancel button` click must close the `paste list` modal window without affecting the list.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The escape key press must close the paste list modal window without affecting the list.",
+      "text": "The `escape key press` must close the `paste list` modal window without affecting the list.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The outside click must close the paste list modal window without affecting the list.",
+      "text": "The `outside click` must close the `paste list` modal window without affecting the list.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "An opened paste list modal window must block the page scrolling until the modal window is closed.",
+      "text": "An opened `paste list` modal window must block the page scrolling until the modal window is closed.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Closing paste list modal window must also remove it from the DOM.",
+      "text": "Closing `paste list` modal window must also remove it from the DOM.",
       "max": 2
     },
     {
@@ -344,32 +344,32 @@
     },
     {
       "type": "subtask",
-      "text": "The add valid options modal window should display its close button. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Close\", \"Cancel\", \"⨉\", \"x\", etc.).",
+      "text": "The `add valid options` modal window should display its `close button`. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Close\", \"Cancel\", \"⨉\", \"x\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The close button click must close the modal window.",
+      "text": "The `close button` click must close the modal window.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The escape key press must close the modal window.",
+      "text": "The `escape key press` must close the modal window.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The outside click must close the modal window.",
+      "text": "The `outside click` must close the modal window.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "An opened add valid options modal window must block the page scrolling until the modal window is closed.",
+      "text": "An opened `add valid options` modal window must block the page scrolling until the modal window is closed.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Closing add valid options modal window must also remove it from the DOM.",
+      "text": "Closing `add valid options` modal window must also remove it from the DOM.",
       "max": 2
     },
     {
@@ -387,12 +387,12 @@
     },
     {
       "type": "subtask",
-      "text": "Decision Picker must be directly accessible via a direct link.",
+      "text": "`Decision Picker` must be directly accessible via a direct link.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "User must be redirected to List of Options if there are less than two valid options to display. An option is considered valid if its title is not empty and its weight is greater than 0.",
+      "text": "User must be redirected to `List of Options` if there are less than two `valid options` to display. An option is considered valid if its `title` is not empty and its `weight` is greater than `0`.",
       "max": 4
     },
     {
@@ -415,22 +415,22 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a back button for navigating to the List of Options route. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Back\", \"⬅\", \"↖\", \"🏠\" etc.).",
+      "text": "Displays a `back button` for navigating to the `List of Options` route. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Back\", \"⬅\", \"↖\", \"🏠\" etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The back button click must navigate to the List of Options route.",
+      "text": "The `back button` click must navigate to the `List of Options` route.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state back button must be temporarily visually disabled and must not be functioning.",
+      "text": "In the `picking state` `back button` must be temporarily visually disabled and must not be functioning.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the initial and picked states back button returns to its original state and functions as it should.",
+      "text": "In the `initial and picked states` `back button` returns to its original state and functions as it should.",
       "max": 2
     },
     {
@@ -439,42 +439,42 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a sound button for toggling sound on/off. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"sound: on\", \"sound: off\", \"🔊\", \"🔇\", etc.).",
+      "text": "Displays a `sound button` for toggling sound on/off. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"sound: on\", \"sound: off\", \"🔊\", \"🔇\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The sound button click must toggle sound on/off.",
+      "text": "The `sound button` click must toggle sound on/off.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The sound button appearance must correspond to the current mute state (dynamically). This means that if the sound is muted, the button shows that it is muted and vice versa.",
+      "text": "The `sound button` appearance must correspond to the current `mute state` (dynamically). This means that if the sound is muted, the button shows that it is muted and vice versa.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The mute state must be persisted when the page is reloaded.",
+      "text": "The `mute state` must be persisted when the page is reloaded.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The mute state must be persisted when the tab/window is closed and a new one is opened.",
+      "text": "The `mute state` must be persisted when the tab/window is closed and a new one is opened.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The mute state must be persisted when the user is navigated to another route and then back again.",
+      "text": "The `mute state` must be persisted when the user is navigated to another route and then back again.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state sound button must be temporarily visually disabled and must not be functioning.",
+      "text": "In the `picking state` `sound button` must be temporarily visually disabled and must not be functioning.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the initial and picked states sound button returns to its original state and functions as it should.",
+      "text": "In the `initial and picked states` `sound button` returns to its original state and functions as it should.",
       "max": 2
     },
     {
@@ -483,32 +483,32 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a duration <input> element for setting the rotation duration in seconds. The appearance of this input should clearly indicate its purpose (contain appropriate label and/or placeholder. e.g., \"⏲\", \"duration\", \"time\", \"seconds\", etc.)",
+      "text": "Displays a `duration` `<input>` element for setting the rotation duration in seconds. The appearance of this input should clearly indicate its purpose (contain appropriate label and/or placeholder. e.g., \"⏲\", \"duration\", \"time\", \"seconds\", etc.)",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "duration element must be able to be edited by the user.",
+      "text": "`duration` element must be able to be edited by the user.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "duration element must take only numbers.",
+      "text": "`duration` element must take only numbers.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "duration element must have a default value, which should be between 5 and 30 seconds.",
+      "text": "`duration` element must have a default value, which should be between 5 and 30 seconds.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state, duration element must be temporarily visually disabled and must not be functioning.",
+      "text": "In the `picking state`, `duration` element must be temporarily visually disabled and must not be functioning.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the initial and picked states duration element returns to its original state and functions as it should.",
+      "text": "In the `initial and picked states` `duration` element returns to its original state and functions as it should.",
       "max": 2
     },
     {
@@ -517,27 +517,27 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a pick button for start picking process. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"▶\", \"pick\", \"start\", etc.).",
+      "text": "Displays a `pick button` for start picking process. The appearance of this button should clearly indicate its purpose (contain appropriate text and/or icon. e.g., \"▶\", \"pick\", \"start\", etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The pick button click must initiate the picking process if the duration input value is greater than five seconds inclusive.",
+      "text": "The `pick button` click must initiate the picking process if the `duration` input value is greater than five seconds inclusive.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The pick button click must notify the user of an incorrect input. (the default form validation is enough, but you can implement a custom one if you want.)",
+      "text": "The `pick button` click must notify the user of an incorrect input. (the default form validation is enough, but you can implement a custom one if you want.)",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state, pick button must be temporarily visually disabled and must not be functioning.",
+      "text": "In the `picking state`, `pick button` must be temporarily visually disabled and must not be functioning.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the initial and picked states pick button returns to its original state and functions as it should.",
+      "text": "In the `initial and picked states` `pick button` returns to its original state and functions as it should.",
       "max": 2
     },
     {
@@ -546,32 +546,32 @@
     },
     {
       "type": "subtask",
-      "text": "Displays a picked option element.",
+      "text": "Displays a `picked option` element.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "In the initial state, picked option must display an appropriate message inviting the player to initiate the picking process.",
+      "text": "In the `initial state`, `picked option` must display an appropriate message inviting the player to initiate the picking process.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state, picked option must **dynamically** display the title of the option currently pointed to by the wheel cursor.",
+      "text": "In the `picking state`, `picked option` must **dynamically** display the `title` of the option currently pointed to by the wheel `cursor`.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "In the picked state, picked option must display the title of the option currently pointed to by the wheel cursor.",
+      "text": "In the `picked state`, `picked option` must display the `title` of the option currently pointed to by the wheel `cursor`.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the initial and picking states, the picked option must not be highlighted.",
+      "text": "In the `initial and picking states`, the `picked option` must not be highlighted.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picked state, the picked option must be highlighted.",
+      "text": "In the `picked state`, the `picked option` must be highlighted.",
       "max": 2
     },
     {
@@ -584,7 +584,7 @@
     },
     {
       "type": "subtask",
-      "text": "Displays the wheel element as a single canvas element.",
+      "text": "Displays the `wheel` element as a single `<canvas>` element.",
       "max": 1
     },
     {
@@ -593,27 +593,27 @@
     },
     {
       "type": "subtask",
-      "text": "The wheel element must display valid options from the List of Options as sections of a circle.",
+      "text": "The `wheel` element must display `valid options` from the `List of Options` as sections of a circle.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The order of option sections on the wheel element must be randomized when the Decision Picker is opened and not change until it is closed.",
+      "text": "The order of `option sections` on the `wheel` element must be randomized when the `Decision Picker` is opened and not change until it is closed.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The fill color of each option section must be randomly generated when the Decision Picker is opened and not change until it is closed.",
+      "text": "The fill color of each `option section` must be randomly generated when the `Decision Picker` is opened and not change until it is closed.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The width (angle) of each option section must depend on the weight field of the option. The main idea of this feature is that by setting the weight value of the option we can adjust the chance of that particular option being picked. That is, the higher the weight of the option, the wider its section, and therefore the higher the chance of being picked.",
+      "text": "The width (angle) of each `option section` must depend on the `weight` field of the option. The main idea of this feature is that by setting the weight value of the option we can adjust the chance of that particular option being picked. That is, the higher the weight of the option, the wider its section, and therefore the higher the chance of being picked.",
       "max": 8
     },
     {
       "type": "subtask",
-      "text": "Each option section must have a visual boundary to distinguish it from other elements (e.g., adjacent sections, cursor, center element), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
+      "text": "Each `option section` must have a visual boundary to distinguish it from other elements (e.g., adjacent sections, cursor, center element), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
       "max": 2
     },
     {
@@ -622,22 +622,22 @@
     },
     {
       "type": "subtask",
-      "text": "Each option section must display the title value of the option as text (except in the case described in the next bullet point). The text should be placed in the section from the center of the wheel to the edge (or from the edge to the center).",
+      "text": "Each `option section` must display the `title` value of the option as text (except in the case described in the next bullet point). The text should be placed in the section from the center of the wheel to the edge (or from the edge to the center).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "Each option section title must not violate the boundaries of its section. If the width (angle) of the section is not wide enough to display the text, the text must not be displayed.",
+      "text": "Each `option section title` must not violate the boundaries of its section. If the width (angle) of the section is not wide enough to display the text, the text must not be displayed.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "Each option section title must not violate the boundaries of wheel. If title is too long, it should be clipped and end with ellipsis (e.g., \"some very very long title\" -> \"some very very long t…\").",
+      "text": "Each `option section title` must not violate the boundaries of wheel. If `title` is too long, it should be clipped and end with ellipsis (e.g., `\"some very very long title\" -> \"some very very long t…\"`).",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "Each displayed option section title must have a visual boundary to distinguish it from the randomized option section fill color. (Additional stroke, shadow, fill can be useful here.)",
+      "text": "Each displayed `option section title` must have a visual boundary to distinguish it from the randomized `option section` fill color. (Additional stroke, shadow, fill can be useful here.)",
       "max": 2
     },
     {
@@ -646,12 +646,12 @@
     },
     {
       "type": "subtask",
-      "text": "In the center of the wheel, there must be a decorative element to hide the point of contact between all the option sections (e.g., a small circle, star, image, etc.).",
+      "text": "In the center of the `wheel`, there must be a decorative element to hide the point of contact between all the option sections (e.g., a small circle, star, image, etc.).",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The center element must have a visual boundary to distinguish it from other elements (e.g., adjacent sections), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
+      "text": "The `center element` must have a visual boundary to distinguish it from other elements (e.g., adjacent sections), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
       "max": 2
     },
     {
@@ -660,17 +660,17 @@
     },
     {
       "type": "subtask",
-      "text": "The wheel element must display a cursor that points to the current option. It can be designed in the form of a triangle, arrow or any similar figure with a clearly defined pointer.",
+      "text": "The `wheel` element must display a `cursor` that points to the current option. It can be designed in the form of a triangle, arrow or any similar figure with a clearly defined pointer.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The cursor must be placed at any position on the edge of the wheel and not overlapped by other elements.",
+      "text": "The `cursor` must be placed at any position on the edge of the `wheel` and not overlapped by other elements.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "The cursor must have a visual boundary to distinguish it from other elements (e.g., adjacent sections, background), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
+      "text": "The `cursor` must have a visual boundary to distinguish it from other elements (e.g., adjacent sections, background), even if their fill colors are similar. (Additional stroke, shadow, fill can be useful here.)",
       "max": 2
     },
     {
@@ -684,12 +684,12 @@
     },
     {
       "type": "subtask",
-      "text": "The rotation duration must be specified by the duration element. That is, it should correspond to its value (in seconds) at the moment of rotation start. Be loyal when crosschecking. A small inaccuracy is acceptable. There is no need to reduce points for a difference of a couple of seconds.",
+      "text": "The rotation duration must be specified by the `duration` element. That is, it should correspond to its value (in seconds) at the moment of rotation start. Be loyal when crosschecking. A small inaccuracy is acceptable. There is no need to reduce points for a difference of a couple of seconds.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "The rotation should have a non-linear velocity. Use a suitable easing (e.g. ease-in-out or ease-in-out-back with a tiny magnitude).",
+      "text": "The rotation should have a non-linear velocity. Use a suitable easing (e.g. `ease-in-out` or `ease-in-out-back` with a tiny magnitude).",
       "max": 4
     },
     {
@@ -699,27 +699,27 @@
     },
     {
       "type": "subtask",
-      "text": "A finish sound must be played when picking state is changed to picked state if mute state is toggled on.",
+      "text": "A `finish sound` must be played when `picking state` is changed to `picked state` if `mute state` is toggled `on`.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "A finish sound must not be played if mute state is toggled off.",
+      "text": "A `finish sound` must not be played if `mute state` is toggled `off`.",
       "max": 2
     },
     {
       "type": "subtask",
-      "text": "In the picking state, option sections must not change their order, shape, color. It means that visually the option sections shall rotate as an indivisible whole wheel.",
+      "text": "In the `picking state`, `option sections` must not change their order, shape, color. It means that visually the `option sections` shall rotate as an indivisible whole wheel.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "In the picking state, each option section title shall not change its location relative to the boundaries of its option section. It means that visually option section title and option section should rotate as an indivisible element.",
+      "text": "In the `picking state`, each `option section title` shall not change its location relative to the boundaries of its `option section`. It means that visually `option section title` and `option section` should rotate as an indivisible element.",
       "max": 4
     },
     {
       "type": "subtask",
-      "text": "In the picking state, the cursor must stay in its place and not rotate.",
+      "text": "In the `picking state`, the `cursor` must stay in its place and not rotate.",
       "max": 2
     },
     {
@@ -732,17 +732,17 @@
     },
     {
       "type": "subtask",
-      "text": "Implemented Error page display if the user is on an unknown route.",
+      "text": "Implemented `Error page` display if the user is on an unknown route.",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The Error page displays a back button for navigating to the List of Options route. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Back\", \"Back to main page\", \"⬅\", \"↖\" etc.).",
+      "text": "The `Error page` displays a `back button` for navigating to the `List of Options` route. The appearance of this button should clearly indicate its purpose (contain appropriate text or icon. e.g., \"Back\", \"Back to main page\", \"⬅\", \"↖\" etc.).",
       "max": 1
     },
     {
       "type": "subtask",
-      "text": "The back button click must navigate to the List of Options route.",
+      "text": "The `back button` click must navigate to the `List of Options` route.",
       "max": 2
     }
   ]
