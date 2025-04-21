@@ -143,6 +143,15 @@
       "max": 10
     },
     {
+      "type": "title",
+      "title": "Youtube video - max 50 points"
+    },
+    {
+      "type": "subtask",
+      "text": "Youtube video",
+      "max": 50
+    },
+    {
       "type": "penalty",
       "text": "Vite/NextJS default favicon",
       "max": -50
