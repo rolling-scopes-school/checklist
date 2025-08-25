@@ -49,11 +49,6 @@
     },
     {
       "type": "penalty",
-      "text": "eslint-plugin-react-compiler isn't used or isn't configured to throw errors",
-      "max": -50
-    },
-    {
-      "type": "penalty",
       "text": "Usage of any",
       "max": -20
     },
