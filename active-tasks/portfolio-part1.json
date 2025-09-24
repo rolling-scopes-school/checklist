@@ -1,0 +1,234 @@
+{
+    "taskName": "Portfolio. Part 1: Responsive Layout",
+    "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage1/tasks/portfolio/portfolio-part-1.md",
+    "criteria": [
+        {
+            "type": "title",
+            "title": "Maximum score for the task: 160 points"
+        },
+        {
+            "type": "title",
+            "title": "The choice of breakpoints and their number is left to the student's discretion."
+        },
+        {
+            "type": "title",
+            "title": "Any disputed issues should be resolved in favor of the student being assessed."
+        },
+        {
+            "type": "title",
+            "title": "Penalties for the task are assigned by the course curators, not by students. An imposed penalty results in zero points for the task. If you believe there's a reason to apply any of the following penalties in the work you're evaluating, please direct message the link to it to one of the curators:\n 1. The layout of the entire design or individual blocks is implemented using images, except in cases where the image is specifically required by the design.\n 2. The use of frameworks, libraries, and technologies that are prohibited in the Technical Requirements."
+        },
+        {
+            "type": "title",
+            "title": "1. The layout of the page sections matches the design at a screen width of 1440px and above: +40"
+        },
+        {
+            "type": "subtask",
+            "text": "header: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Hero section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "About section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Portfolio section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Price section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "FAQ section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "footer: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "When scaling the browser page (<100%) or increasing the page width (>1440px), the layout of the page (except slider's content) is centered rather than shifted to the side and not stretched across the entire width: +6",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "The background sections' color stretches across the entire width of the screen: +6",
+            "max": 6
+        },
+        {
+            "type": "title",
+            "title": "2. The layout of the page sections matches the design at a screen width of 768px: +28"
+        },
+        {
+            "type": "subtask",
+            "text": "header: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Hero section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "About section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Portfolio section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Price section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "FAQ section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "footer: +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "3. The layout of the page sections matches the design at a screen width of 380px: +28"
+        },
+        {
+            "type": "subtask",
+            "text": "header: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Hero section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "About section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Portfolio section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Price section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "FAQ section: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "footer: +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "4. At any width between 1440px and 380px, no horizontal scrollbar appears. All page content displays exactly as intended by the design — nothing is cropped, removed, or shifted: +12"
+        },
+        {
+            "type": "subtask",
+            "text": "no horizontal scroll bar between 1440px and 768px widths: +6",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "no horizontal scroll bar between 768px and 380px widths: +6",
+            "max": 6
+        },
+        {
+            "type": "title",
+            "title": "5. During smooth resizing of the browser window from 1440px to 380px, the layout occupies the full width of the window (including specified margins), elements adjust their sizes and positions appropriately without full scaling, no elements overlap, and images maintain their correct aspect ratios: +8"
+        },
+        {
+            "type": "subtask",
+            "text": "During smooth resizing of the browser window from 1440px to 380px, the layout occupies the full width of the window (including specified margins), elements adjust their sizes and positions appropriately without full scaling, no elements overlap, and images maintain their correct aspect ratios: +8",
+            "max": 8
+        },
+        {
+            "type": "title",
+            "title": "6. At screen widths of 768px, the menu and navigation links in <header> are concealed, and a burger menu icon is displayed: +4 (Note: Activation of the burger menu icon is not evaluated at this stage.)"
+        },
+        {
+            "type": "subtask",
+            "text": "At screen widths of 768px, the menu and navigation links in <header> are concealed, and a burger menu icon is displayed: +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "7. Interactivity: +26"
+        },
+        {
+            "type": "subtask",
+            "text": "Smooth scrolling with anchor links: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Interactivity of the links and buttons is implemented according to the Figma layout. Interactivity includes not only changing cursor's appearance, for example, using the cursor: pointer property, but also the use of other visual effects, such as changing the background color or font color, following the Styleguide in the Figma layout. If the interactivity is not specified in the Styleguide, cursor: pointer property is enough: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Each Package-card in the Packages & Pricing section is interactive (color for border and button) when hovering over any area of the card: +6",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "Each accordion's header in the FAQ section is interactive (color for name and 'plus' sign) when hovering over any area of the header, except content of this accordion: +6 (Note: Opening/closing of accordion sections is not evaluated at this stage.)",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "Mandatory requirement for interactivity: smooth change in the appearance of an element on hover, without affecting adjacent elements: +2",
+            "max": 2
+        },
+        {
+            "type": "subtask",
+            "text": "Hover effects are active on desktop devices (as per the Desktop device type in DevTools) and are disabled for mobile devices (as per the Mobile device type in DevTools): +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "8. Checking validation of the page: +14"
+        },
+        {
+            "type": "subtask",
+            "text": "The layout for the page is validated and error-free according to the W3C Validator (https://validator.w3.org/): +6\n Valid markup of checked page corresponds to the message 'Document checking completed. No errors or warnings to show.' In this case, you assigns the full points for the checked page (+6).\n If there are warnings but no errors, you assigns half of the points (+3) for the checked page",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "Favicon is added to the page: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Only one h1 on the page: +4",
+            "max": 4
+        }
+    ]
+}
