@@ -161,7 +161,7 @@
         },
         {
             "type": "title",
-            "title": "5. During smooth resizing of the browser window from 1440px to 380px, the layout occupies the full width of the window (including specified margins), elements adjust their sizes and positions appropriately without full scaling, no elements overlap, and images maintain their correct aspect ratios: +8"
+            "title": "5. Smooth Resizing: +8"
         },
         {
             "type": "subtask",
@@ -170,11 +170,11 @@
         },
         {
             "type": "title",
-            "title": "6. At screen widths of 768px, the menu and navigation links in <header> are concealed, and a burger menu icon is displayed: +4 (Note: Activation of the burger menu icon is not evaluated at this stage.)"
+            "title": "6. Burger Menu: +4"
         },
         {
             "type": "subtask",
-            "text": "At screen widths of 768px, the menu and navigation links in <header> are concealed, and a burger menu icon is displayed: +4",
+            "text": "At screen widths of 768px, the menu and navigation links in 'header' are concealed, and a burger menu icon is displayed: +4 (Note: Activation of the burger menu icon is not evaluated at this stage.)",
             "max": 4
         },
         {
