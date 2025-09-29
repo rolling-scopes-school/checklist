@@ -1,0 +1,136 @@
+{
+  "taskName": "CV. HTML, CSS & Git Basics",
+  "github": "https://github.com/rolling-scopes-school/qualifying-stage/blob/main/tasks/cv/html-css-git.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Submission"
+    },
+    {
+      "type": "subtask",
+      "text": "The student submits a link to their CV deployed on gh-pages through the RS App",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Markup Validity"
+    },
+    {
+      "type": "subtask",
+      "text": "The HTML markup is valid. Use the W3C Markup Validator (https://validator.w3.org/) to check validity",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Semantic Markup"
+    },
+    {
+      "type": "subtask",
+      "text": "The CV includes header, main, and footer elements",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The CV contains a nav element used appropriately",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The CV includes only one h1 heading in the document",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "The CV uses multiple h2 headings to structure the content",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Footer Content"
+    },
+    {
+      "type": "subtask",
+      "text": "Footer includes a link to the author's GitHub profile, the year of creation, the RS School logo, and a link to the RS School course",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "CSS Styles"
+    },
+    {
+      "type": "subtask",
+      "text": "CSS is used to format the CV layout and design effectively",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Responsive Design"
+    },
+    {
+      "type": "subtask",
+      "text": "The CV page remains horizontally centered when the browser window is resized",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Photo/Avatar"
+    },
+    {
+      "type": "subtask",
+      "text": "The CV includes an author photo or avatar with proper proportions and an alt attribute",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Lists Formatting"
+    },
+    {
+      "type": "subtask",
+      "text": "Navigation, contact information, and skills are formatted using list structures (ul/ol with li or li > a)",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "CV Content"
+    },
+    {
+      "type": "subtask",
+      "text": "A brief self-introduction is included",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Contact information is included (e.g., email, GitHub, LinkedIn)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A list of skills relevant to the student is included",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A code example is added using proper HTML characters or code tags",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "A list of educational projects with links to source code or deployed apps is included",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Information about education and English proficiency level is included",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Language Requirement"
+    },
+    {
+      "type": "subtask",
+      "text": "The CV content is written entirely in English",
+      "max": 10
+    }
+  ]
+}
