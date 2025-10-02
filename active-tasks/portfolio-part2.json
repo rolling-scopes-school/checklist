@@ -1,0 +1,168 @@
+{
+    "taskName": "Portfolio. Part 2: Adding Functionality",
+    "github": "https://github.com/rolling-scopes-school/tasks/blob/master/stage1/tasks/portfolio/portfolio-part-2.md",
+    "criteria": [
+        {
+            "type": "title",
+            "title": "Maximum score for the task: 130 points"
+        },
+        {
+            "type": "title",
+            "title": "Any disputed issues should be resolved in favor of the student being assessed."
+        },
+        {
+            "type": "title",
+            "title": "Penalties for the task are assigned by the course curators, not by students. An imposed penalty results in zero points for the task. If you believe there's a reason to apply any of the following penalties in the work you're evaluating, please direct message the link to it to one of the curators:\n 1. The layout of the entire design or individual blocks is implemented using images, except in cases where the image is specifically required by the design.\n 2. The use of frameworks, libraries, and technologies that are prohibited in the Technical Requirements."
+        },
+        {
+            "type": "title",
+            "title": "1. Implementation of the burger menu: +40"
+        },
+        {
+            "type": "subtask",
+            "text": "At 768px and below, the navigation panel hides, and a burger icon appears: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "The burger icon is created using HTML and CSS without the use of images/svg: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "When clicking the burger icon, the burger menu slides out from the right, and the burger icon smoothly transforms into a cross: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "The burger menu occupies the entire available screen area below the 'header' block: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "The placement and sizes of elements in the burger menu correspond to the layout (horizontal and vertical centering of menu items): +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "When clicking the cross, the burger menu smoothly hides, moving to the right of the screen, and the cross smoothly transforms into a burger icon: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "When clicking on any link in the menu, the burger menu smoothly hides to the right, and the cross smoothly transforms into a burger icon: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Links scroll smoothly to their anchor points: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "The page behind the open menu does not scroll. After closing the menu, scrolling works again: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Above 768px, both the burger icon and menu are hidden, and the standard navigation panel is shown: +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "2. Implementation of the Slider: +40"
+        },
+        {
+            "type": "subtask",
+            "text": "By default, the slider track must be horizontally centered on the page: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "On desktop, slider scrolling is activated by hovering the cursor over the left or right area: +8",
+            "max": 8
+        },
+        {
+            "type": "subtask",
+            "text": "On desktop, the active area for scrolling the slider is ~30% of the screen width on each side: +8",
+            "max": 8
+        },
+        {
+            "type": "subtask",
+            "text": "On desktop, the remaining area in the center is inactive: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "On mobile, the slider is scrolled by swiping with a finger: +8",
+            "max": 8
+        },
+        {
+            "type": "subtask",
+            "text": "The slider's end positions are aligned with the page content on either side. Scrolling is locked beyond these points: +8",
+            "max": 8
+        },
+        {
+            "type": "title",
+            "title": "3. Implementation of the accordions in the FAQ section: +24"
+        },
+        {
+            "type": "subtask",
+            "text": "By default, the first accordion is open: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "You can open or close the accordion by clicking anywhere on its header: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Only one accordion can be open at a time (opening a new one closes the previous): +8",
+            "max": 8
+        },
+        {
+            "type": "subtask",
+            "text": "Accordion state persists after page reload: +8",
+            "max": 8
+        },
+        {
+            "type": "title",
+            "title": "4. Implementation of the modals: +22"
+        },
+        {
+            "type": "subtask",
+            "text": "A modal opens when you click any 'BOOK NOW' button in the cards within the Packages & Pricing section: +6",
+            "max": 6
+        },
+        {
+            "type": "subtask",
+            "text": "The part of the page outside the Modal is darkened: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "When the Modal is open, the vertical scroll of the page becomes inactive; when closed, it becomes active again: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "Clicking both outside the modal and on the close button closes it: +4",
+            "max": 4
+        },
+        {
+            "type": "subtask",
+            "text": "The Modal is centered on both axes, sizes of modal elements and their layout match the design: +4",
+            "max": 4
+        },
+        {
+            "type": "title",
+            "title": "5. Implementation of the scroll down button: +4"
+        },
+        {
+            "type": "subtask",
+            "text": "When the button is clicked, the page scrolls to About section: +4",
+            "max": 4
+        }
+    ]
+}
