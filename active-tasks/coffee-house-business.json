@@ -1,0 +1,213 @@
+{
+  "taskName": "Coffee-House: Business Functionality",
+  "github": "https://github.com/rolling-scopes-school/qualifying-stage/blob/main/tasks/typescript/coffee-house.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "👋 Hello, dear reviewers! We only check the requirements listed in the evaluation criteria. If something isn’t described there, we don’t evaluate it. In case of non-critical inaccuracies, the evaluation should be in favor of the student."
+    },
+    {
+      "type": "title",
+      "title": "Technical Implementation"
+    },
+    {
+      "type": "subtask",
+      "text": "TypeScript integration",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Proper ESLint and Webpack/Vite configuration",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Adherence to strict typing rules",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Interfaces, enums, and generics usage",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Linting rules compliance",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Main Page"
+    },
+    {
+      "type": "subtask",
+      "text": "Back-end integration and data fetching",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Loader implementation",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Slider functionality",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Menu Page"
+    },
+    {
+      "type": "subtask",
+      "text": "Back-end integration and data fetching",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Loader implementation",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Dynamic product card generation",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Category selection and filtering",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Price display logic",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Modal Window"
+    },
+    {
+      "type": "subtask",
+      "text": "Back-end integration and data fetching",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Loader implementation",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Dynamic product card generation",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Add-to-Cart functionality",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Close modal functionality",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Hover effects and tooltips",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Cart Page"
+    },
+    {
+      "type": "subtask",
+      "text": "Cart icon and item counter",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Persistency of cart items",
+      "max": 15
+    },
+    {
+      "type": "subtask",
+      "text": "Proper item display and deletions",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Confirmation of order",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Error of order placement handling ",
+      "max": 15
+    },
+    {
+      "type": "title",
+      "title": "Sign In Page"
+    },
+    {
+      "type": "subtask",
+      "text": "Input validation",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Enabling/disabling the button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Successful login redirection",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Registration Page"
+    },
+    {
+      "type": "subtask",
+      "text": "Correct implementation of all input fields",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Validation rules",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Enabling/disabling the button",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Successful registration redirection",
+      "max": 5
+    }
+  ]
+}
