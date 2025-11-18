@@ -53,7 +53,7 @@
     },
     {
       "type": "subtask",
-      "text": " Grid boundary rules: Implements proper row boundary pair matching (last number of one row can pair with the first number of the next row)",
+      "text": "Grid boundary rules: Implements proper row boundary pair matching (last number of one row can pair with the first number of the next row)",
       "max": 5
     },
     {
@@ -74,7 +74,7 @@
     {
       "type": "subtask",
       "text": "Assist tools implementation: All 5 tools work with correct usage limits. Add Numbers: Appends new numbers to the grid according to the current mode (max 10 uses per game)",
-      "max": 5
+      "max": 10
     },
     {
       "type": "subtask",
@@ -302,6 +302,14 @@
       "type": "subtask",
       "text": "Bonus feature implemented",
       "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Penalties"
+    },
+    {
+      "type": "title",
+      "title": "Please note that the penalty percentage is currently calculated automatically based on the full score. If the work is completed only partially, you need to adjust the percentage manually."
     },
     {
       "type": "penalty",
