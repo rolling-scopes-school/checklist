@@ -1,0 +1,337 @@
+{
+  "taskName": "Pair 'em Up",
+  "github": "https://github.com/rolling-scopes-school/tasks/tree/master/stage1/tasks/pair-em-up",
+  "information": "The maximum number of points is 300. Cross-check criterias:",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "👋 Hello, dear reviewers! We only check the requirements listed in the evaluation criteria. If something isn’t described there, we don’t evaluate it. In case of non-critical inaccuracies, the evaluation should be in favor of the student."
+    },
+    {
+      "type": "title",
+      "title": "Core Game Logic"
+    },
+    {
+      "type": "subtask",
+      "text": "Pair validation - identical numbers: Correctly identifies pairs of same numbers",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "Pair validation - sum to 10: Correctly identifies pairs that sum to 10",
+      "max": 7
+    },
+    {
+      "type": "subtask",
+      "text": "Scoring - identical pairs: Awards exactly 1 point for matching identical numbers",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Scoring - sum pairs: Awards exactly 2 points for numbers summing to 10",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Scoring - bonus pairs: Awards exactly 3 points for pairs of fives",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Win condition detection: Correctly ends game when score reaches 100+",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Lose condition detection: No moves: Correctly ends game when no moves available and no assists left",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Lose condition detection: Grid limit: Correctly ends game when the 50-line grid limit is reached",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": " Grid boundary rules: Implements proper row boundary pair matching (last number of one row can pair with the first number of the next row)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "50-line limit enforcement: Prevents adding numbers beyond grid limit",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools implementation: All 5 tools work with correct usage limits. Hints: Shows the number of currently available valid moves (maximum display: 5+)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools implementation: All 5 tools work with correct usage limits.Revert: Undoes the last move (single-step undo, limited to one use per turn)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools implementation: All 5 tools work with correct usage limits. Add Numbers: Appends new numbers to the grid according to the current mode (max 10 uses per game)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools implementation: All 5 tools work with correct usage limits. Shuffle: Randomly rearranges existing numbers on the board (max 5 uses per game)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools implementation: All 5 tools work with correct usage limits. Eraser: Removes any single number from the grid (max 5 uses per game)",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Game Grid & Number Generation "
+    },
+    {
+      "type": "subtask",
+      "text": "Classic mode - sequential placement: Numbers 1-19 (excluding 0) in correct order",
+      "max": 9
+    },
+    {
+      "type": "subtask",
+      "text": "Random mode - random placement: Numbers 1-19 (excluding 0) placed randomly",
+      "max": 9
+    },
+    {
+      "type": "subtask",
+      "text": "Chaotic mode - 27 numbers: Exactly 27 random numbers from 1-9",
+      "max": 9
+    },
+    {
+      "type": "subtask",
+      "text": "Number regeneration: Correct number generation according to the current mode",
+      "max": 5
+    },  
+    {
+      "type": "title",
+      "title": "User Interface Components"
+    },
+    {
+      "type": "subtask",
+      "text": "Start screen - title display: Game title prominently shown",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Start screen - author credit: GitHub link displayed and functional ",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Start screen - mode selection: Three mode buttons functional",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Game screen - grid display: Initial grid properly rendered ",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Game screen - score display: Current and target score shown",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Game screen - timer display: MM:SS format counting from start",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Control buttons: Reset, Save, Continue buttons functional. Reset button: Restarts the current game in the same mode with fresh numbers",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Control buttons: Reset, Save, Continue buttons functional. Save game button: Preserves current game state (grid, score, timer, mode, undo history, assist tools uses)",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Control buttons: Reset, Save, Continue buttons functional. Continue game button: Loads a previously saved game state",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Assist tools UI: All 5 tools displayed with usage counters",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Settings panel: Complete audio and theme controls. Sound toggle(s) for sound effects",
+      "max": 3
+    },
+    {
+      "type": "subtask",
+      "text": "Settings panel: Complete audio and theme controls.Theme switching between light and dark modes",
+      "max": 3
+    },
+    {
+      "type": "subtask",
+      "text": "Results screen: Statistics and high scores table properly displayed.Statistics: Current game score, completion time, win/loss outcome ",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Results screen: Statistics and high scores table properly displayed. High scores table: Latest 5 games sorted by time",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Screen navigation: Proper transitions between all screens",
+      "max": 3
+    },
+    {
+      "type": "title",
+      "title": "Responsive Design & Browser Support"
+    },    
+    {
+      "type": "subtask",
+      "text": "Proper display and touch functionality within 380px ≤ width ≤ 1280px viewport range: for desktop and mobile devices",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Chrome browser support: Proper implemented functionality in latest Chrome",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Game State Management"
+    },
+    {
+      "type": "subtask",
+      "text": "Game initialization logic: Proper setup for each game mode",
+      "max": 7
+    },
+    {
+      "type": "subtask",
+      "text": "Cell selection mechanism: Click/tap selection and deselection",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Move validation: Pair checking and success/failure feedback",
+      "max": 7
+    },
+    {
+      "type": "subtask",
+      "text": "Grid updates: Proper cell clearing and number positions",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Timer accuracy: Precise MM:SS countdown functionality",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Audio & Visual Feedback"
+    },    
+    {
+      "type": "subtask",
+      "text": "Cell selection sounds: Audio feedback for cell interactions",
+      "max": 4
+    },
+    {
+      "type": "subtask",
+      "text": "Valid/invalid pair sounds: Sounds for correct/invalid pair matches",
+      "max": 3
+    },
+    {
+      "type": "subtask",
+      "text": "Win/lose sounds: Sounds for winning/losing the game",
+      "max": 3
+    },
+    {
+      "type": "subtask",
+      "text": "Visual cell highlighting: Selected cells clearly indicated",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Animation effects: Smooth transitions and visual feedback",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "Theme switching: Complete light/dark mode implementation",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Data Persistence & Settings"
+    },
+    {
+      "type": "subtask",
+      "text": "Game state storage: Grid, score, timer, mode, undo history, assist tools uses saved and can be resumed on page reload ",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Settings persistence: Audio and theme preferences saved",
+      "max": 5
+    },
+    {
+      "type": "subtask",
+      "text": "High scores table: Latest 5 games sorted by time stored and retrieved",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Code Quality & Functionality"
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling: No JavaScript errors in browser console",
+      "max": 5
+    },
+    {
+      "type": "title",
+      "title": "Bonus"
+    },
+    {
+      "type": "subtask",
+      "text": "Bonus feature implemented",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "body in the index.html file is not empty (only script tag is allowed): -100%",
+      "max": -300
+    },
+    {
+      "type": "penalty",
+      "text": "Anything mentioned as not allowed in the Main technical requirements section: -100%",
+      "max": -300
+    },
+    {
+      "type": "penalty",
+      "text": "App is not supported at 380px ≤ width ≤ 1280px viewport range (e.g., DOM elements go out of bounds, overlap, etc.): -30%",
+      "max": -100
+    },
+    {
+      "type": "penalty",
+      "text": "Using alert(), prompt(), or confirm() functions: -50%",
+      "max": -150
+    },
+    {
+      "type": "penalty",
+      "text": "Game logic errors or broken features: -10 to -30 per major error",
+      "max": -10
+    },
+    {
+      "type": "penalty",
+      "text": "Minor UI/UX inconsistencies or incomplete features: -5 to -15 per issue",
+      "max": -5
+    }
+  ]
+}
