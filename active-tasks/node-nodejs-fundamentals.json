@@ -92,12 +92,12 @@
     },
     {
       "type": "subtask",
-      "text": "`compress.js`  implemented properly (reads all files from workspace/toCompress/, recursively compresses entire directory structure into single .br archive, saves to workspace/compressed/)",
+      "text": "`compressDir.js`  implemented properly (reads all files from workspace/toCompress/, recursively compresses entire directory structure into single .br archive, saves to workspace/compressed/)",
       "max": 10
     },
     {
       "type": "subtask",
-      "text": "`decompress.js` implemented properly (reads archive.br from workspace/compressed/, decompresses and extracts to workspace/decompressed/, result matches original)",
+      "text": "`decompressDir.js` implemented properly (reads archive.br from workspace/compressed/, decompresses and extracts to workspace/decompressed/, result matches original)",
       "max": 10
     },
     {
@@ -136,12 +136,12 @@
     {
       "type": "penalty",
       "text": "Any external tools/libraries are used",
-      "max": -196
+      "max": -190
     },
     {
       "type": "penalty",
       "text": "Commits after deadline (except commits that affect only Readme.md, .gitignore, etc.)",
-      "max": -62
+      "max": -60
     }
   ]
 }
