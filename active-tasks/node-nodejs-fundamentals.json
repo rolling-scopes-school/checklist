@@ -1,0 +1,147 @@
+{
+  "taskName": "Node.js Fundamentals",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments-v2/01-nodejs-fundamentals/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "File System (src/fs): +32"
+    },
+    {
+      "type": "subtask",
+      "text": "`snapshot.js`  implemented properly (recursive scan, correct JSON structure with path/type/size)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`restore.js`  implemented properly (reads snapshot, recreates structure)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`findByExt.js` implemented properly (recursive search, sorted output)",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "`merge.js` implemented properly (reads .txt files in order, concatenates, writes result)",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Command line interface(src/cli): +26"
+    },
+    {
+      "type": "subtask",
+      "text": "`interactive.js` implemented properly (readline prompt, supports uptime/cwd/date/exit commands, handles Ctrl+C)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`progress.js`  implemented properly (in-place updating progress bar, 0-100% over ~5 seconds)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`progress.js`  supports --color <hex> (#RRGGBB), applies color only to filled segment, and resets ANSI style correctly",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "Modules(src/modules): +10"
+    },
+    {
+      "type": "subtask",
+      "text": "`dynamic.js`  implemented properly (dynamic import from plugins/, calls run(), handles missing plugin)",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Hash (src/hash): +12"
+    },
+    {
+      "type": "subtask",
+      "text": "`verify.js`  implemented properly (reads checksums.json, calculates SHA256 via Streams, prints OK/FAIL per file)",
+      "max": 12
+    },
+    {
+      "type": "title",
+      "title": "Streams (src/streams): +30"
+    },
+    {
+      "type": "subtask",
+      "text": "`lineNumberer.js` implemented properly (Transform stream, prepends line numbers)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`filter.js` implemented properly (Transform stream, filters by pattern from CLI arg)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`split.js` implemented properly (Readable stream, splits file into chunks by line count)",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Zlib (src/zip): +20"
+    },
+    {
+      "type": "subtask",
+      "text": "`compressDir.js`  implemented properly (reads all files from workspace/toCompress/, recursively compresses entire directory structure into single .br archive, saves to workspace/compressed/)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`decompressDir.js` implemented properly (reads archive.br from workspace/compressed/, decompresses and extracts to workspace/decompressed/, result matches original)",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "Worker Threads (src/wt): +40"
+    },
+    {
+      "type": "subtask",
+      "text": "`worker.js` implemented properly (receives array, returns sorted array)",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "`main.js`  implemented properly (reads data.json, splits by CPU count, distributes to workers, k-way merges results)",
+      "max": 30
+    },
+    {
+      "type": "title",
+      "title": "Child Processes (src/cp): +30"
+    },
+    {
+      "type": "subtask",
+      "text": "`execCommand.js` spawns child process from CLI argument" ,
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "child process `stdout/stderr` piped to parent `stdout/stderr`",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "parent exits with the same exit code as child",
+      "max": 10
+    },
+    {
+      "type": "penalty",
+      "text": "Any external tools/libraries are used",
+      "max": -190
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only Readme.md, .gitignore, etc.)",
+      "max": -60
+    }
+  ]
+}
