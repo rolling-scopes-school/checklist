@@ -1,0 +1,189 @@
+{
+  "taskName": "Data Processing CLI",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments-v2/02-data-processing-cli/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "The task must be checked on the LTS version of Node.js.\nIf there are uncertainties about whether to lower the evaluation for the assignment or not, the benefit of the doubt is given to the student."
+    },
+    {
+      "type": "title",
+      "title": "1.Basic Scope: +42"
+    },
+    {
+      "type": "subtask",
+      "text": "Application starts with npm run start and displays welcome message",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Application exits gracefully with `.exit` command or `Ctrl+C` and displays goodbye message",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Current working directory is printed at startup and after each successful operation",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Unknown or invalid commands display Invalid input and application continues running",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Operations that fail display Operation failed and application continues running",
+      "max": 10
+    },
+  
+    {
+      "type": "title",
+      "title": "2.Navigation Commands: +28"
+    },
+    {
+      "type": "subtask",
+      "text": "`up` command moves up one directory level correctly",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "`cd` command navigates to specified directory (both relative and absolute paths)",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "`ls` command lists files and folders with proper sorting (folders first, then files, alphabetically)",
+      "max": 12
+    },
+    {
+      "type": "title",
+      "title": "3.Data Processing Commands: +80"
+    },
+    {
+      "type": "subtask",
+      "text": "`csv-to-json` command works correctly (headers parsed, rows converted to objects, output is valid JSON array, uses Streams)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "`json-to-csv` command works correctly (headers from object keys, values as rows, uses Streams)",
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "`count` command works correctly (lines, words, characters counted via Streams, output format matches specification)",
+      "max": 12
+    },
+    {
+      "type": "subtask",
+      "text": "`hash` command works correctly (SHA256 by default, supports `md5` and `sha512` via `--algorithm` option, uses Streams, supports `--save` to write hash file next to input)",
+      "max": 12
+    },
+    {
+      "type": "subtask",
+      "text": "`encrypt` command works correctly (AES-256-GCM, key derivation from password+salt, Streams, output format matches spec)",
+      "max": 8
+    },
+    {
+      "type": "subtask",
+      "text": "`decrypt` command works correctly (AES-256-GCM, key derivation from password+salt, Streams, authTag verified, result matches original)",
+      "max": 8
+    },
+    {
+      "type": "title",
+      "title": "4.Path Resolution: +26"
+    },
+    {
+      "type": "subtask",
+      "text": "All file paths in commands are correctly resolved relative to current working directory",
+      "max": 16
+    },
+    {
+      "type": "subtask",
+      "text": " All file operations properly handle errors (non-existent files, invalid paths, permission errors)",
+      "max": 10
+    },
+    {
+      "type": "title",
+      "title": "5.Advanced Scope: `log-stats` command works correctly: +28"
+    },
+    {
+      "type": "subtask",
+      "text": "File is split into chunks equal to the number of CPU cores (line boundaries preserved)",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Each chunk is processed in a separate Worker Thread",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Partial stats are merged correctly (counters, maps, totals)",
+      "max": 6
+    },
+    {
+      "type": "subtask",
+      "text": "Final output JSON matches the specification",
+      "max": 6
+    },
+    {
+      "type": "title",
+      "title": "5.Advanced Scope: Project structure follows the specification : +16"
+    },
+    {
+      "type": "subtask",
+      "text": "Project structure follows the specification (separate files for navigation, commands, utilities, worker)",
+      "max": 16
+    },
+    {
+      "type": "title",
+      "title": "5.Advanced Scope: Interactive REPL implementation: +20"
+    },
+    {
+      "type": "subtask",
+      "text": "Maintains application state (current working directory) across commands",
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Properly handles readline for continuous command input",
+      "max": 10
+    },
+      {
+      "type": "title",
+      "title": "5.Advanced Scope: `hash-compare` command works correctly: +10"
+    },
+    {
+      "type": "subtask",
+      "text": "`hash-compare` command works correctly (reads expected hash from file, computes current hash with selected algorithm, returns OK / MISMATCH)",
+      "max": 10
+    },
+   
+    {
+      "type": "penalty",
+      "text": "-95% of total task score Any external tools/libraries are used",
+      "max": -237.5
+    },
+    {
+      "type": "penalty",
+      "text": "-30% of total task score Commits after deadline (except commits that affect only Readme.md, .gitignore, etc.)",
+      "max": -75
+    },
+    {
+      "type": "penalty",
+      "text": "-20 Missing PR or its description is incorrect",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "-20 No separate development branch",
+      "max": -20
+    },
+     {
+      "type": "penalty",
+      "text": "-20 Less than 3 commits in the development branch, not including commits that make changes only to `Readme.md` or similar files (`tsconfig.json`, `.gitignore`, `.prettierrc.json`, etc.)",
+      "max": -20
+    }
+  ]
+}
